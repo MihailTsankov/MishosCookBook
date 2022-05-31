@@ -5,7 +5,9 @@ import dishes from '../resources/dishes.json'
 
 function CookBook (): ReactElement {
     return (
-        <div>
+        <div style={{
+            display: 'flex',
+        }}>
             {dishes.map(dish => <Dish key={dish.title} dish={dish} />)}
         </div>
     )

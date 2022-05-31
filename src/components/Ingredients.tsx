@@ -1,4 +1,5 @@
 import React, {ReactElement} from 'react'
+import {Typography} from '@mui/material'
 
 export interface IIngredient {
     name: string,
@@ -16,17 +17,17 @@ function Ingredients (props: IIngredientsProps): ReactElement | null {
         return null
     }
     return (
-        <div>
+        <Typography>
             Съставки:
             {
                 ingredients.map((ingredient: IIngredient) => (
-                    <div key={ingredient.name}>
+                    <Typography key={ingredient.name}>
                         {ingredient.name}
                         {ingredient.quantity ? ` : ${ingredient.quantity}` : null }
-                    </div>
+                    </Typography>
                 ))
             }
-        </div>
+        </Typography>
     )
 }
 

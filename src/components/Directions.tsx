@@ -1,4 +1,5 @@
 import React, {ReactElement} from 'react'
+import Typography from '@mui/material/Typography'
 
 export interface IDirection {
     content: string
@@ -14,7 +15,7 @@ function Directions (props: IDirectionsProps): ReactElement | null {
         return null
     }
     return (
-        <div>
+        <Typography>
             {
                 directions.map(direction => (
                     <div key={direction.content}>
@@ -22,7 +23,7 @@ function Directions (props: IDirectionsProps): ReactElement | null {
                     </div>
                 ))
             }
-        </div>
+        </Typography>
     )
 }
 

@@ -1,4 +1,5 @@
 import React, {ReactElement} from 'react'
+import {CardContent, CardMedia} from '@mui/material'
 
 export interface IImage {
     title: string,
@@ -14,14 +15,22 @@ function Images (props: IImageProps): ReactElement | null {
     if (!images || !images.length) return null
 
     return (
-        <div>
+        <CardContent style={{display: 'flex'}}>
             {
                 images.map((image: IImage) => {
                     const imageSource = `../resources/images/${image.src}`
-                    return <img key={image.src} src={imageSource} alt={image.title}/>
+                    return <CardMedia
+                        component='img'
+                        key={image.src}
+                        height='194'
+                        image={imageSource}
+                        alt={image.title}
+                    />
                 })
             }
-        </div>
+        </CardContent>
+
+
     )
 }
 
