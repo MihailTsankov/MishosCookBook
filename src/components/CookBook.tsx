@@ -7,6 +7,7 @@ function CookBook (): ReactElement {
     return (
         <div style={{
             display: 'flex',
+            flexWrap: 'wrap',
         }}>
             {dishes.map(dish => <Dish key={dish.title} dish={dish} />)}
         </div>

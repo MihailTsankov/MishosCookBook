@@ -1,16 +1,15 @@
 import React, {ReactElement} from 'react'
-import Directions, {IDirection} from './Directions'
-import Parts, {IPart} from './Parts'
-import Images, {IImage} from './Images'
 import { styled } from '@mui/material/styles'
 import Card from '@mui/material/Card'
-import CardHeader from '@mui/material/CardHeader'
 import CardContent from '@mui/material/CardContent'
 import CardActions from '@mui/material/CardActions'
 import Collapse from '@mui/material/Collapse'
 import IconButton, { IconButtonProps } from '@mui/material/IconButton'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-import MoreVertIcon from '@mui/icons-material/MoreVert'
+import Directions, {IDirection} from './Directions'
+import Parts, {IPart} from './Parts'
+import Images, {IImage} from './Images'
+import Title from './Title'
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -44,27 +43,23 @@ function Dish (props: IDishProps): ReactElement {
     const {title, directions, parts, images, keywords} = props.dish
     const [expanded, setExpanded] = React.useState(false)
 
-    const keywordsText = keywords.join(', ')
-
     const handleExpandClick = () => {
         setExpanded(!expanded)
     }
 
     return (
         <Card sx={{
-            width: expanded ? 'auto' : 345,
+            width: expanded ? 'calc(100% - 10px)' : 345,
             margin: 1,
         }}>
-            <CardHeader
-                action={
-                    <IconButton aria-label='settings'>
-                        <MoreVertIcon />
-                    </IconButton>
-                }
-                title={title}
-                subheader={keywordsText}
-            />
+            <Title title={title} keywords={keywords} />
             <Images images={images} />
+            <Collapse in={expanded} timeout='auto' unmountOnExit>
+                <CardContent>
+                    <Directions directions={directions} />
+                    <Parts parts={parts} />
+                </CardContent>
+            </Collapse>
             <CardActions disableSpacing>
                 <ExpandMore
                     expand={expanded}
@@ -75,12 +70,6 @@ function Dish (props: IDishProps): ReactElement {
                     <ExpandMoreIcon />
                 </ExpandMore>
             </CardActions>
-            <Collapse in={expanded} timeout='auto' unmountOnExit>
-                <CardContent>
-                    <Directions directions={directions} />
-                    <Parts parts={parts} />
-                </CardContent>
-            </Collapse>
         </Card>
     )
 }
