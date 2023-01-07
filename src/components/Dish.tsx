@@ -56,8 +56,8 @@ function Dish (props: IDishProps): ReactElement {
             <Images images={images} />
             <Collapse in={expanded} timeout='auto' unmountOnExit>
                 <CardContent>
-                    <Directions directions={directions} />
                     <Parts parts={parts} />
+                    <Directions directions={directions} />
                 </CardContent>
             </Collapse>
             <CardActions disableSpacing>
