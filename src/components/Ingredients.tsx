@@ -22,7 +22,7 @@ function Ingredients (props: IIngredientsProps): ReactElement | null {
             {
                 ingredients.map((ingredient: IIngredient) => (
                     <Typography key={ingredient.name}>
-                        {ingredient.name}
+                        - {ingredient.name}
                         {ingredient.quantity ? ` : ${ingredient.quantity}` : null }
                     </Typography>
                 ))

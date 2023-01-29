@@ -10,6 +10,7 @@ import Directions, {IDirection} from './Directions'
 import Parts, {IPart} from './Parts'
 import Images, {IImage} from './Images'
 import Title from './Title'
+import URLs from './URLs'
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -40,7 +41,7 @@ interface IDishProps {
 }
 
 function Dish (props: IDishProps): ReactElement {
-    const {title, directions, parts, images, keywords} = props.dish
+    const {title, directions, parts, images, keywords, urls} = props.dish
     const [expanded, setExpanded] = React.useState(false)
 
     const handleExpandClick = () => {
@@ -58,6 +59,7 @@ function Dish (props: IDishProps): ReactElement {
                 <CardContent>
                     <Parts parts={parts} />
                     <Directions directions={directions} />
+                    <URLs urls={urls} />
                 </CardContent>
             </Collapse>
             <CardActions disableSpacing>
