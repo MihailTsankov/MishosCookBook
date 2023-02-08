@@ -59,9 +59,11 @@ function Dish (props: IDishProps): ReactElement {
                 <CardContent>
                     <Parts parts={parts} />
                     <Directions directions={directions} />
-                    <URLs urls={urls} />
                 </CardContent>
             </Collapse>
+            <CardContent>
+                <URLs urls={urls} />
+            </CardContent>
             <CardActions disableSpacing>
                 <ExpandMore
                     expand={expanded}

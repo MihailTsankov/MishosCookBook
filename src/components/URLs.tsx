@@ -14,18 +14,16 @@ function URLs (props: IURLsProps): ReactElement | null {
         return null
     }
     return (
-        <Typography>
-            Линкове:
+        <div>
+            <Typography>Линкове:</Typography>
             {
                 urls.map((urlItem: IURL) => (
                     <Typography key={urlItem.url}>
-                        <div>
-                            <a href={urlItem.url}>{urlItem.url}</a>
-                        </div>
+                        <a href={urlItem.url}>{urlItem.url}</a>
                     </Typography>
                 ))
             }
-        </Typography>
+        </div>
     )
 }
 
