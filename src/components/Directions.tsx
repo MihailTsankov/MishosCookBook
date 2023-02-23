@@ -1,5 +1,6 @@
 import React, {ReactElement} from 'react'
 import Typography from '@mui/material/Typography'
+import {List, ListItemText} from '@mui/material'
 
 export interface IDirection {
     content: string
@@ -15,15 +16,21 @@ function Directions (props: IDirectionsProps): ReactElement | null {
         return null
     }
     return (
-        <Typography>
-            {
-                directions.map(direction => (
-                    <div key={direction.content}>
-                        {direction.content}
-                    </div>
-                ))
+        <List
+            subheader={
+                <Typography variant={'h6'}>
+                    Инструкции:
+                </Typography>
             }
-        </Typography>
+            style={{paddingTop: 10}}>
+            {
+                directions.map(direction => <ListItemText
+                    sx={{ display: 'list-item', listStyleType: 'circle', marginLeft: 2 }}
+                    key={direction.content}
+                    primary={direction.content}
+                />)
+            }
+        </List>
     )
 }
 

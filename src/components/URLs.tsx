@@ -14,8 +14,10 @@ function URLs (props: IURLsProps): ReactElement | null {
         return null
     }
     return (
-        <div>
-            <Typography>Линкове:</Typography>
+        <>
+            <Typography variant={'h6'}>
+                Линкове:
+            </Typography>
             {
                 urls.map((urlItem: IURL) => (
                     <Typography key={urlItem.url}>
@@ -23,7 +25,7 @@ function URLs (props: IURLsProps): ReactElement | null {
                     </Typography>
                 ))
             }
-        </div>
+        </>
     )
 }
 

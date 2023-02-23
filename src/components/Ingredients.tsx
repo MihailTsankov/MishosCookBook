@@ -1,5 +1,5 @@
 import React, {ReactElement} from 'react'
-import {Typography} from '@mui/material'
+import {ListItemText, Typography} from '@mui/material'
 
 export interface IIngredient {
     name: string,
@@ -12,22 +12,26 @@ interface IIngredientsProps {
 }
 
 function Ingredients (props: IIngredientsProps): ReactElement | null {
-    const {ingredients} = props
+    const {ingredients, title} = props
     if (!ingredients) {
         return null
     }
     return (
-        <Typography>
-            Съставки:
+        <span>
+            <Typography variant={'h6'}>
+                {title || 'Съставки'}:
+            </Typography>
             {
                 ingredients.map((ingredient: IIngredient) => (
-                    <Typography key={ingredient.name}>
-                        - {ingredient.name}
-                        {ingredient.quantity ? ` : ${ingredient.quantity}` : null }
-                    </Typography>
+                    <ListItemText
+                        sx={{ display: 'list-item', listStyleType: 'disc', marginLeft: 2 }}
+                        key={ingredient.name}
+                        primary={`${ingredient.name} ${ingredient.quantity ? ` : ${ingredient.quantity}` : '' }`}
+                    />
                 ))
             }
-        </Typography>
+        </span>
+
     )
 }
 
