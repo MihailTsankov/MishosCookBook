@@ -54,7 +54,7 @@ function Dish (props: IDishProps): ReactElement {
             margin: 1,
         }}>
             <Title title={title} keywords={keywords} />
-            <Images images={images} />
+            <Images images={images} expanded={expanded}/>
             <Collapse in={expanded} timeout='auto' unmountOnExit>
                 <CardContent>
                     <Parts parts={parts} />

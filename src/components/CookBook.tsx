@@ -4,13 +4,13 @@ import Dish from './Dish'
 import dishes from '../resources/dishes.json'
 import Filters from './Filters'
 
-const dishTypeFilters = ['манджа', 'супа', 'салата', 'закуска', 'десерт', 'гарнитура', 'марината', 'заготовка', 'подправка', 'тест']
-const dishQuicknessFilters = ['бързо', 'средно-бързо', 'средно', 'средно-бавно', 'бавно', 'много бавно' ]
-const dishHowFilters = ['лесно', 'фурна', 'тиган', 'пържене', 'варене', 'миксер', 'запечатване', 'без пържене' ]
-const dishDiateryTypeFilters = ['кето', 'веган', 'вегетарианско']
-const dishMeatFilters = ['пиле', 'свинско', 'тележко', 'агнешко', 'риба', 'кайма']
-const dishVegetablesFilters = ['боб', 'леща', 'ориз', 'гъби', 'картофи', 'козунак', 'хляб', 'паста', 'макарони']
-const dishAnimalProductsFilters=['яйца', 'кашкавал', 'сирене', 'прясно мляко', 'кисело мляко', 'сметана']
+const dishTypeFilters = ['манджа', 'супа', 'салата', 'закуска', 'десерт', 'гарнитура', 'сос', 'марината', 'заготовка', 'подправка', 'тест']
+const dishQuicknessFilters = ['бързо', 'средно-бързо', 'средно', 'средно-бавно', 'бавно', 'много-бавно' ]
+const dishHowFilters = ['лесно', 'фурна', 'тиган', 'пържене', 'варене', 'тенджера', 'тава', 'печене', 'миксер', 'запечатване', 'без пържене',  'пасатор' ]
+const dishDiateryTypeFilters = ['кето', 'веган', 'вегетарианско', 'фибри']
+const dishMeatFilters = ['пиле', 'свинско', 'бекон', 'телешко', 'агнешко', 'риба', 'кайма']
+const dishPlantsFilters = ['боб', 'леща', 'ориз', 'гъби', 'картофи', 'домати', 'моркови', 'авокадо',  'кисело зеле', 'тиквички', 'хляб', 'бургер', 'паста', 'макарони', 'козунак', 'брашно', 'тесто', 'панировка']
+const dishAnimalProductsFilters=['яйца', 'кашкавал', 'сирене', 'прясно мляко', 'кисело мляко', 'сметана', 'мед']
 
 const filters = dishes.reduce((sum: any, dish) => {
     const newSum = [...sum]
@@ -21,7 +21,7 @@ const filters = dishes.reduce((sum: any, dish) => {
             && !dishHowFilters.includes(keyword)
             && !dishDiateryTypeFilters.includes(keyword)
             && !dishMeatFilters.includes(keyword)
-            && !dishVegetablesFilters.includes(keyword)
+            && !dishPlantsFilters.includes(keyword)
             && !dishAnimalProductsFilters.includes(keyword)){
             newSum.push(keyword)
         }
@@ -58,7 +58,7 @@ function CookBook (): ReactElement {
             <Filters title={'Как:'} filters={dishHowFilters} filtered={filtered} onClickFilter={onClickFilter}/>
             <Filters title={'Диета:'} filters={dishDiateryTypeFilters} filtered={filtered} onClickFilter={onClickFilter}/>
             <Filters title={'Месо:'} filters={dishMeatFilters} filtered={filtered} onClickFilter={onClickFilter}/>
-            <Filters title={'Зеленчуци:'} filters={dishVegetablesFilters} filtered={filtered} onClickFilter={onClickFilter}/>
+            <Filters title={'Растителни:'} filters={dishPlantsFilters} filtered={filtered} onClickFilter={onClickFilter}/>
             <Filters title={'Животински:'} filters={dishAnimalProductsFilters} filtered={filtered} onClickFilter={onClickFilter}/>
             <Filters title={'Други:'} filters={filters} filtered={filtered} onClickFilter={onClickFilter}/>
             <div style={{

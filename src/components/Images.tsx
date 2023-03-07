@@ -8,10 +8,11 @@ export interface IImage {
 
 interface IImageProps {
     images?: IImage[]
+    expanded: boolean
 }
 
 function Images (props: IImageProps): ReactElement | null {
-    const {images} = props
+    const {images, expanded} = props
     if (!images || !images.length) return null
 
     return (
@@ -22,7 +23,7 @@ function Images (props: IImageProps): ReactElement | null {
                     return <CardMedia
                         component='img'
                         key={image.src}
-                        height='194'
+                        height={expanded ? 400 : 194}
                         image={imageSource}
                         alt={image.title}
                     />
