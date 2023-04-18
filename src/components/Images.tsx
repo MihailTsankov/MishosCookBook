@@ -19,7 +19,7 @@ function Images (props: IImageProps): ReactElement | null {
         <CardContent style={{display: 'flex'}}>
             {
                 images.map((image: IImage) => {
-                    const imageSource = `../resources/images/${image.src}`
+                    const imageSource = `../static/images/${image.src}`
                     return <CardMedia
                         component='img'
                         key={image.src}
