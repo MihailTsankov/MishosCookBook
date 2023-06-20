@@ -21,7 +21,7 @@ function URLs (props: IURLsProps): ReactElement | null {
             {
                 urls.map((urlItem: IURL) => (
                     <Typography key={urlItem.url}>
-                        <a href={urlItem.url}>{urlItem.url}</a>
+                        <a href={urlItem.url} target='_blank' rel='noreferrer'>{urlItem.url}</a>
                     </Typography>
                 ))
             }
