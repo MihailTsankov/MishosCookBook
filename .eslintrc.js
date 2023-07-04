@@ -90,6 +90,11 @@ module.exports = {
         'arrow-body-style': [1, 'as-needed'],
         'prefer-spread': 1,
         'prefer-const': 1,
+        "react/jsx-no-target-blank": [1, {
+            "allowReferrer": true,
+            "links": true,
+            "forms": true,
+        }]
     },
     env: {
         browser: true,
