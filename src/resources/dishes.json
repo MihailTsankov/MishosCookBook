@@ -1529,7 +1529,7 @@
         "images": [
             {
                 "title": "Сьомга",
-                "src": "salmon.png"
+                "src": "salmon.jpg"
             }
         ],
         "keywords": [
@@ -4422,6 +4422,11 @@
             "лесно",
             "бързо",
             "десерт"
+        ],
+        "urls": [
+            {
+                "url": "https://youtu.be/1nqpTkHpYyE"
+            }
         ]
     },
     {
