@@ -51,6 +51,9 @@ function CookBook (): ReactElement {
         return true
     })
 
+    const url = new URL(window.location.href)
+    const currentDish = url.searchParams.get('dish')
+
     return (
         <div>
             <Filters title={'Тип ястие:'} filters={dishTypeFilters} filtered={filtered} onClickFilter={onClickFilter}/>
@@ -65,7 +68,7 @@ function CookBook (): ReactElement {
                 display: 'flex',
                 flexWrap: 'wrap',
             }}>
-                {filteredDishes.map(dish => <Dish key={dish.title} dish={dish} />)}
+                {filteredDishes.map(dish => <Dish key={dish.title} dish={dish} isDishExpanded={currentDish === dish.title}/>)}
             </div>
         </div>
     )

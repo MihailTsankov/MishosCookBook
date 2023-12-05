@@ -1,4 +1,4 @@
-import React, {ReactElement} from 'react'
+import React, {ReactElement, useRef, useEffect} from 'react'
 import { styled } from '@mui/material/styles'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
@@ -37,22 +37,56 @@ export interface IDish {
 }
 
 interface IDishProps {
-    dish: IDish
+    dish: IDish,
+    isDishExpanded: boolean
 }
 
 function Dish (props: IDishProps): ReactElement {
-    const {title, directions, parts, images, keywords, urls} = props.dish
-    const [expanded, setExpanded] = React.useState(false)
+    const {isDishExpanded, dish} = props
+    const {title, directions, parts, images, keywords, urls} = dish
+    const [expanded, setExpanded] = React.useState(isDishExpanded)
+    const dishRef = useRef<HTMLDivElement>(null)
 
     const handleExpandClick = () => {
         setExpanded(!expanded)
     }
 
+    const updateQueryParams = () => {
+        // Parse the current URL
+        const url = new URL(window.location.href)
+
+        // Update or add the query parameter
+        if (expanded) {
+            url.searchParams.set('dish', title)
+        } else if (url.searchParams.get('dish') === title) {
+            url.searchParams.delete('dish')
+        }
+
+        // Replace the current URL with the updated one
+        window.history.replaceState({}, '', url.href)
+    }
+
+    const scrollToDish = () => {
+        if (dishRef.current && expanded) {
+            dishRef.current.scrollIntoView({
+                behavior: 'smooth', // You can use 'auto' or 'smooth' for the scrolling behavior
+                block: 'start',     // You can use 'start', 'center', 'end', or 'nearest'
+                inline: 'start',    // You can use 'start', 'center', 'end', or 'nearest'
+            })
+        }
+    }
+
+    useEffect(() => {
+        scrollToDish()
+        updateQueryParams()
+    }, [expanded])
+
     return (
-        <Card sx={{
-            width: expanded ? 'calc(100% - 10px)' : 345,
-            margin: 1,
-        }}>
+        <Card ref={dishRef}
+            sx={{
+                width: expanded ? 'calc(100% - 10px)' : 345,
+                margin: 1,
+            }}>
             <Title title={title} keywords={keywords} />
             <Images images={images} expanded={expanded}/>
             <Collapse in={expanded} timeout='auto' unmountOnExit>
