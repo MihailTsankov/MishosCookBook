@@ -1451,61 +1451,6 @@
         ]
     },
     {
-        "title": "Сьомга със синьо сирене (ТЕСТ)",
-        "parts": [
-            {
-                "name": "Съставки",
-                "ingredients": [
-                    {
-                        "name": "1/4 чаена чаша зехтин"
-                    },
-                    {
-                        "name": "черен пипер"
-                    },
-                    {
-                        "name": "1/4 чаена чаша лимонов сок"
-                    },
-                    {
-                        "name": "1/2 чаена чаша бяло вино"
-                    },
-                    {
-                        "name": "каперси"
-                    }
-                ]
-            }
-        ],
-        "directions": [
-            {
-                "content": "Начин на приготвяне:"
-            },
-            {
-                "content": "Намазваме рибата със зехтина, поръсваме с черен пипер и поставяме сьомгата върху парче алуминиево фолио, достатъчно голямо, за да може да завием рибата."
-            },
-            {
-                "content": "Поръсваме филетата с лимонов сок и вино. Ако използвате каперси, може да добавите и тях."
-            },
-            {
-                "content": "Слагаме сиренето и запечатваме месото с фолиото."
-            },
-            {
-                "content": "Поставяме го в тавичка и печем във фурна за около 30-40 минути на 200 градуса."
-            },
-            {
-                "content": "* Може да изпечем ястието с фолиото на скара за около 10 минути. "
-            }
-        ],
-        "images": [
-            {
-                "title": "Сьомга със синьо сирене",
-                "src": "salmonwithcheese.jpeg"
-            }
-        ],
-        "keywords": [
-            "манджа",
-            "тест"
-        ]
-    },
-    {
         "title": "Сьомга с хрупкава коричка",
         "parts": [
             {
@@ -1565,48 +1510,6 @@
             {
                 "url": "https://www.youtube.com/watch?v=mxa-4hN1-qM"
             }
-        ]
-    },
-    {
-        "title": "Веган Кюфтенца на Джулиян (ТЕСТ)",
-        "parts": [
-            {
-                "name": "Съставки",
-                "ingredients": [
-                    {
-                        "name": "Боб"
-                    }
-                ]
-            }
-        ],
-        "directions": [
-            {
-                "content": "Chop a small onion, fry it in some olive oil in a pot. Add 1 tsp Cummin, 1/2 tsp turmeric, 1/2 tsp coriander, 1 tsp sharena sol. Fry for a bit. Add a couple of grated carrots. Drain and rinse a big tin of red kidney beans. Add to mixture a cook a bit. Then mash them, adding flour (or rice flour) until you can mould them into balls and squash them to make the patties. Then fry them in a non-stick pan on both sides."
-            }
-        ],
-        "images": [
-        ],
-        "keywords": [
-            "манджа",
-            "тест"
-        ]
-    },
-    {
-        "title": "Руло Стефани (ТЕСТ)",
-        "parts": [
-        ],
-        "directions": [
-        ],
-        "images": [
-        ],
-        "urls": [
-            {
-                "url": "https://www.youtube.com/watch?v=TZWPm67J9Fo"
-            }
-        ],
-        "keywords": [
-            "манджа",
-            "тест"
         ]
     },
     {
@@ -3535,372 +3438,6 @@
         ]
     },
     {
-        "title": "Хрупкав лук на фурна \"Цвете\" (ТЕСТ)",
-        "parts": [
-            {
-                "name": "Съставки",
-                "ingredients": [
-                    {
-                        "name": "Голяма глава лук"
-                    },
-                    {
-                        "name": "Яйце с галета или панко ИЛИ настърган пармезан"
-                    },
-                    {
-                        "name": "Шарена сол, чубрица, червен и черен пипер"
-                    }
-                ]
-            }
-        ],
-        "directions": [
-            {
-                "content": "Пускаме фурната да се загрява на 200 градуса"
-            },
-            {
-                "content": "Обелваш луковите глави и отгоре ги режеш на 4, да се получат 4 ръкавчета. "
-            },
-            {
-                "content": "Поръсете с 3 с. л. настърган пармезан, смесени с 1 ч. л. черен пипер ИЛИ топиш лука с отворите надолу във смес от яйце и панко."
-            },
-            {
-                "content": "Нареждаш в тава. Поръсваш със шарена сол, чубрица и пипер. "
-            },
-            {
-                "content": "Печеш в загрята фурна до златисто"
-            }
-        ],
-        "urls": [
-            {
-                "url": "https://bistro.bg/article/idei/kak-da-si-napravim-hrupkav-paniran-luk-cvete.html"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Веган Майонеза със горчица (ТЕСТ)",
-        "urls": [
-            {
-                "url": "https://www.bonapeti.bg/recepti/veganska-mayoneza/"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Лаваш бургер (ТЕСТ)",
-        "urls": [
-            {
-                "url": "https://www.tiktok.com/@busezeyneppp/video/7193347094759902469"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Fried egg yolks (ТЕСТ)",
-        "urls": [
-            {
-                "url": "https://vm.tiktok.com/ZMYFA2BXt/"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Картофени гнезда (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:c60dbc5152"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест",
-            "картофи",
-            "яйца",
-            "вегетарианско"
-        ]
-    },
-    {
-        "title": "Пухкави хлебчета (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:63bec753ff"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Пухкаво домашно хлебче (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:0d5d9444dd"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Пълнени гъбки (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:aea2cb7e34"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Питка Хаос (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:904ba249f2"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Надупени картофи (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:ca8b562e7b"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест",
-            "картофи",
-            "веган",
-            "вегетарианско"
-        ]
-    },
-    {
-        "title": "Уникална пица с дупка (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:dbd6f5a7c1"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Солени мъфини (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:6d248abfed"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Мини пици хапки (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:fa7831de4f"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Баница (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:2874bc9b27"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Зеленчуков чипс (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:431e81bdb8"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Яйчни гнезда (ТЕСТ)",
-        "urls": [
-            {
-                "url": "https://www.youtube.com/watch?v=BGERrowrt6w"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Домашна пица (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:818cbd3b3b"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Усукани пръчици с кашкавал (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:3744ed695e"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Картофи по шведски (ТЕСТ)",
-        "urls": [
-            {
-                "url": "https://www.vbox7.com/play:1dd815e879"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест",
-            "картофи",
-            "вегетарианско"
-        ]
-    },
-    {
-        "title": "Усукани хотдози (ТЕСТ)",
-        "urls": [
-            {
-                "url": "https://www.youtube.com/watch?v=xEHNwvIqOYs"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Полезни бързинки (ТЕСТ)",
-        "urls": [
-            {
-                "url": "https://www.facebook.com/officialgoodful/videos/1666644846739308/"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Дробчета в масло на тиган (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://www.amateurpornbot.com/video/your-life-masturbates-in-class-and-gets-caught-teacher-569.html"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Меки Pretzels (ТЕСТ)",
-        "urls": [
-            {
-                "url": "https://www.youtube.com/watch?v=utU6lwMn22Y"
-            }
-        ],
-        "keywords": [
-            "бързо",
-            "тест"
-        ]
-    },
-    {
-        "title": "Grilled Cheese Roll Ups (ТЕСТ)",
-        "keywords": [
-            "тиган",
-            "бързо",
-            "сирене",
-            "кашкавал",
-            "бързо",
-            "тест"
-        ],
-        "urls": [
-            {
-                "url": "https://www.tiktok.com/@somethingaboutsandwiches/video/6981495859779276037"
-            }
-        ]
-    },
-    {
-        "title": "Картофени кюфтета (ТЕСТ)",
-        "keywords": [
-            "тиган",
-            "бързо",
-            "сирене",
-            "кашкавал",
-            "картофи",
-            "вегетарианско",
-            "бързо",
-            "тест"
-        ],
-        "urls": [
-            {
-                "url": "https://vm.tiktok.com/ZMRkknX6C/"
-            }
-        ]
-    },
-    {
-        "title": "Много Пухкава питка (ТЕСТ)",
-        "keywords": [
-            "хляб",
-            "картофи",
-            "вегетарианско",
-            "бързо",
-            "тест"
-        ],
-        "urls": [
-            {
-                "url": "https://www.instagram.com/p/CTztkaUK9yk/?utm_medium=share_sheet"
-            }
-        ]
-    },
-    {
         "title": "Пилешка супа със застройка",
         "parts": [
             {
@@ -4279,48 +3816,6 @@
         "urls": [
             {
                 "url": "https://youtu.be/LpalC9v8ffQ?si=uXbf94MQOew8cKPF&t=567"
-            }
-        ]
-    },
-    {
-        "title": "Свежа салата с извара (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:ab959d5f62"
-            }
-        ],
-        "keywords": [
-            "салата",
-            "тест"
-        ]
-    },
-    {
-        "title": "Rosemary Salt - If You Know, You Know (ТЕСТ)",
-        "keywords": [
-            "подправка",
-            "марината",
-            "бързо",
-            "миксер",
-            "тест"
-        ],
-        "urls": [
-            {
-                "url": "https://vm.tiktok.com/ZM8x6fkh6/"
-            }
-        ]
-    },
-    {
-        "title": "Лук трушия (ТЕСТ)",
-        "keywords": [
-            "подправка",
-            "марината",
-            "бързо",
-            "веган",
-            "тест"
-        ],
-        "urls": [
-            {
-                "url": "https://vm.tiktok.com/ZMLJcdnJX/"
             }
         ]
     },
@@ -4905,6 +4400,78 @@
         ]
     },
     {
+        "title": "Шоколадови шишарки",
+        "parts": [
+            {
+                "name": "Продукти",
+                "ingredients": [
+                    {
+                        "name": "Един пакет чаени бисквити"
+                    },
+                    {
+                        "name": "200гр течен шоколад"
+                    },
+                    {
+                        "name": "50гр разтопено масло"
+                    },
+                    {
+                        "name": "50гр фъстъчено масло"
+                    },
+                    {
+                        "name": "50гр прясно мляко (или заместител)"
+                    },
+                    {
+                        "name": "Шепа парченца Chocapic"
+                    },
+                    {
+                        "name": "Пудра захар"
+                    }
+                ]
+            }
+        ],
+        "directions": [
+            {
+                "content": "Натрошаваме бисквитите колкото можем."
+            },
+            {
+                "content": "Смесваме ги с шоколада, маслото, фъстъченото масло и прясното мляко."
+            },
+            {
+                "content": "Правим ги на заоблено конусче и ги подреждаме върху тава."
+            },
+            {
+                "content": "Започваме да забучваме Chocapic парченцата, така че да приличат на леко разтворена шишарка (ако искаме по-затворена шишарката трябва да започнем от горе надолу)"
+            },
+            {
+                "content": "Поръсваме с пудразахар през сито."
+            },
+            {
+                "content": "Слагаме в хладилник за да се стегнат."
+            }
+        ],
+        "images": [
+            {
+                "title": "Шоколадови шишарки",
+                "src": "chocoPineCones1.jpg"
+            },
+            {
+                "title": "Шоколадови шишарки",
+                "src": "chocoPineCones2.jpg"
+            }
+        ],
+        "urls": [
+            {
+                "url": "https://www.tiktok.com/@_bellabakes/video/7300351247897414943"
+            }
+        ],
+        "keywords": [
+            "десерт",
+            "бързо",
+            "от преден ден",
+            "шоколад"
+        ]
+    },
+    {
         "title": "Негърче на Кики",
         "parts": [
             {
@@ -4967,195 +4534,6 @@
         ],
         "keywords": [
             "десерт"
-        ]
-    },
-    {
-        "title": "Скалички на Коси (ТЕСТ)",
-        "directions": [
-            {
-                "content": "4 paketa 4aeni biskiviti s smetana \"Tea\" (mislq 4e taka se kazva6e markata), 500gr. sladko ot shipki, 1 mle4en shokolad, kakao(obiknovenno), 50gr maslo, 100 gr orehi( ako obi4ash moje i pove4e), kokosovi sturgotini"
-            },
-            {
-                "content": "natroshavash biskvitite, kolkoto moje6(che malko trudno stava), posle slagash sladkoto, raztopenoto maslo, 1 4aena lujica kakao, natro6enite qdki"
-            },
-            {
-                "content": "da stane homogenna smes, kolkoto e vuzmojno"
-            },
-            {
-                "content": "sled tova oformqsh skali4kite, raztopqvash na mikrovulnovata mle4eniqt shokolad(purvo puskash na mn maluk gradus i postepenno uveli4ava6, vnimavai druj pove4e vreme na malko gradusi i go naglejdai kato se raztopi) posle topva6 vruh4eto na skali4kata v raztopeniqt shokolad i otgore porusva6 s    kokosovi sturgotini"
-            }
-        ],
-        "keywords": [
-            "десерт",
-            "тест"
-        ]
-    },
-    {
-        "title": "Американски бисквити с шоколад (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://www.vesti.bg/temi-v-razvitie/vkusni-amerikanski-biskviti-s-shokolad-6049011"
-            }
-        ],
-        "keywords": [
-            "десерт",
-            "тест"
-        ]
-    },
-    {
-        "title": "Мързеливки (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:dd4d2a5c68"
-            }
-        ],
-        "keywords": [
-            "десерт",
-            "тест"
-        ]
-    },
-    {
-        "title": "Сладки с шоколад (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:4a55f3837d"
-            }
-        ],
-        "keywords": [
-            "десерт",
-            "тест"
-        ]
-    },
-    {
-        "title": "Бисквитени бонбони (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:90159f44d4"
-            }
-        ],
-        "keywords": [
-            "десерт",
-            "тест"
-        ]
-    },
-    {
-        "title": "Кекс зебра (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:d5cede5596"
-            }
-        ],
-        "keywords": [
-            "десерт",
-            "тест"
-        ]
-    },
-    {
-        "title": "Крем тирамису (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:9489193f63"
-            }
-        ],
-        "keywords": [
-            "десерт",
-            "тест"
-        ]
-    },
-    {
-        "title": "Лимонови бонбони (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:b36ef38a13"
-            }
-        ],
-        "keywords": [
-            "десерт",
-            "тест"
-        ]
-    },
-    {
-        "title": "Домашни еклери (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:b84daef316"
-            }
-        ],
-        "keywords": [
-            "десерт",
-            "тест"
-        ]
-    },
-    {
-        "title": "Облачни хлебчета (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:9289149c6e"
-            }
-        ],
-        "keywords": [
-            "десерт",
-            "тест"
-        ]
-    },
-    {
-        "title": "Бишкотен сладкиш (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:f27aa3258c"
-            }
-        ],
-        "keywords": [
-            "десерт",
-            "тест"
-        ]
-    },
-    {
-        "title": "Банани с крема сирене (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://vbox7.com/play:d5d4ac4664"
-            }
-        ],
-        "keywords": [
-            "десерт",
-            "тест"
-        ]
-    },
-    {
-        "title": "Чийз Кейк (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://www.vkusnoteka.bg/2013/02/blog-post_25.html"
-            }
-        ],
-        "keywords": [
-            "десерт",
-            "тест"
-        ]
-    },
-    {
-        "title": "Палачинки в шише (ТЕСТ)",
-        "urls": [
-            {
-                "url": "https://www.youtube.com/watch?v=YZ_FQ2goqF8"
-            }
-        ],
-        "keywords": [
-            "десерт",
-            "тест"
-        ]
-    },
-    {
-        "title": "Чийз кейк с боровинки (ТЕСТ)",
-        "urls": [
-            {
-                "url": "http://www.vkusnoteka.bg/2013/02/blog-post_25.html?m=1"
-            }
-        ],
-        "keywords": [
-            "десерт",
-            "тест"
         ]
     },
     {
@@ -6097,6 +5475,700 @@
         ],
         "keywords": [
             "помощни"
+        ]
+    },
+    {
+        "title": "Скалички на Коси (ТЕСТ)",
+        "directions": [
+            {
+                "content": "4 paketa 4aeni biskiviti s smetana \"Tea\" (mislq 4e taka se kazva6e markata), 500gr. sladko ot shipki, 1 mle4en shokolad, kakao(obiknovenno), 50gr maslo, 100 gr orehi( ako obi4ash moje i pove4e), kokosovi sturgotini"
+            },
+            {
+                "content": "natroshavash biskvitite, kolkoto moje6(che malko trudno stava), posle slagash sladkoto, raztopenoto maslo, 1 4aena lujica kakao, natro6enite qdki"
+            },
+            {
+                "content": "da stane homogenna smes, kolkoto e vuzmojno"
+            },
+            {
+                "content": "sled tova oformqsh skali4kite, raztopqvash na mikrovulnovata mle4eniqt shokolad(purvo puskash na mn maluk gradus i postepenno uveli4ava6, vnimavai druj pove4e vreme na malko gradusi i go naglejdai kato se raztopi) posle topva6 vruh4eto na skali4kata v raztopeniqt shokolad i otgore porusva6 s    kokosovi sturgotini"
+            }
+        ],
+        "keywords": [
+            "десерт",
+            "тест"
+        ]
+    },
+    {
+        "title": "Американски бисквити с шоколад (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://www.vesti.bg/temi-v-razvitie/vkusni-amerikanski-biskviti-s-shokolad-6049011"
+            }
+        ],
+        "keywords": [
+            "десерт",
+            "тест"
+        ]
+    },
+    {
+        "title": "Мързеливки (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:dd4d2a5c68"
+            }
+        ],
+        "keywords": [
+            "десерт",
+            "тест"
+        ]
+    },
+    {
+        "title": "Сладки с шоколад (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:4a55f3837d"
+            }
+        ],
+        "keywords": [
+            "десерт",
+            "тест"
+        ]
+    },
+    {
+        "title": "Бисквитени бонбони (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:90159f44d4"
+            }
+        ],
+        "keywords": [
+            "десерт",
+            "тест"
+        ]
+    },
+    {
+        "title": "Кекс зебра (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:d5cede5596"
+            }
+        ],
+        "keywords": [
+            "десерт",
+            "тест"
+        ]
+    },
+    {
+        "title": "Крем тирамису (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:9489193f63"
+            }
+        ],
+        "keywords": [
+            "десерт",
+            "тест"
+        ]
+    },
+    {
+        "title": "Лимонови бонбони (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:b36ef38a13"
+            }
+        ],
+        "keywords": [
+            "десерт",
+            "тест"
+        ]
+    },
+    {
+        "title": "Домашни еклери (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:b84daef316"
+            }
+        ],
+        "keywords": [
+            "десерт",
+            "тест"
+        ]
+    },
+    {
+        "title": "Облачни хлебчета (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:9289149c6e"
+            }
+        ],
+        "keywords": [
+            "десерт",
+            "тест"
+        ]
+    },
+    {
+        "title": "Бишкотен сладкиш (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:f27aa3258c"
+            }
+        ],
+        "keywords": [
+            "десерт",
+            "тест"
+        ]
+    },
+    {
+        "title": "Банани с крема сирене (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:d5d4ac4664"
+            }
+        ],
+        "keywords": [
+            "десерт",
+            "тест"
+        ]
+    },
+    {
+        "title": "Чийз Кейк (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://www.vkusnoteka.bg/2013/02/blog-post_25.html"
+            }
+        ],
+        "keywords": [
+            "десерт",
+            "тест"
+        ]
+    },
+    {
+        "title": "Палачинки в шише (ТЕСТ)",
+        "urls": [
+            {
+                "url": "https://www.youtube.com/watch?v=YZ_FQ2goqF8"
+            }
+        ],
+        "keywords": [
+            "десерт",
+            "тест"
+        ]
+    },
+    {
+        "title": "Чийз кейк с боровинки (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://www.vkusnoteka.bg/2013/02/blog-post_25.html?m=1"
+            }
+        ],
+        "keywords": [
+            "десерт",
+            "тест"
+        ]
+    },
+    {
+        "title": "Хрупкав лук на фурна \"Цвете\" (ТЕСТ)",
+        "parts": [
+            {
+                "name": "Съставки",
+                "ingredients": [
+                    {
+                        "name": "Голяма глава лук"
+                    },
+                    {
+                        "name": "Яйце с галета или панко ИЛИ настърган пармезан"
+                    },
+                    {
+                        "name": "Шарена сол, чубрица, червен и черен пипер"
+                    }
+                ]
+            }
+        ],
+        "directions": [
+            {
+                "content": "Пускаме фурната да се загрява на 200 градуса"
+            },
+            {
+                "content": "Обелваш луковите глави и отгоре ги режеш на 4, да се получат 4 ръкавчета. "
+            },
+            {
+                "content": "Поръсете с 3 с. л. настърган пармезан, смесени с 1 ч. л. черен пипер ИЛИ топиш лука с отворите надолу във смес от яйце и панко."
+            },
+            {
+                "content": "Нареждаш в тава. Поръсваш със шарена сол, чубрица и пипер. "
+            },
+            {
+                "content": "Печеш в загрята фурна до златисто"
+            }
+        ],
+        "urls": [
+            {
+                "url": "https://bistro.bg/article/idei/kak-da-si-napravim-hrupkav-paniran-luk-cvete.html"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Веган Майонеза със горчица (ТЕСТ)",
+        "urls": [
+            {
+                "url": "https://www.bonapeti.bg/recepti/veganska-mayoneza/"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Лаваш бургер (ТЕСТ)",
+        "urls": [
+            {
+                "url": "https://www.tiktok.com/@busezeyneppp/video/7193347094759902469"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Fried egg yolks (ТЕСТ)",
+        "urls": [
+            {
+                "url": "https://vm.tiktok.com/ZMYFA2BXt/"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Картофени гнезда (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:c60dbc5152"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест",
+            "картофи",
+            "яйца",
+            "вегетарианско"
+        ]
+    },
+    {
+        "title": "Пухкави хлебчета (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:63bec753ff"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Пухкаво домашно хлебче (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:0d5d9444dd"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Пълнени гъбки (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:aea2cb7e34"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Питка Хаос (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:904ba249f2"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Надупени картофи (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:ca8b562e7b"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест",
+            "картофи",
+            "веган",
+            "вегетарианско"
+        ]
+    },
+    {
+        "title": "Уникална пица с дупка (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:dbd6f5a7c1"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Солени мъфини (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:6d248abfed"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Мини пици хапки (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:fa7831de4f"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Баница (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:2874bc9b27"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Зеленчуков чипс (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:431e81bdb8"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Яйчни гнезда (ТЕСТ)",
+        "urls": [
+            {
+                "url": "https://www.youtube.com/watch?v=BGERrowrt6w"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Домашна пица (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:818cbd3b3b"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Усукани пръчици с кашкавал (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:3744ed695e"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Картофи по шведски (ТЕСТ)",
+        "urls": [
+            {
+                "url": "https://www.vbox7.com/play:1dd815e879"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест",
+            "картофи",
+            "вегетарианско"
+        ]
+    },
+    {
+        "title": "Усукани хотдози (ТЕСТ)",
+        "urls": [
+            {
+                "url": "https://www.youtube.com/watch?v=xEHNwvIqOYs"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Полезни бързинки (ТЕСТ)",
+        "urls": [
+            {
+                "url": "https://www.facebook.com/officialgoodful/videos/1666644846739308/"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Дробчета в масло на тиган (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://www.amateurpornbot.com/video/your-life-masturbates-in-class-and-gets-caught-teacher-569.html"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Меки Pretzels (ТЕСТ)",
+        "urls": [
+            {
+                "url": "https://www.youtube.com/watch?v=utU6lwMn22Y"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "тест"
+        ]
+    },
+    {
+        "title": "Grilled Cheese Roll Ups (ТЕСТ)",
+        "keywords": [
+            "тиган",
+            "бързо",
+            "сирене",
+            "кашкавал",
+            "бързо",
+            "тест"
+        ],
+        "urls": [
+            {
+                "url": "https://www.tiktok.com/@somethingaboutsandwiches/video/6981495859779276037"
+            }
+        ]
+    },
+    {
+        "title": "Картофени кюфтета (ТЕСТ)",
+        "keywords": [
+            "тиган",
+            "бързо",
+            "сирене",
+            "кашкавал",
+            "картофи",
+            "вегетарианско",
+            "бързо",
+            "тест"
+        ],
+        "urls": [
+            {
+                "url": "https://vm.tiktok.com/ZMRkknX6C/"
+            }
+        ]
+    },
+    {
+        "title": "Много Пухкава питка (ТЕСТ)",
+        "keywords": [
+            "хляб",
+            "картофи",
+            "вегетарианско",
+            "бързо",
+            "тест"
+        ],
+        "urls": [
+            {
+                "url": "https://www.instagram.com/p/CTztkaUK9yk/?utm_medium=share_sheet"
+            }
+        ]
+    },
+    {
+        "title": "Веган Кюфтенца на Джулиян (ТЕСТ)",
+        "parts": [
+            {
+                "name": "Съставки",
+                "ingredients": [
+                    {
+                        "name": "Боб"
+                    }
+                ]
+            }
+        ],
+        "directions": [
+            {
+                "content": "Chop a small onion, fry it in some olive oil in a pot. Add 1 tsp Cummin, 1/2 tsp turmeric, 1/2 tsp coriander, 1 tsp sharena sol. Fry for a bit. Add a couple of grated carrots. Drain and rinse a big tin of red kidney beans. Add to mixture a cook a bit. Then mash them, adding flour (or rice flour) until you can mould them into balls and squash them to make the patties. Then fry them in a non-stick pan on both sides."
+            }
+        ],
+        "images": [
+        ],
+        "keywords": [
+            "манджа",
+            "тест"
+        ]
+    },
+    {
+        "title": "Руло Стефани (ТЕСТ)",
+        "parts": [
+        ],
+        "directions": [
+        ],
+        "images": [
+        ],
+        "urls": [
+            {
+                "url": "https://www.youtube.com/watch?v=TZWPm67J9Fo"
+            }
+        ],
+        "keywords": [
+            "манджа",
+            "тест"
+        ]
+    },
+    {
+        "title": "Сьомга със синьо сирене (ТЕСТ)",
+        "parts": [
+            {
+                "name": "Съставки",
+                "ingredients": [
+                    {
+                        "name": "1/4 чаена чаша зехтин"
+                    },
+                    {
+                        "name": "черен пипер"
+                    },
+                    {
+                        "name": "1/4 чаена чаша лимонов сок"
+                    },
+                    {
+                        "name": "1/2 чаена чаша бяло вино"
+                    },
+                    {
+                        "name": "каперси"
+                    }
+                ]
+            }
+        ],
+        "directions": [
+            {
+                "content": "Начин на приготвяне:"
+            },
+            {
+                "content": "Намазваме рибата със зехтина, поръсваме с черен пипер и поставяме сьомгата върху парче алуминиево фолио, достатъчно голямо, за да може да завием рибата."
+            },
+            {
+                "content": "Поръсваме филетата с лимонов сок и вино. Ако използвате каперси, може да добавите и тях."
+            },
+            {
+                "content": "Слагаме сиренето и запечатваме месото с фолиото."
+            },
+            {
+                "content": "Поставяме го в тавичка и печем във фурна за около 30-40 минути на 200 градуса."
+            },
+            {
+                "content": "* Може да изпечем ястието с фолиото на скара за около 10 минути. "
+            }
+        ],
+        "images": [
+            {
+                "title": "Сьомга със синьо сирене",
+                "src": "salmonwithcheese.jpeg"
+            }
+        ],
+        "keywords": [
+            "манджа",
+            "тест"
+        ]
+    },
+    {
+        "title": "Свежа салата с извара (ТЕСТ)",
+        "urls": [
+            {
+                "url": "http://vbox7.com/play:ab959d5f62"
+            }
+        ],
+        "keywords": [
+            "салата",
+            "тест"
+        ]
+    },
+    {
+        "title": "Rosemary Salt - If You Know, You Know (ТЕСТ)",
+        "keywords": [
+            "подправка",
+            "марината",
+            "бързо",
+            "миксер",
+            "тест"
+        ],
+        "urls": [
+            {
+                "url": "https://vm.tiktok.com/ZM8x6fkh6/"
+            }
+        ]
+    },
+    {
+        "title": "Лук трушия (ТЕСТ)",
+        "keywords": [
+            "подправка",
+            "марината",
+            "бързо",
+            "веган",
+            "тест"
+        ],
+        "urls": [
+            {
+                "url": "https://vm.tiktok.com/ZMLJcdnJX/"
+            }
         ]
     }
 ]
