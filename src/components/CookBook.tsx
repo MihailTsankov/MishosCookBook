@@ -3,14 +3,17 @@ import Dish from './Dish'
 
 import dishes from '../resources/dishes.json'
 import Filters from './Filters'
+import {clearParameterFromURL} from './windowUtils'
 
 const dishTypeFilters = ['манджа', 'аламинут', 'предястие', 'супа', 'салата', 'закуска', 'десерт', 'гарнитура', 'сос', 'марината', 'заготовка', 'подправка', 'тест']
 const dishQuicknessFilters = ['бързо', 'средно-бързо', 'средно', 'средно-бавно', 'бавно', 'много-бавно', 'от преден ден' ]
 const dishHowFilters = ['фурна', 'тиган', 'тенджера', 'тава', 'air-fryer', 'multi-cooker', 'миксер', 'пасатор', 'блендер', 'пържене', 'варене', 'печене', 'запечатване', 'бланширане'  ]
 const dishDiateryTypeFilters = ['кето', 'веган', 'вегетарианско', 'фибри']
-const dishMeatFilters = ['пиле', 'свинско', 'бекон', 'телешко', 'агнешко', 'риба', 'кайма']
+const dishMeatFilters = ['пиле', 'свинско', 'бекон', 'телешко', 'агнешко', 'риба', 'кайма', 'месо']
 const dishPlantsFilters = ['боб', 'леща', 'ориз', 'гъби', 'картофи', 'домати', 'моркови', 'авокадо', 'кисело зеле', 'брюкселско зеле', 'карфиол', 'тиквички', 'хляб', 'бургер', 'паста', 'макарони', 'козунак', 'брашно', 'тесто', 'панировка']
 const dishAnimalProductsFilters=['яйца', 'кашкавал', 'сирене', 'прясно мляко', 'кисело мляко', 'сметана', 'мед']
+
+const DISH_PARAMETER = 'dish'
 
 const filters = dishes.reduce((sum: any, dish) => {
     const newSum = [...sum]
@@ -41,6 +44,7 @@ function CookBook (): ReactElement {
             const newFiltered = [...filtered, filter]
             setFiltered(newFiltered)
         }
+        clearParameterFromURL(DISH_PARAMETER)
     }
 
     const filteredDishes = dishes.filter(dish => {

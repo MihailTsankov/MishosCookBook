@@ -11,10 +11,13 @@ import Parts, {IPart} from './Parts'
 import Images, {IImage} from './Images'
 import Title from './Title'
 import URLs from './URLs'
+import {updateQueryParams, scrollToDish} from './windowUtils'
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
 }
+
+const DISH_PARAMETER = 'dish'
 
 const ExpandMore = styled((props: ExpandMoreProps) => {
     const { expand, ...other } = props
@@ -51,34 +54,12 @@ function Dish (props: IDishProps): ReactElement {
         setExpanded(!expanded)
     }
 
-    const updateQueryParams = () => {
-        // Parse the current URL
-        const url = new URL(window.location.href)
-
-        // Update or add the query parameter
-        if (expanded) {
-            url.searchParams.set('dish', title)
-        } else if (url.searchParams.get('dish') === title) {
-            url.searchParams.delete('dish')
-        }
-
-        // Replace the current URL with the updated one
-        window.history.replaceState({}, '', url.href)
-    }
-
-    const scrollToDish = () => {
-        if (dishRef.current && expanded) {
-            dishRef.current.scrollIntoView({
-                behavior: 'smooth', // You can use 'auto' or 'smooth' for the scrolling behavior
-                block: 'start',     // You can use 'start', 'center', 'end', or 'nearest'
-                inline: 'start',    // You can use 'start', 'center', 'end', or 'nearest'
-            })
-        }
-    }
 
     useEffect(() => {
-        scrollToDish()
-        updateQueryParams()
+        if (expanded) {
+            scrollToDish(dishRef)
+        }
+        updateQueryParams(DISH_PARAMETER, title, expanded)
     }, [expanded])
 
     return (
