@@ -1839,7 +1839,7 @@
         ],
         "urls": [
             {
-                "url":  "https://gotvach.bg/n-63084-%D0%A2%D0%B0%D0%B9%D0%BD%D0%B8%D1%82%D0%B5_%D0%BD%D0%B0_%D0%B2%D0%BA%D1%83%D1%81%D0%BD%D0%BE%D1%82%D0%BE_%D1%80%D0%B8%D0%B7%D0%BE%D1%82%D0%BE"
+                "url": "https://gotvach.bg/n-63084-%D0%A2%D0%B0%D0%B9%D0%BD%D0%B8%D1%82%D0%B5_%D0%BD%D0%B0_%D0%B2%D0%BA%D1%83%D1%81%D0%BD%D0%BE%D1%82%D0%BE_%D1%80%D0%B8%D0%B7%D0%BE%D1%82%D0%BE"
             },
             {
                 "url": "https://www.youtube.com/watch?v=w4dhH9pPmyw&ab_channel=CookieandKate"
@@ -2048,6 +2048,85 @@
             "аламинут",
             "паста",
             "домати",
+            "тиган",
+            "тенджера",
+            "варене"
+        ]
+    },
+    {
+        "title": "Паста карбонара",
+        "parts": [
+            {
+                "name": "Продукти",
+                "ingredients": [
+                    {
+                        "name": "Спагети (или прясна паста - много по-вкусно е) за 4 порции"
+                    },
+                    {
+                        "name": "200г твърдо сирене (пармезан и пекорино примерно)"
+                    },
+                    {
+                        "name": "5 яйца"
+                    },
+                    {
+                        "name": "200г Guanciale (гуанчале), панчета или просто пушен бекон"
+                    },
+                    {
+                        "name": "Мазнина (олио, зехтин)"
+                    },
+                    {
+                        "name": "Сол и черен пипер"
+                    }
+                ]
+            }
+        ],
+        "directions": [
+            {
+                "content": "Слага се вода да ври в тенджера."
+            },
+            {
+                "content": "В голяма купа се настъргва на много дребно сиренето."
+            },
+            {
+                "content": "Добавят се 3 яйца и жълтъците на още 2 яйца и малко черен пипер. Разбърква се добре."
+            },
+            {
+                "content": "Месото се нарязва на не тънки парчета."
+            },
+            {
+                "content": "Слага се тиган с олио/зехтин и в него се поставя месото. Пържи се докато стане хрупкаво."
+            },
+            {
+                "content": "В заврялата тенджера се поставя добро количество сол и след това спагетите."
+            },
+            {
+                "content": "В купата с яйцата и сиренето се добавят спагетите (без да се изсушават - с щипка направо от тенджерата) и месото и се разбърква всичко добре."
+            },
+            {
+                "content": "Сервира се с малко настърган пармезан отгоре."
+            }
+        ],
+        "images": [
+            {
+                "title": "Паста карбонара",
+                "src": "pastaCarbonara1.jpg"
+            },
+            {
+                "title": "Паста карбонара 2",
+                "src": "pastaCarbonara2.jpg"
+            }
+        ],
+        "urls": [
+            {
+                "url": "https://www.youtube.com/watch?v=NqFi90p38N8&ab_channel=Epicurious"
+            }
+        ],
+        "keywords": [
+            "бързо",
+            "аламинут",
+            "паста",
+            "бекон",
+            "сирене",
             "тиган",
             "тенджера",
             "варене"
@@ -4139,7 +4218,6 @@
             }
         ],
         "images": [
-
             {
                 "title": "Доматена крем супа",
                 "src": "supa_krem_domat_1.jpg"
@@ -4150,8 +4228,12 @@
             }
         ],
         "urls": [
-            {"url":  "https://www.tiktok.com/@notorious_foodie/video/7305842125847973152"},
-            {"url":  "https://www.youtube.com/watch?v=Q96I_lUbx_Y&ab_channel=GordonRamsayHell%27sKitchen"}
+            {
+                "url": "https://www.tiktok.com/@notorious_foodie/video/7305842125847973152"
+            },
+            {
+                "url": "https://www.youtube.com/watch?v=Q96I_lUbx_Y&ab_channel=GordonRamsayHell%27sKitchen"
+            }
         ],
         "keywords": [
             "супа",
@@ -5389,7 +5471,7 @@
                 "url": "https://youtu.be/UusmRYeekc0"
             },
             {
-                "url":"https://youtu.be/LpalC9v8ffQ?si=VXyvf4KYDPe9MBni&t=650"
+                "url": "https://youtu.be/LpalC9v8ffQ?si=VXyvf4KYDPe9MBni&t=650"
             }
         ],
         "images": [
@@ -5905,10 +5987,8 @@
     {
         "title": "Перфектни пилешки пържоли от бут",
         "parts": [
-
         ],
         "directions": [
-
         ],
         "images": [
         ],
@@ -6023,7 +6103,9 @@
             }
         ],
         "urls": [
-            {"url": "https://www.youtube.com/watch?v=dCQpT9FZ7B8&ab_channel=ThatDudeCanCook"}
+            {
+                "url": "https://www.youtube.com/watch?v=dCQpT9FZ7B8&ab_channel=ThatDudeCanCook"
+            }
         ],
         "keywords": [
             "средно-бързо",
@@ -6039,7 +6121,6 @@
     },
     {
         "title": "Точене и оправяне на нож с камък за точене",
-
         "urls": [
             {
                 "url": "https://www.youtube.com/watch?v=PHsKLoLMQcA"
@@ -6073,7 +6154,6 @@
             "тест"
         ]
     },
-
     {
         "title": "Веган Майонеза със горчица (ТЕСТ)",
         "urls": [
@@ -6098,7 +6178,6 @@
             "тест"
         ]
     },
-
     {
         "title": "Мини пици хапки (ТЕСТ)",
         "urls": [
@@ -6111,7 +6190,6 @@
             "тест"
         ]
     },
-
     {
         "title": "Зеленчуков чипс (ТЕСТ)",
         "urls": [
@@ -6124,7 +6202,6 @@
             "тест"
         ]
     },
-
     {
         "title": "Усукани пръчици с кашкавал (ТЕСТ)",
         "urls": [
@@ -6175,7 +6252,6 @@
             "тест"
         ]
     },
-
     {
         "title": "Grilled Cheese Roll Ups (ТЕСТ)",
         "keywords": [
@@ -6249,7 +6325,6 @@
             "тест"
         ]
     },
-
     {
         "title": "Сьомга със синьо сирене (ТЕСТ)",
         "parts": [
