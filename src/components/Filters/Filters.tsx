@@ -70,7 +70,7 @@ function Filters ({ handleChangeFiltered }: FiltersProps): ReactElement | null {
             <Button
                 onClick={toggleExpand}
                 style={{
-                    position: 'fixed',
+                    position: 'absolute',
                     top: 10,
                     right: 10,
                     backgroundColor: 'white',
