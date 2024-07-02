@@ -11,7 +11,7 @@ import Parts, {IPart} from './Parts'
 import Images, {IImage} from './Images'
 import Title from './Title'
 import URLs from './URLs'
-import {updateQueryParams, scrollToDish} from './windowUtils'
+import {updateQueryParams, scrollToDish} from '../windowUtils'
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -67,6 +67,9 @@ function Dish (props: IDishProps): ReactElement {
             sx={{
                 width: expanded ? 'calc(100% - 10px)' : 345,
                 margin: 1,
+                display: 'flex',
+                justifyContent: 'space-between',
+                flexDirection: 'column',
             }}>
             <Title title={title} keywords={keywords} />
             <Images images={images} expanded={expanded}/>
