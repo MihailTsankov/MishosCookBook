@@ -6406,5 +6406,31 @@
                 "url": "https://vm.tiktok.com/ZM8x6fkh6/"
             }
         ]
+    },
+    {
+        "title": "Три салатни дресинги",
+        "keywords": [
+            "дресинг",
+            "бързо",
+            "салата"
+        ],
+        "urls": [
+            {
+                "url": "https://www.youtube.com/watch?v=FECzUhbT2l0&ab_channel=Epicurious"
+            }
+        ]
+    },
+    {
+        "title": "Пет салатни дресинги",
+        "keywords": [
+            "дресинг",
+            "бързо",
+            "салата"
+        ],
+        "urls": [
+            {
+                "url": "https://www.youtube.com/watch?v=Xv5xbJLw--Q&ab_channel=BrianLagerstrom"
+            }
+        ]
     }
 ]
