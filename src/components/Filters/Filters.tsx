@@ -103,7 +103,7 @@ const useStyles = makeStyles({
     filterContent: {
         transition: 'max-height 0.3s ease-in-out',
         overflow: 'hidden',
-        maxHeight: '0',
+        maxHeight: 'fit-content',
     },
     expanded: {
         maxHeight: '500px', // Adjust this value to your desired maximum height
