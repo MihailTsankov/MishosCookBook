@@ -4876,6 +4876,9 @@
             },
             {
                 "url": "https://youtu.be/605DPLl8Gqg"
+            },
+            {
+                "url": "https://youtu.be/Hvel0_s4xcY?si=vXTPPavJ1A2q1slq"
             }
         ],
         "keywords": [
@@ -4944,7 +4947,14 @@
             }
         ],
         "keywords": [
-            "десерт"
+            "десерт",
+            "закуска",
+            "средно-бързо",
+            "тиган",
+            "брашно",
+            "яйца",
+            "кисело мляко",
+            "вегетарианско"
         ]
     },
     {
@@ -5001,6 +5011,53 @@
             {
                 "title": "Пловдивски палачинки",
                 "src": "palachinkiPlovdiv.jpg"
+            }
+        ],
+        "keywords": [
+            "десерт",
+            "закуска",
+            "средно-бързо",
+            "тиган",
+            "брашно",
+            "яйца",
+            "кисело мляко",
+            "вегетарианско"
+        ]
+    },
+    {
+        "title": "Американски палачинки",
+        "parts": [
+        ],
+        "directions": [
+        ],
+        "images": [
+            {
+                "title": "Американски палачинки",
+                "src": "palachinki_amerikanski.jpg"
+            }
+        ],
+        "urls": [
+            {
+                "url": "https://youtu.be/4QcK3MXl9sg?si=1jncoCc3mDHmj0pf"
+            }
+        ],
+        "keywords": [
+            "десерт",
+            "закуска",
+            "средно-бързо",
+            "тиган",
+            "брашно",
+            "яйца",
+            "прясно мляко",
+            "вегетарианско"
+        ]
+    },
+    {
+        "title": "Бананови палачинки",
+        "images": [
+            {
+                "title": "Бананови палачинки",
+                "src": "bananapalachinki.jpeg"
             }
         ],
         "keywords": [
@@ -5143,6 +5200,9 @@
         "urls": [
             {
                 "url": "https://youtu.be/1nqpTkHpYyE"
+            },
+            {
+                "url": "https://youtu.be/yaiReysXdCQ?si=5aqbiYfiODIt8XRF"
             }
         ]
     },
@@ -5212,18 +5272,6 @@
             "хляб",
             "яйца",
             "бързо"
-        ]
-    },
-    {
-        "title": "Бананови палачинки",
-        "images": [
-            {
-                "title": "Бананови палачинки",
-                "src": "bananapalachinki.jpeg"
-            }
-        ],
-        "keywords": [
-            "десерт"
         ]
     },
     {
@@ -5972,6 +6020,32 @@
             "бързо",
             "блендер",
             "сос",
+            "вегетарианско",
+            "веган"
+        ]
+    },
+    {
+        "title": "Карамелизиран лук",
+        "parts": [
+
+        ],
+        "directions": [
+        ],
+        "urls": [
+            {
+                "url": "https://youtu.be/v-bhA0GcoLM?si=f-MF3_zM8mPfcT3A"
+            }
+        ],
+        "images": [
+            {
+                "title": "Карамелизиран лук",
+                "src": "caramelized_onions.jpg"
+            }
+        ],
+        "keywords": [
+            "средно-бързо",
+            "тиган",
+            "гарнитура",
             "вегетарианско",
             "веган"
         ]
