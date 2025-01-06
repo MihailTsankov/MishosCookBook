@@ -84,7 +84,6 @@ function Filters ({ handleChangeFiltered }: FiltersProps): ReactElement | null {
             </Button>
             {isExpanded && (
                 <div className={`${classes.filterContent} ${isExpanded ? classes.expanded : ''}`}>
-
                     <FilterGroup title={'Тип ястие:'} filters={dishTypeFilters} filtered={filtered} onClickFilter={onClickFilter}/>
                     <FilterGroup title={'Бързина:'} filters={dishQuicknessFilters} filtered={filtered} onClickFilter={onClickFilter}/>
                     <FilterGroup title={'Как:'} filters={dishHowFilters} filtered={filtered} onClickFilter={onClickFilter}/>
@@ -106,7 +105,7 @@ const useStyles = makeStyles({
         maxHeight: 'fit-content',
     },
     expanded: {
-        maxHeight: '500px', // Adjust this value to your desired maximum height
+        //maxHeight: '500px', // Adjust this value to your desired maximum height
     },
 })
 
