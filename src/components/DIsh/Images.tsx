@@ -24,6 +24,7 @@ function Images (props: IImageProps): ReactElement | null {
                         component='img'
                         key={image.src}
                         height={expanded ? 400 : 194}
+                        sx={{ marginRight: '2em', objectFit: 'contain' }}
                         image={imageSource}
                         alt={image.title}
                     />
