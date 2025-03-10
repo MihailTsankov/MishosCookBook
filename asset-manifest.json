@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/MishosCookBook/static/css/main.ea080233.css",
-    "main.js": "/MishosCookBook/static/js/main.58a15815.js",
+    "main.js": "/MishosCookBook/static/js/main.b9990164.js",
     "static/js/787.bfbe5665.chunk.js": "/MishosCookBook/static/js/787.bfbe5665.chunk.js",
     "index.html": "/MishosCookBook/index.html",
     "main.ea080233.css.map": "/MishosCookBook/static/css/main.ea080233.css.map",
-    "main.58a15815.js.map": "/MishosCookBook/static/js/main.58a15815.js.map",
+    "main.b9990164.js.map": "/MishosCookBook/static/js/main.b9990164.js.map",
     "787.bfbe5665.chunk.js.map": "/MishosCookBook/static/js/787.bfbe5665.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ea080233.css",
-    "static/js/main.58a15815.js"
+    "static/js/main.b9990164.js"
   ]
 }
