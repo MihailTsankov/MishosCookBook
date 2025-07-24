@@ -11,6 +11,7 @@ import Parts, {IPart} from './Parts'
 import Images, {IImage} from './Images'
 import Title from './Title'
 import URLs from './URLs'
+import {ITimes} from './Times'
 import {updateQueryParams, scrollToDish} from '../windowUtils'
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -36,7 +37,8 @@ export interface IDish {
     keywords: string[],
     parts?: IPart[],
     directions?: IDirection[],
-    images?: IImage[],
+    images?: IImage[]
+    times?: ITimes
 }
 
 interface IDishProps {
@@ -46,7 +48,7 @@ interface IDishProps {
 
 function Dish (props: IDishProps): ReactElement {
     const {isDishExpanded, dish} = props
-    const {title, directions, parts, images, keywords, urls} = dish
+    const {title, directions, parts, images, keywords, urls, times} = dish
     const [expanded, setExpanded] = React.useState(isDishExpanded)
     const dishRef = useRef<HTMLDivElement>(null)
 
@@ -71,7 +73,7 @@ function Dish (props: IDishProps): ReactElement {
                 justifyContent: 'space-between',
                 flexDirection: 'column',
             }}>
-            <Title title={title} keywords={keywords} />
+            <Title title={title} keywords={keywords} times={times} />
             <Images images={images} expanded={expanded}/>
             <Collapse in={expanded} timeout='auto' unmountOnExit>
                 <CardContent>
