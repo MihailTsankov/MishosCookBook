@@ -1,6 +1,6 @@
 import React, {ReactElement} from 'react'
 import CardHeader from '@mui/material/CardHeader'
-import getTimesText, {ITimes} from './Times'
+import Times, {ITimes} from './Times'
 
 export interface ITitle {
     title: string,
@@ -11,10 +11,10 @@ export interface ITitle {
 function Title (props: ITitle): ReactElement | null {
     const {title, keywords, times} = props
 
-    const timesText = times ? getTimesText(times) : undefined
+    const timesComponent = times ? <Times {...times} /> : null
     const keywordsText = keywords.join(', ')
 
-    const subheaderText = timesText ? `${timesText}, ${keywordsText}` : keywordsText
+    const subheaderText = timesComponent ? <span>{timesComponent}, {keywordsText}</span> : keywordsText
 
     return (
         <CardHeader

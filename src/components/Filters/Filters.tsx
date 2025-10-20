@@ -1,17 +1,32 @@
 import React, { ReactElement, useState } from 'react'
 import FilterGroup from './FilterGroup'
+import TimeFilterGroup from './TimeFilterGroup'
 import dishes from '../../resources/dishes.json'
 import {clearParameterFromURL} from '../windowUtils'
 import {Button, Typography} from '@mui/material'
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import { makeStyles } from '@mui/styles'
-
+import {dishQuickness, getTimeBucket} from '../DIsh/Times'
 
 const DISH_PARAMETER = 'dish'
 
 const dishTypeFilters = ['манджа', 'аламинут', 'предястие', 'супа', 'яхния', 'салата', 'закуска', 'десерт', 'гарнитура', 'сос', 'дресинг', 'марината', 'заготовка', 'подправка', 'тест']
-const dishQuicknessFilters = ['бързо', 'средно-бързо', 'средно', 'средно-бавно', 'бавно', 'много-бавно', 'от преден ден' ]
+
+/* Референция към dishQuickness
+    15: 'бързо',
+    30: 'средно-бързо',
+    60: 'средно',
+    90: 'средно-бавно',
+    120: 'бавно',
+    180: 'много-бавно',
+    3600: 'от преден ден',
+*/
+const dishQuicknessFilters: string[] = Object.values(dishQuickness)
+const dishQuicknessTimesFilters: number[] = Object.keys(dishQuickness)
+.map(Number)
+.filter(Number.isFinite)
+.sort((a, b) => a - b)
 const dishHowFilters = ['фурна', 'тиган', 'тенджера', 'тава', 'скара', 'air-fryer', 'multi-cooker', 'миксер', 'пасатор', 'блендер', 'пържене', 'варене', 'печене', 'запечатване', 'бланширане'  ]
 const dishDiateryTypeFilters = ['кето', 'веган', 'вегетарианско', 'фибри']
 const dishMeatFilters = ['пиле', 'свинско', 'бекон', 'телешко', 'агнешко', 'риба', 'кайма', 'месо']
@@ -31,6 +46,13 @@ const filters = dishes.reduce((sum: any, dish) => {
             && !dishPlantsFilters.includes(keyword)
             && !dishAnimalProductsFilters.includes(keyword)){
             newSum.push(keyword)
+        }
+    }
+
+    if (dish.times && dish.times.total) {
+        const timeBucket = getTimeBucket(dish.times.total)
+        if (!sum.includes(timeBucket)){
+            newSum.push(timeBucket)
         }
     }
 
@@ -85,7 +107,10 @@ function Filters ({ handleChangeFiltered }: FiltersProps): ReactElement | null {
             {isExpanded && (
                 <div className={`${classes.filterContent} ${isExpanded ? classes.expanded : ''}`}>
                     <FilterGroup title={'Тип ястие:'} filters={dishTypeFilters} filtered={filtered} onClickFilter={onClickFilter}/>
-                    <FilterGroup title={'Бързина:'} filters={dishQuicknessFilters} filtered={filtered} onClickFilter={onClickFilter}/>
+                    <TimeFilterGroup
+                        title={'Бързина:'}
+                        filters={dishQuicknessTimesFilters}
+                        filtered={filtered} onClickFilter={onClickFilter}/>
                     <FilterGroup title={'Как:'} filters={dishHowFilters} filtered={filtered} onClickFilter={onClickFilter}/>
                     <FilterGroup title={'Диета:'} filters={dishDiateryTypeFilters} filtered={filtered} onClickFilter={onClickFilter}/>
                     <FilterGroup title={'Месо:'} filters={dishMeatFilters} filtered={filtered} onClickFilter={onClickFilter}/>

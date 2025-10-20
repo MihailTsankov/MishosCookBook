@@ -3,6 +3,7 @@ import Dish from './DIsh/Dish'
 
 import dishes from '../resources/dishes.json'
 import Filters from './Filters/Filters'
+import {getTimeLabel} from './DIsh/Times'
 
 
 
@@ -16,7 +17,14 @@ function CookBook (): ReactElement {
     const filteredDishes = dishes.filter(dish => {
         if (filtered.length === 0) return true
         for (const filter of filtered) {
-            if (!dish.keywords.includes(filter)) return false
+
+            const dishQuicknessLabel: string | undefined = dish.times?.total ? getTimeLabel(dish.times.total) : undefined
+
+            const dishFiltersInculdeFilter = dish.keywords.includes(filter)
+            const dishTotalTimeEqualsFilter = dishQuicknessLabel === filter
+
+            if (!dishFiltersInculdeFilter
+                && !dishTotalTimeEqualsFilter) return false
         }
         return true
     })
