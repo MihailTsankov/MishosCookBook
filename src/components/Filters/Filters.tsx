@@ -88,22 +88,25 @@ function Filters ({ handleChangeFiltered }: FiltersProps): ReactElement | null {
 
     return (
         <div style={{marginTop: 20}}>
-            <Typography style={{ marginLeft: 10, color: isExpanded ? 'black' : '#888888' }}>Филтри:</Typography>
-            <Button
-                onClick={toggleExpand}
-                style={{
-                    position: 'absolute',
-                    top: 10,
-                    right: 10,
-                    backgroundColor: 'white',
-                    color: 'black',
-                    borderRadius: '50%',
-                    padding: '10px',
-                    boxShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
-                }}
-            >
-                {isExpanded ?  <KeyboardArrowDownIcon /> : <KeyboardArrowUpIcon />}
-            </Button>
+            <div style={{display: 'flex', alignItems: 'left', marginLeft: 10}}>
+                <Button
+                    onClick={toggleExpand}
+                    style={{
+                        /*position: 'absolute',
+                        top: 10,
+                        right: 50,*/
+                        backgroundColor: 'white',
+                        color: 'black',
+                        borderRadius: '50%',
+                        padding: '5px',
+                        boxShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
+                    }}
+                >
+                    {isExpanded ?  <KeyboardArrowDownIcon /> : <KeyboardArrowUpIcon />}
+                </Button>
+                <Typography variant='h5' style={{ marginLeft: 10, color: isExpanded ? 'black' : '#888888' }}>Филтри:</Typography>
+            </div>
+
             {isExpanded && (
                 <div className={`${classes.filterContent} ${isExpanded ? classes.expanded : ''}`}>
                     <FilterGroup title={'Тип ястие:'} filters={dishTypeFilters} filtered={filtered} onClickFilter={onClickFilter}/>

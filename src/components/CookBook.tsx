@@ -4,6 +4,7 @@ import Dish from './DIsh/Dish'
 import dishes from '../resources/dishes.json'
 import Filters from './Filters/Filters'
 import {getTimeLabel} from './DIsh/Times'
+import ScrollToTopButton from './ScrollToTopButton'
 
 
 
@@ -36,6 +37,7 @@ function CookBook (): ReactElement {
 
     return (
         <div>
+            <ScrollToTopButton />
             <Filters handleChangeFiltered={handleChangeFiltered}/>
             <div style={{
                 display: 'flex',

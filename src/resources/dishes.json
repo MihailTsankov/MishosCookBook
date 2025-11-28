@@ -3881,15 +3881,13 @@
             }
         ],
         "keywords": [
-            "манджа",
-            "тенджера",
+            "multi-cooker",
             "свинско",
             "месо"
         ],
-        "timing": {
-            "preparation": "20 минути",
-            "cooking": "30 минути",
-            "total": "50 минути"
+        "times": {
+            "total": 50,
+            "work": 20
         }
     },
     {
@@ -3977,10 +3975,9 @@
             "свинско",
             "месо"
         ],
-        "timing": {
-            "preparation": "20 минути",
-            "cooking": "60 минути",
-            "total": "80 минути"
+        "times": {
+            "total": 80,
+            "work": 20
         }
     },
     {
@@ -5623,10 +5620,9 @@
             "вегетарианско",
             "фурна"
         ],
-        "timings": {
-            "preparation": "5 минути",
-            "cooking": "5 минути",
-            "total": "10 минути"
+        "times": {
+            "work": 5,
+            "total": 10
         }
     },
     {
@@ -8714,10 +8710,9 @@
                 "url": "https://www.supichka.com/%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82%D0%B0/898/%D0%BA%D0%BB%D0%B0%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0-%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82%D0%B0-%D0%B7%D0%B0-%D0%B3%D0%BE%D1%84%D1%80%D0%B5%D1%82%D0%B8"
             }
         ],
-        "timing": {
-            "preparation": "10 минути",
-            "cooking": "20 минути",
-            "total": "30 минути"
+        "times": {
+            "work": 10,
+            "total": 30
         },
         "keywords": [
             "десерт",
