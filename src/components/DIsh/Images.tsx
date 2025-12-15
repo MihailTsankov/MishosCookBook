@@ -1,5 +1,5 @@
-import React, {ReactElement} from 'react'
-import {Box} from '@mui/material'
+import React, { ReactElement } from 'react'
+import { Box } from '@mui/material'
 
 export interface IImage {
     title: string,
@@ -11,40 +11,56 @@ interface IImageProps {
     expanded: boolean
 }
 
-function Images (props: IImageProps): ReactElement | null {
-    const {images, expanded} = props
+function Images(props: IImageProps): ReactElement | null {
+    const { images, expanded } = props
     if (!images || !images.length) return null
 
+    const imgHeight = 200
+    const maxWidth = imgHeight * 2 // width not more than double the height
+
     if (!expanded) {
-        // Collapsed: show only the first image with a fixed height and cover cropping
         const img = images[0]
         return (
-            <Box sx={{ height: 200, overflow: 'hidden' }}>
+            <Box sx={{ height: imgHeight, overflow: 'hidden', display: 'flex', justifyContent: 'center' }}>
                 <Box
                     component='img'
                     src={`static/images/${img.src}`}
                     alt={img.title ?? ''}
-                    sx={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                    sx={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        display: 'block',
+                        maxWidth: `${maxWidth}px`,
+                    }}
                 />
             </Box>
         )
     }
 
-    // Expanded: show all images in a responsive grid (1-2 columns)
-    const cols = images.length === 1 ? 1 : images.length === 2 ? 2 : 2
     return (
         <Box
             sx={{
                 display: 'grid',
-                gridTemplateColumns: `repeat(${cols}, 1fr)`,
                 gap: 1,
-                '& img': { width: '100%', height: 200, objectFit: 'cover', display: 'block' },
+                justifyItems: 'center',
+                gridTemplateColumns: {
+                    xs: 'repeat(1, 1fr)',
+                    sm: 'repeat(2, 1fr)',
+                    md: 'repeat(3, 1fr)',
+                    lg: 'repeat(4, 1fr)',
+                },
+                '& img': {
+                    width: '100%',
+                    height: imgHeight,
+                    objectFit: 'cover',
+                    display: 'block',
+                    maxWidth: `${maxWidth}px`,
+                },
             }}
         >
             {images.map((img, i) => <Box key={i} component='img' src={`static/images/${img.src}`} alt={img.title ?? `image-${i}`} />)}
         </Box>
-
-
     )
 }
 
