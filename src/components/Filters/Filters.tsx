@@ -11,7 +11,24 @@ import {dishQuickness, getTimeBucket} from '../DIsh/Times'
 
 const DISH_PARAMETER = 'dish'
 
-const dishTypeFilters = ['манджа', 'аламинут', 'предястие', 'супа', 'яхния', 'салата', 'закуска', 'десерт', 'гарнитура', 'сос', 'дресинг', 'марината', 'заготовка', 'подправка', 'тест']
+const dishTypeFilters = [
+    'аламинут',
+    'вегетариянско',
+    'гарнитура',
+    'дресинг',
+    'десерт',
+    'закуска',
+    'заготовка',
+    'манджа',
+    'марината',
+    'подправка',
+    'предястие',
+    'салата',
+    'сос',
+    'супа',
+    'тест',
+    'яхния',
+]
 
 /* Референция към dishQuickness
     15: 'бързо',
@@ -27,14 +44,79 @@ const dishQuicknessTimesFilters: number[] = Object.keys(dishQuickness)
 .map(Number)
 .filter(Number.isFinite)
 .sort((a, b) => a - b)
-const dishHowFilters = ['фурна', 'тиган', 'тенджера', 'тава', 'скара', 'air-fryer', 'multi-cooker', 'миксер', 'пасатор', 'блендер', 'пържене', 'варене', 'печене', 'запечатване', 'бланширане'  ]
-const dishDiateryTypeFilters = ['кето', 'веган', 'вегетарианско', 'фибри']
-const dishMeatFilters = ['пиле', 'свинско', 'бекон', 'телешко', 'агнешко', 'риба', 'кайма', 'месо']
-const dishPlantsFilters = ['боб', 'леща', 'ориз', 'гъби', 'картофи', 'домати', 'моркови', 'авокадо', 'кисело зеле', 'брюкселско зеле', 'карфиол', 'тиквички', 'хляб', 'бургер', 'пица', 'паста', 'макарони', 'козунак', 'брашно', 'тесто', 'кори', 'панировка']
-const dishAnimalProductsFilters=['яйца', 'сирене', 'прясно мляко', 'кисело мляко', 'сметана', 'мед']
+const dishHowFilters = [
+    'air-fryer',
+    'бланширане',
+    'варене',
+    'запечатване',
+    'касерола',
+    'миксер',
+    'multi-cooker',
+    'пасатор',
+    'печене',
+    'пържене',
+    'скара',
+    'тава',
+    'тенджера',
+    'тиган',
+    'блендер',
+    'фурна',
+]
+const dishDiateryTypeFilters = [
+    'веган',
+    'вегетарианско',
+    'кето',
+    'фибри',
+]
+const dishMeatFilters = [
+    'агнешко',
+    'бекон',
+    'кайма',
+    'месо',
+    'пиле',
+    'риба',
+    'свинско',
+    'телешко',
+]
+const dishPlantsFilters = [
+    'авокадо',
+    'боб',
+    'брашно',
+    'брюкселско зеле',
+    'бургер',
+    'бутер тесто',
+    'гъби',
+    'домати',
+    'карфиол',
+    'картофи',
+    'кисело зеле',
+    'козунак',
+    'кори',
+    'леща',
+    'макарони',
+    'моркови',
+    'ориз',
+    'панировка',
+    'паста',
+    'пица',
+    'тесто',
+    'тиквички',
+    'хляб',
+    'чесън',
+]
+const dishAnimalProductsFilters = [
+    'кисело мляко',
+    'мед',
+    'прясно мляко',
+    'сирене',
+    'сметана',
+    'шоколад',
+    'яйца',
+]
 
 
-const filters = dishes.reduce((sum: any, dish) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const filters = dishes.reduce((sum: string[], dish: any) => {
     const newSum = [...sum]
     for (const keyword of dish.keywords) {
         if (!sum.includes(keyword)
@@ -51,13 +133,16 @@ const filters = dishes.reduce((sum: any, dish) => {
 
     if (dish.times && dish.times.total) {
         const timeBucket = getTimeBucket(dish.times.total)
-        if (!sum.includes(timeBucket)){
-            newSum.push(timeBucket)
+        if (timeBucket !== undefined) {
+            const timeBucketStr = timeBucket.toString()
+            if (!sum.includes(timeBucketStr)){
+                newSum.push(timeBucketStr)
+            }
         }
     }
 
     return newSum
-}, [])
+}, [] as string[])
 
 interface FiltersProps {
     handleChangeFiltered: (newFiltered: string[]) => void;
