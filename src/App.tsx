@@ -1,14 +1,39 @@
-import React from 'react'
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import RecipeGrid from "./components/RecipeGrid";
+import RecipeDialog from "./components/RecipeDialog";
 
-import './App.css'
-import CookBook from './components/CookBook'
+function AppRoutes() {
+  const location = useLocation();
+  const state = location.state as { backgroundLocation?: Location } | null;
 
-function App() {
-    return (
-        <div className='App'>
-            <CookBook />
-        </div>
-    )
+  return (
+    <>
+      <Routes location={state?.backgroundLocation || location}>
+        <Route path="/" element={<RecipeGrid />} />
+        <Route path="/recipe/:id" element={<RecipeGrid />} />
+      </Routes>
+
+      {/* When navigated from the grid, show dialog over the grid */}
+      {state?.backgroundLocation && (
+        <Routes>
+          <Route path="/recipe/:id" element={<RecipeDialog />} />
+        </Routes>
+      )}
+
+      {/* When navigated directly to a recipe URL (no background state) */}
+      {!state?.backgroundLocation && (
+        <Routes>
+          <Route path="/recipe/:id" element={<RecipeDialog />} />
+        </Routes>
+      )}
+    </>
+  );
 }
 
-export default App
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  );
+}
