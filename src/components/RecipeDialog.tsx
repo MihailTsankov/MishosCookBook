@@ -110,26 +110,21 @@ export default function RecipeDialog() {
             </AppBar>
 
             <DialogContent sx={{ p: 0, bgcolor: "background.default" }}>
-                {/* Hero Image */}
-                <Box
-                    sx={{
-                        width: "100%",
-                        maxHeight: 400,
-                        overflow: "hidden",
-                    }}
-                >
+                {/* All Images */}
+                {recipe.image.map((img) => (
                     <Box
+                        key={img.src}
                         component="img"
-                        src={recipe.image}
-                        alt={recipe.title}
+                        src={img.src}
+                        alt={img.title ?? recipe.title}
                         sx={{
                             width: "100%",
-                            height: 400,
+                            maxHeight: 400,
                             objectFit: "cover",
                             display: "block",
                         }}
                     />
-                </Box>
+                ))}
 
                 <Container maxWidth="md" sx={{ py: 4 }}>
                     {/* Title & Keywords */}

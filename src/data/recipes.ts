@@ -20,7 +20,7 @@ export const FILTER_CATEGORIES: { key: keyof RecipeKeywords; label: string }[] =
 export interface Recipe {
     id: string;
     title: string;
-    image: string;
+    image: { title: string; src: string }[];
     keywords: RecipeKeywords;
     ingredients: string[];
     instructions: string[];
@@ -34,7 +34,10 @@ const recipes: Recipe[] = [
     {
         id: "musaka",
         title: "Мусака",
-        image: "musaka.png",
+        image: [
+            { title: "musaka", src: "/images/musaka.png" },
+            { title: "musaka", src: "/images/musakaFull.jpg" },
+        ],
         keywords: {
             type: ["манджа"],
             how: ["фурна"],
@@ -77,7 +80,7 @@ const recipes: Recipe[] = [
     {
         id: "musaka-v-multi-cooker",
         title: "Мусака в multi-cooker",
-        image: "musaka_multicooker.jpg",
+        image: [{ title: "Мусака в мултикуукър", src: "/images/musaka_multicooker.jpg" }],
         keywords: {
             type: ["манджа"],
             how: ["фурна"],
@@ -120,7 +123,7 @@ const recipes: Recipe[] = [
     {
         id: "varen-bob",
         title: "Варен Боб",
-        image: "beans.jpg",
+        image: [{ title: "Варен Боб", src: "/images/beans.jpg" }],
         keywords: {
             type: ["манджа", "супа"],
             how: ["варене", "тенджера"],
@@ -157,7 +160,7 @@ const recipes: Recipe[] = [
     {
         id: "varen-bob-s-meso",
         title: "Варен Боб с месо",
-        image: "bob_s_meso.jpg",
+        image: [{ title: "Варен Боб с месо", src: "/images/bob_s_meso.jpg" }],
         keywords: {
             type: ["манджа"],
             how: ["варене", "тенджера"],
@@ -197,7 +200,7 @@ const recipes: Recipe[] = [
     {
         id: "leshta",
         title: "Леща",
-        image: "leshta.png",
+        image: [{ title: "Леща", src: "/images/leshta.png" }],
         keywords: {
             type: ["манджа", "супа"],
             how: ["варене", "тенджера"],
@@ -234,7 +237,7 @@ const recipes: Recipe[] = [
     {
         id: "leshta-yahniya",
         title: "Леща яхния",
-        image: "leshta_stew.png",
+        image: [{ title: "Леща", src: "/images/leshta_stew.png" }],
         keywords: {
             type: ["манджа", "яхния"],
             how: ["варене", "тенджера"],
@@ -277,7 +280,10 @@ const recipes: Recipe[] = [
     {
         id: "yahniya-ot-chervena-leshta",
         title: "Яхния от червена леща",
-        image: "leshta_chervena_stew_portion.jpg",
+        image: [
+            { title: "Червена леща яхния порция", src: "/images/leshta_chervena_stew_portion.jpg" },
+            { title: "Червена леща яхния", src: "/images/leshta_chervena_stew_2.jpg" },
+        ],
         keywords: {
             type: ["манджа", "супа"],
             how: ["варене", "multi-cooker"],
@@ -320,7 +326,7 @@ const recipes: Recipe[] = [
     {
         id: "pile-s-oriz",
         title: "Пиле с ориз",
-        image: "chickenWithRice.jpg",
+        image: [{ title: "Chicken with rice", src: "/images/chickenWithRice.jpg" }],
         keywords: {
             type: ["манджа"],
             how: ["варене", "тенджера", "фурна"],
@@ -358,7 +364,7 @@ const recipes: Recipe[] = [
     {
         id: "pile-s-oriz-v-multikukar",
         title: "Пиле с ориз в мултикукър",
-        image: "oriz_multicooker.jpg",
+        image: [{ title: "Chicken with rice in multi-cooker", src: "/images/oriz_multicooker.jpg" }],
         keywords: {
             type: ["манджа"],
             how: ["multi-cooker"],
@@ -395,7 +401,7 @@ const recipes: Recipe[] = [
     {
         id: "pile-s-oriz-basmati",
         title: "Пиле с ориз басмати",
-        image: "riceBasmatiWithChicken.jpg",
+        image: [{ title: "Chicken with basmati rice", src: "/images/riceBasmatiWithChicken.jpg" }],
         keywords: {
             type: ["манджа"],
             how: ["фурна"],
@@ -438,7 +444,10 @@ const recipes: Recipe[] = [
     {
         id: "kremavo-toskansko-pile-s-oriz",
         title: "Кремаво тосканско пиле с ориз",
-        image: "pile_sirena_oriz_portion.jpg",
+        image: [
+            { title: "Кремаво тосканско пиле с ориз порция", src: "/images/pile_sirena_oriz_portion.jpg" },
+            { title: "Кремаво тосканско пиле с ориз", src: "/images/pile_sirena_oriz_portions.jpg" },
+        ],
         keywords: {
             type: ["манджа"],
             how: ["тиган"],
@@ -485,7 +494,7 @@ const recipes: Recipe[] = [
     {
         id: "parzhen-gotov-oriz-s-yaytsa-kashkaval-i-mlyako",
         title: "Пържен готов ориз с яйца, кашкавал и мляко",
-        image: "riceWithEggsAndMilk.jpeg",
+        image: [{ title: "Ориз с яйца и мляко", src: "/images/riceWithEggsAndMilk.jpeg" }],
         keywords: {
             type: ["манджа"],
             how: ["тиган"],
@@ -519,7 +528,7 @@ const recipes: Recipe[] = [
     {
         id: "pile-s-kartofi",
         title: "Пиле с картофи",
-        image: "potatoesWithChicken.png",
+        image: [{ title: "Пиле с картофи", src: "/images/potatoesWithChicken.png" }],
         keywords: {
             type: ["манджа"],
             how: ["фурна"],
@@ -555,7 +564,7 @@ const recipes: Recipe[] = [
     {
         id: "butter-chicken",
         title: "Butter chicken",
-        image: "chicken_butter_1.jpg",
+        image: [{ title: "Butter chicken", src: "/images/chicken_butter_1.jpg" }],
         keywords: {
             type: ["манджа"],
             how: ["тиган", "пасатор"],
@@ -613,7 +622,7 @@ const recipes: Recipe[] = [
     {
         id: "pileshka-supena-yahniya",
         title: "Пилешка супена яхния",
-        image: "chicken_stew_1.jpg",
+        image: [{ title: "Яхния с пилешко порция", src: "/images/chicken_stew_1.jpg" }],
         keywords: {
             type: ["манджа", "супа"],
             how: ["multi-cooker"],
@@ -650,7 +659,10 @@ const recipes: Recipe[] = [
     {
         id: "pile-frikase-blanquette-de-poulet",
         title: "Пиле фрикасе (Blanquette de Poulet)",
-        image: "pile_chicken_fricassee_portion.jpg",
+        image: [
+            { title: "Пиле фрикасе порция", src: "/images/pile_chicken_fricassee_portion.jpg" },
+            { title: "Пиле фрикасе", src: "/images/pile_chicken_fricassee_2.jpg" },
+        ],
         keywords: {
             type: ["манджа"],
             how: ["тенджера"],
@@ -701,7 +713,7 @@ const recipes: Recipe[] = [
     {
         id: "pile-zhulien",
         title: "Пиле жулиен",
-        image: "pileJulien.png",
+        image: [{ title: "Пиле жулиен", src: "/images/pileJulien.png" }],
         keywords: {
             type: ["манджа"],
             how: ["тиган"],
@@ -734,7 +746,10 @@ const recipes: Recipe[] = [
     {
         id: "zapecheni-kartofi-s-bekon-i-smetana",
         title: "Запечени картофи с бекон и сметана",
-        image: "kartofibaconsmetana_1.jpg",
+        image: [
+            { title: "Запечени картофи с бекон и сметана", src: "/images/kartofibaconsmetana_1.jpg" },
+            { title: "Запечени картофи с бекон и сметана", src: "/images/kartofibaconsmetana_2.jpg" },
+        ],
         keywords: {
             type: ["манджа"],
             how: ["тава", "печене"],
@@ -768,7 +783,10 @@ const recipes: Recipe[] = [
     {
         id: "pecheni-kartofi",
         title: "Печени картофи",
-        image: "potatoes_roasted_1.jpg",
+        image: [
+            { title: "Печени картофи порция", src: "/images/potatoes_roasted_1.jpg" },
+            { title: "Печени картофи", src: "/images/potatoes_roasted_2.jpg" },
+        ],
         keywords: {
             type: ["аламинут", "гарнитура"],
             how: ["тиган", "тенджера", "варене", "печене", "пържене", "фурна"],
@@ -806,7 +824,10 @@ const recipes: Recipe[] = [
     {
         id: "nadupeni-kartofi",
         title: "Надупени картофи",
-        image: "nadupeniKartofi.jpg",
+        image: [
+            { title: "Надупени картофи", src: "/images/nadupeniKartofi.jpg" },
+            { title: "Надупени картофи", src: "/images/nadupeniKartofi2.jpg" },
+        ],
         keywords: {
             type: ["аламинут", "гарнитура"],
             how: ["тава", "печене", "фурна"],
@@ -841,7 +862,10 @@ const recipes: Recipe[] = [
     {
         id: "kartofi-i-morkovi-na-furna",
         title: "Картофи и моркови на фурна",
-        image: "kartofi_s_morkovi_1.jpg",
+        image: [
+            { title: "Картофи с моркови", src: "/images/kartofi_s_morkovi_1.jpg" },
+            { title: "Картофи с моркови", src: "/images/kartofi_s_morkovi_2.jpg" },
+        ],
         keywords: {
             type: ["гарнитура"],
             how: ["фурна"],
@@ -870,7 +894,10 @@ const recipes: Recipe[] = [
     {
         id: "kartofena-yahniya-v-multikukar",
         title: "Картофена яхния в мултикукър",
-        image: "stew_potatoes_multicooker_1.jpg",
+        image: [
+            { title: "Картофена яхния в мултикукър порция", src: "/images/stew_potatoes_multicooker_1.jpg" },
+            { title: "Картофена яхния в мултикукър", src: "/images/stew_potatoes_multicooker_2.jpg" },
+        ],
         keywords: {
             type: ["манджа"],
             how: ["multi-cooker"],
@@ -922,7 +949,11 @@ const recipes: Recipe[] = [
     {
         id: "kartofeni-kyufteta-v-air-fryer",
         title: "Картофени кюфтета в air-fryer",
-        image: "kartofeni_kufteta_airfrier_big_bowl.jpg",
+        image: [
+            { title: "Картофени кюфтета в air-fryer", src: "/images/kartofeni_kufteta_airfrier_big_bowl.jpg" },
+            { title: "Картофени кюфтета в air-fryer порция", src: "/images/kartofeni_kufteta_airfrier_portion.jpg" },
+            { title: "Картофени кюфтета в air-fryer порция резнати", src: "/images/kartofeni_kufteta_airfrier_insides.jpg" },
+        ],
         keywords: {
             type: [],
             how: ["air-fryer", "тиган"],
@@ -964,7 +995,10 @@ const recipes: Recipe[] = [
     {
         id: "kartofeni-kyufteta-s-shunka-i-kashkaval",
         title: "Картофени кюфтета с шунка и кашкавал",
-        image: "kartofeni_kufteta_1.jpg",
+        image: [
+            { title: "Картофени кюфтета с шунка и кашкавал", src: "/images/kartofeni_kufteta_1.jpg" },
+            { title: "Картофени бонбони", src: "/images/kartofeni_kufteta_2.jpg" },
+        ],
         keywords: {
             type: ["аламинут"],
             how: ["пържене", "тиган"],
@@ -1005,7 +1039,10 @@ const recipes: Recipe[] = [
     {
         id: "nyoki",
         title: "Ньоки",
-        image: "nioki.jpg",
+        image: [
+            { title: "Ньоки", src: "/images/nioki.jpg" },
+            { title: "Ньоки хапки", src: "/images/nioki_hapki.jpg" },
+        ],
         keywords: {
             type: ["аламинут", "гарнитура"],
             how: ["варене", "тенджера"],
@@ -1050,7 +1087,11 @@ const recipes: Recipe[] = [
     {
         id: "kartofeni-bonboni-s-motsarela",
         title: "Картофени бонбони с моцарела",
-        image: "kartofeni_bonboni_mocarela_1.jpg",
+        image: [
+            { title: "Картофени бонбони с моцарела 1", src: "/images/kartofeni_bonboni_mocarela_1.jpg" },
+            { title: "Картофени бонбони с моцарела 2", src: "/images/kartofeni_bonboni_mocarela_2.jpg" },
+            { title: "Картофени бонбони с моцарела 3", src: "/images/kartofeni_bonboni_mocarela_3.jpg" },
+        ],
         keywords: {
             type: ["аламинут"],
             how: ["пържене", "тиган"],
@@ -1082,7 +1123,7 @@ const recipes: Recipe[] = [
     {
         id: "parzheni-kartofi-s-air-fryer",
         title: "Пържени картофи с air-fryer",
-        image: "friedPotatoes1.jpg",
+        image: [{ title: "Пържени картофи", src: "/images/friedPotatoes1.jpg" }],
         keywords: {
             type: [],
             how: ["пържене", "air-fryer"],
@@ -1109,7 +1150,7 @@ const recipes: Recipe[] = [
     {
         id: "kartofeno-pyure",
         title: "Картофено пюре",
-        image: "kartofenopure.jpg",
+        image: [{ title: "Картофено пюре.", src: "/images/kartofenopure.jpg" }],
         keywords: {
             type: ["гарнитура", "заготовка"],
             how: ["варене", "тенджера"],
@@ -1142,7 +1183,7 @@ const recipes: Recipe[] = [
     {
         id: "vareni-pecheni-kartofi",
         title: "Варени-печени картофи",
-        image: "vareniPecheniKartofi.jpg",
+        image: [{ title: "Варени печени картофи", src: "/images/vareniPecheniKartofi.jpg" }],
         keywords: {
             type: ["гарнитура"],
             how: [],
@@ -1172,7 +1213,7 @@ const recipes: Recipe[] = [
     {
         id: "pileshki-parzholki-s-gabi-na-furna",
         title: "Пилешки пържолки с гъби на фурна",
-        image: "pilegabifurna.png",
+        image: [{ title: "Пилешки пържолки с гъби на фурна", src: "/images/pilegabifurna.png" }],
         keywords: {
             type: ["манджа"],
             how: ["тава", "печене", "фурна"],
@@ -1207,7 +1248,7 @@ const recipes: Recipe[] = [
     {
         id: "domateno-pile",
         title: "Доматено Пиле",
-        image: "domatenoPile.jpg",
+        image: [{ title: "Доматено Пиле", src: "/images/domatenoPile.jpg" }],
         keywords: {
             type: ["манджа"],
             how: ["тава", "печене"],
@@ -1243,7 +1284,7 @@ const recipes: Recipe[] = [
     {
         id: "pileshki-drobcheta-v-maslo",
         title: "Пилешки дробчета в масло",
-        image: "drobVMaslo.jpg",
+        image: [{ title: "Дробчета в масло", src: "/images/drobVMaslo.jpg" }],
         keywords: {
             type: ["аламинут"],
             how: ["тиган", "пържене"],
@@ -1273,7 +1314,7 @@ const recipes: Recipe[] = [
     {
         id: "panirani-kriltsa",
         title: "Панирани крилца",
-        image: "",
+        image: [],
         keywords: {
             type: [],
             how: ["пържене", "тиган"],
@@ -1300,7 +1341,7 @@ const recipes: Recipe[] = [
     {
         id: "panirano-pileshko-na-furna",
         title: "Панирано пилешко на фурна",
-        image: "chicken_flowered_baked_1.jpg",
+        image: [{ title: "Панирано пилешко на фурна", src: "/images/chicken_flowered_baked_1.jpg" }],
         keywords: {
             type: [],
             how: ["печене", "тава"],
@@ -1338,7 +1379,7 @@ const recipes: Recipe[] = [
     {
         id: "panirani-kriltsa-na-furna",
         title: "Панирани крилца на фурна",
-        image: "paniraniKrilcaNaFurna.jpg",
+        image: [{ title: "Панирани крилца на фурна", src: "/images/paniraniKrilcaNaFurna.jpg" }],
         keywords: {
             type: ["аламинут"],
             how: ["тава", "печене"],
@@ -1374,7 +1415,7 @@ const recipes: Recipe[] = [
     {
         id: "pecheni-kriltsa-ili-butcheta-na-furna",
         title: "Печени крилца или бутчета на фурна",
-        image: "krilcaNaFurna.jpg",
+        image: [{ title: "Крилца на фурна", src: "/images/krilcaNaFurna.jpg" }],
         keywords: {
             type: ["аламинут"],
             how: ["тава"],
@@ -1409,7 +1450,13 @@ const recipes: Recipe[] = [
     {
         id: "pile-s-pesto-zavito-v-bekon",
         title: "Пиле с песто завито в бекон",
-        image: "pilepesto5.jpg",
+        image: [
+            { title: "Стъпка 4", src: "/images/pilepesto5.jpg" },
+            { title: "Стъпка 1", src: "/images/pilepesto1.png" },
+            { title: "Стъпка 2", src: "/images/pilepesto2.png" },
+            { title: "Стъпка 3", src: "/images/pilepesto3.png" },
+            { title: "Стъпка 4", src: "/images/pilepesto4.png" },
+        ],
         keywords: {
             type: ["аламинут"],
             how: ["тава", "печене", "фурна"],
@@ -1435,7 +1482,10 @@ const recipes: Recipe[] = [
     {
         id: "kordon-blyo-cordon-bleu",
         title: "Кордон Бльо (Cordon Bleu)",
-        image: "cordonbleu_1.jpg",
+        image: [
+            { title: "Кордон Бльо", src: "/images/cordonbleu_1.jpg" },
+            { title: "Cordon Bleu", src: "/images/cordonbleu_2.jpg" },
+        ],
         keywords: {
             type: ["манджа"],
             how: ["тава", "фурна", "печене"],
@@ -1471,7 +1521,7 @@ const recipes: Recipe[] = [
     {
         id: "pileshki-gardi-na-tigan-sas-sos",
         title: "Пилешки гърди на тиган със сос",
-        image: "pilegardisos.jpg",
+        image: [{ title: "Пилешки гърди със сос", src: "/images/pilegardisos.jpg" }],
         keywords: {
             type: [],
             how: ["тиган"],
@@ -1496,7 +1546,10 @@ const recipes: Recipe[] = [
     {
         id: "pileshki-gardi-v-sladko-kisel-sos",
         title: "Пилешки гърди в сладко-кисел сос",
-        image: "pile_sladkoKiselSos_1.jpg",
+        image: [
+            { title: "Пилешки гърди в сладко кисел сос", src: "/images/pile_sladkoKiselSos_1.jpg" },
+            { title: "Пилешки гърди в сладко кисел сос порция", src: "/images/pile_sladkoKiselSos_2.jpg" },
+        ],
         keywords: {
             type: [],
             how: ["тиган"],
@@ -1542,7 +1595,7 @@ const recipes: Recipe[] = [
     {
         id: "parzheno-pile-na-air-fryer",
         title: "Пържено пиле на air-fryer",
-        image: "friedChickenAirFryer.jpg",
+        image: [{ title: "Пържено пиле в air-fryer", src: "/images/friedChickenAirFryer.jpg" }],
         keywords: {
             type: [],
             how: ["air-fryer"],
@@ -1569,7 +1622,7 @@ const recipes: Recipe[] = [
     {
         id: "perfektni-pileshki-gardi",
         title: "Перфектни пилешки гърди",
-        image: "pilegardisos.jpg",
+        image: [{ title: "Пилешки гърди", src: "/images/pilegardisos.jpg" }],
         keywords: {
             type: ["аламинут"],
             how: ["тиган"],
@@ -1599,7 +1652,10 @@ const recipes: Recipe[] = [
     {
         id: "chicken-nuggets",
         title: "Chicken nuggets",
-        image: "chickenNuggets_1.jpg",
+        image: [
+            { title: "Chicken Nuggets порция", src: "/images/chickenNuggets_1.jpg" },
+            { title: "Chicken Nuggets", src: "/images/chickenNuggets_2.jpg" },
+        ],
         keywords: {
             type: [],
             how: ["тиган", "пържене"],
@@ -1640,7 +1696,7 @@ const recipes: Recipe[] = [
     {
         id: "perfektni-pileshki-parzholi-ot-but",
         title: "Перфектни пилешки пържоли от бут",
-        image: "",
+        image: [],
         keywords: {
             type: ["аламинут", "тест"],
             how: ["тиган"],
@@ -1659,7 +1715,10 @@ const recipes: Recipe[] = [
     {
         id: "svinsko-na-furna",
         title: "Свинско на фурна",
-        image: "svinsko_na_furna_2.jpg",
+        image: [
+            { title: "Свинско на фурна", src: "/images/svinsko_na_furna_2.jpg" },
+            { title: "Свинско на фурна", src: "/images/svinsko_na_furna.jpg" },
+        ],
         keywords: {
             type: ["манджа"],
             how: ["тава", "печене"],
@@ -1695,7 +1754,10 @@ const recipes: Recipe[] = [
     {
         id: "svinski-vratni-zapechatani-i-zapecheni",
         title: "Свински вратни запечатани и запечени",
-        image: "svinskaVratnaSasSirene.jpg",
+        image: [
+            { title: "Свинска вратна", src: "/images/svinskaVratnaSasSirene.jpg" },
+            { title: "Сос (gravy)", src: "/images/svinskaVratnaSasSireneGravy.jpg" },
+        ],
         keywords: {
             type: ["манджа"],
             how: ["тиган", "запечатване", "фурна"],
@@ -1735,7 +1797,7 @@ const recipes: Recipe[] = [
     {
         id: "bavno-gotveno-svinsko",
         title: "Бавно готвено свинско",
-        image: "svinsko_bavnoGotveno.jpg",
+        image: [{ title: "Бавно готвено свинско", src: "/images/svinsko_bavnoGotveno.jpg" }],
         keywords: {
             type: ["манджа"],
             how: ["тиган", "запечатване", "фурна"],
@@ -1772,7 +1834,10 @@ const recipes: Recipe[] = [
     {
         id: "bavno-gotveno-darpano-svinsko-s-chipotle-mayoneza",
         title: "Бавно готвено дърпано свинско с чипотле майонеза",
-        image: "svinsko_bavnoGotveno_chipotle_1.jpg",
+        image: [
+            { title: "Бавно готвено свинско с чипотле майонеза", src: "/images/svinsko_bavnoGotveno_chipotle_1.jpg" },
+            { title: "Бавно готвено свинско с чипотле майонеза порция", src: "/images/svinsko_bavnoGotveno_chipotle_2.jpg" },
+        ],
         keywords: {
             type: ["манджа"],
             how: ["тава", "запечатване", "фурна"],
@@ -1814,7 +1879,7 @@ const recipes: Recipe[] = [
     {
         id: "bavno-gotveno-meso-s-vino",
         title: "Бавно готвено месо с вино",
-        image: "bavnoGotvenoMesoSVino.jpg",
+        image: [{ title: "Бавно готвено месо с вино", src: "/images/bavnoGotvenoMesoSVino.jpg" }],
         keywords: {
             type: ["манджа"],
             how: ["фурна", "multi-cooker"],
@@ -1848,7 +1913,10 @@ const recipes: Recipe[] = [
     {
         id: "ramstek-s-luk",
         title: "Рамстек с Лук",
-        image: "ramstek1.jpg",
+        image: [
+            { title: "Рамстек с лук", src: "/images/ramstek1.jpg" },
+            { title: "Рамстек с лук", src: "/images/ramstek2.jpg" },
+        ],
         keywords: {
             type: ["манджа"],
             how: [],
@@ -1883,7 +1951,10 @@ const recipes: Recipe[] = [
     {
         id: "postni-kyufteta-s-bob-i-nahut",
         title: "Постни кюфтета с боб и нахут",
-        image: "veganMeatballs.jpg",
+        image: [
+            { title: "Vegan meatballs", src: "/images/veganMeatballs.jpg" },
+            { title: "Vegan meatballs", src: "/images/veganMeatballs2.jpg" },
+        ],
         keywords: {
             type: ["аламинут"],
             how: ["пържене", "тиган"],
@@ -1921,7 +1992,10 @@ const recipes: Recipe[] = [
     {
         id: "postni-kyufteta-s-chervena-leshta",
         title: "Постни кюфтета с червена леща",
-        image: "kufteta_leshta_0.jpg",
+        image: [
+            { title: "Кюфтета от червена леща", src: "/images/kufteta_leshta_0.jpg" },
+            { title: "Кюфтета от червена леща 2", src: "/images/kufteta_leshta_1.jpg" },
+        ],
         keywords: {
             type: [],
             how: ["пържене", "тиган"],
@@ -1956,7 +2030,7 @@ const recipes: Recipe[] = [
     {
         id: "postni-kyufteta-s-leshta-i-morkovi",
         title: "Постни кюфтета с леща и моркови",
-        image: "lentilsMeatballs.jpg",
+        image: [{ title: "Vegan meatballs", src: "/images/lentilsMeatballs.jpg" }],
         keywords: {
             type: [],
             how: ["пържене", "тиган"],
@@ -1990,7 +2064,7 @@ const recipes: Recipe[] = [
     {
         id: "leshteni-kyufteta",
         title: "Лещени кюфтета",
-        image: "leshteni_kufteta_1.jpg",
+        image: [{ title: "Лещени кюфтета", src: "/images/leshteni_kufteta_1.jpg" }],
         keywords: {
             type: ["аламинут"],
             how: ["печене"],
@@ -2032,7 +2106,7 @@ const recipes: Recipe[] = [
     {
         id: "zelevi-sarmi-s-kayma",
         title: "Зелеви сарми с кайма",
-        image: "sarmiZelevi.jpg",
+        image: [{ title: "Zelevi sarmi", src: "/images/sarmiZelevi.jpg" }],
         keywords: {
             type: ["манджа"],
             how: [],
@@ -2079,7 +2153,7 @@ const recipes: Recipe[] = [
     {
         id: "lozovi-sarmi-postni",
         title: "Лозови сарми (постни)",
-        image: "lozoviSarmi.jpg",
+        image: [{ title: "Lozovi sarmi", src: "/images/lozoviSarmi.jpg" }],
         keywords: {
             type: ["манджа"],
             how: [],
@@ -2116,7 +2190,7 @@ const recipes: Recipe[] = [
     {
         id: "vinen-kebap-v-multikukar",
         title: "Винен кебап в мултикукър",
-        image: "vinen_kebab_multi-cooker_portion.jpg",
+        image: [{ title: "Винен кебап в мултикукър", src: "/images/vinen_kebab_multi-cooker_portion.jpg" }],
         keywords: {
             type: [],
             how: ["multi-cooker"],
@@ -2160,7 +2234,7 @@ const recipes: Recipe[] = [
     {
         id: "vinen-kebap",
         title: "Винен кебап",
-        image: "vinenKebap.jpg",
+        image: [{ title: "Винен кебап", src: "/images/vinenKebap.jpg" }],
         keywords: {
             type: ["манджа"],
             how: ["тенджера"],
@@ -2200,7 +2274,7 @@ const recipes: Recipe[] = [
     {
         id: "zapechatani-svinski-vratni-s-gabi-na-furna",
         title: "Запечатани свински вратни с гъби на фурна",
-        image: "svinskoSGybi.jpg",
+        image: [{ title: "Свински вратни с гъби", src: "/images/svinskoSGybi.jpg" }],
         keywords: {
             type: ["манджа", "манджа"],
             how: ["запечатване", "фурна"],
@@ -2234,7 +2308,7 @@ const recipes: Recipe[] = [
     {
         id: "syomga-s-hrupkava-korichka",
         title: "Сьомга с хрупкава коричка",
-        image: "salmon.jpg",
+        image: [{ title: "Сьомга", src: "/images/salmon.jpg" }],
         keywords: {
             type: ["манджа"],
             how: ["тиган"],
@@ -2262,7 +2336,7 @@ const recipes: Recipe[] = [
     {
         id: "varen-oriz",
         title: "Варен ориз",
-        image: "rice.png",
+        image: [{ title: "Варен ориз", src: "/images/rice.png" }],
         keywords: {
             type: ["гарнитура", "заготовка"],
             how: ["варене", "тенджера"],
@@ -2289,7 +2363,7 @@ const recipes: Recipe[] = [
     {
         id: "varen-kafyav-oriz",
         title: "Варен кафяв ориз",
-        image: "rice_brown_1.jpg",
+        image: [{ title: "Варен кафяв ориз", src: "/images/rice_brown_1.jpg" }],
         keywords: {
             type: ["гарнитура", "заготовка"],
             how: ["варене", "тенджера"],
@@ -2314,7 +2388,7 @@ const recipes: Recipe[] = [
     {
         id: "rizoto",
         title: "Ризото",
-        image: "risoto.jpg",
+        image: [{ title: "Ризото", src: "/images/risoto.jpg" }],
         keywords: {
             type: [],
             how: ["тиган"],
@@ -2355,7 +2429,10 @@ const recipes: Recipe[] = [
     {
         id: "spageti-boloneze",
         title: "Спагети болонезе",
-        image: "pasta bolognese.jpg",
+        image: [
+            { title: "Спагети", src: "/images/pasta bolognese.jpg" },
+            { title: "Спагети", src: "/images/spaghetti bolognese.jpg" },
+        ],
         keywords: {
             type: [],
             how: ["тиган", "тенджера", "варене", "пържене"],
@@ -2396,7 +2473,7 @@ const recipes: Recipe[] = [
     {
         id: "teleshko-ragu",
         title: "Телешко Рагу",
-        image: "pasta_ragu.jpg",
+        image: [{ title: "Рагу", src: "/images/pasta_ragu.jpg" }],
         keywords: {
             type: [],
             how: ["тиган", "тенджера", "варене"],
@@ -2454,7 +2531,7 @@ const recipes: Recipe[] = [
     {
         id: "lazanya-makaroni-boloneze",
         title: "Лазаня макарони болонезе",
-        image: "lasagnaMacaroniBolognese.jpg",
+        image: [{ title: "Лазаня макарони болонезе", src: "/images/lasagnaMacaroniBolognese.jpg" }],
         keywords: {
             type: ["аламинут"],
             how: ["тиган", "тава", "тенджера", "варене", "печене"],
@@ -2502,7 +2579,10 @@ const recipes: Recipe[] = [
     {
         id: "pasta-karbonara",
         title: "Паста карбонара",
-        image: "pastaCarbonara1.jpg",
+        image: [
+            { title: "Паста карбонара", src: "/images/pastaCarbonara1.jpg" },
+            { title: "Паста карбонара 2", src: "/images/pastaCarbonara2.jpg" },
+        ],
         keywords: {
             type: ["аламинут"],
             how: ["тиган", "тенджера", "варене"],
@@ -2537,7 +2617,7 @@ const recipes: Recipe[] = [
     {
         id: "orizovi-spageti-sas-zelenchutsi",
         title: "Оризови спагети със зеленчуци",
-        image: "rice_noodles_with_vegetables.jpg",
+        image: [{ title: "Оризови спагети със зеленчуци", src: "/images/rice_noodles_with_vegetables.jpg" }],
         keywords: {
             type: ["аламинут"],
             how: ["тиган", "тенджера", "варене"],
@@ -2573,7 +2653,7 @@ const recipes: Recipe[] = [
     {
         id: "parzheni-kyufteta-s-domaten-sos",
         title: "Пържени кюфтета с доматен сос",
-        image: "meatBallsInTomatoeSauce.png",
+        image: [{ title: "Пържени кюфтета с доматен сос", src: "/images/meatBallsInTomatoeSauce.png" }],
         keywords: {
             type: ["аламинут"],
             how: ["тиган", "пържене"],
@@ -2606,7 +2686,7 @@ const recipes: Recipe[] = [
     {
         id: "kyuftentsa-s-domaten-sos",
         title: "Кюфтенца с доматен сос",
-        image: "meatballs_tomato_sauce.jpg",
+        image: [{ title: "Пържени кюфтета с доматен сос", src: "/images/meatballs_tomato_sauce.jpg" }],
         keywords: {
             type: ["аламинут"],
             how: ["тиган"],
@@ -2650,7 +2730,10 @@ const recipes: Recipe[] = [
     {
         id: "kyufteta-s-byal-sos",
         title: "Кюфтета с бял сос",
-        image: "kufteta_white_sauce_1.jpg",
+        image: [
+            { title: "Кюфтета с бял сос 1", src: "/images/kufteta_white_sauce_1.jpg" },
+            { title: "Кюфтета с бял сос 2", src: "/images/kufteta_white_sauce_2.jpg" },
+        ],
         keywords: {
             type: ["супа"],
             how: ["тенджера", "варене"],
@@ -2690,7 +2773,11 @@ const recipes: Recipe[] = [
     {
         id: "kyufteta-s-domaten-sos",
         title: "Кюфтета с доматен сос",
-        image: "kufteta_domaten_sos_0.jpg",
+        image: [
+            { title: "Кюфтета с доматен сос порции", src: "/images/kufteta_domaten_sos_0.jpg" },
+            { title: "Кюфтета с доматен сос порция", src: "/images/kufteta_domaten_sos_1.jpg" },
+            { title: "Кюфтета с доматен сос", src: "/images/kufteta_domaten_sos_2.jpg" },
+        ],
         keywords: {
             type: ["аламинут"],
             how: ["тиган", "пържене"],
@@ -2733,7 +2820,7 @@ const recipes: Recipe[] = [
     {
         id: "kyufteta-na-furna",
         title: "Кюфтета на фурна",
-        image: "meatBallsInAnOven.png",
+        image: [{ title: "Кюфтета на Фурна", src: "/images/meatBallsInAnOven.png" }],
         keywords: {
             type: ["аламинут"],
             how: ["тава", "фурна", "печене"],
@@ -2765,7 +2852,7 @@ const recipes: Recipe[] = [
     {
         id: "parzheni-kyufteta-v-air-fryer",
         title: "Пържени кюфтета в air-fryer",
-        image: "kufteta_air-fryer.jpg",
+        image: [{ title: "Кюфтета в air-fryer", src: "/images/kufteta_air-fryer.jpg" }],
         keywords: {
             type: ["аламинут"],
             how: ["air-fryer"],
@@ -2797,7 +2884,7 @@ const recipes: Recipe[] = [
     {
         id: "hrupkavi-tikvichki-na-furna",
         title: "Хрупкави тиквички на фурна",
-        image: "tikvichkiNaFurna.jpeg",
+        image: [{ title: "Хрупкави тиквички на фурна", src: "/images/tikvichkiNaFurna.jpeg" }],
         keywords: {
             type: ["предястие"],
             how: ["пържене", "тиган"],
@@ -2834,7 +2921,7 @@ const recipes: Recipe[] = [
     {
         id: "parzheni-tikvichki",
         title: "Пържени тиквички",
-        image: "tikvichkiParjeni.jpg",
+        image: [{ title: "Хрупкави тиквички на фурна", src: "/images/tikvichkiParjeni.jpg" }],
         keywords: {
             type: ["предястие"],
             how: ["пържене", "тиган"],
@@ -2872,7 +2959,7 @@ const recipes: Recipe[] = [
     {
         id: "rultsa-ot-tikvichki-i-sirene",
         title: "Рулца от тиквички и сирене",
-        image: "rulca_tikvichki_portion.jpg",
+        image: [{ title: "Рулца от тиквички и сирене", src: "/images/rulca_tikvichki_portion.jpg" }],
         keywords: {
             type: ["предястие"],
             how: ["тиган"],
@@ -2905,7 +2992,7 @@ const recipes: Recipe[] = [
     {
         id: "spageti-s-krenvirshi",
         title: "Спагети с кренвирши",
-        image: "spaghettiinhotdogs.png",
+        image: [{ title: "Спагети с кренвирши", src: "/images/spaghettiinhotdogs.png" }],
         keywords: {
             type: ["аламинут"],
             how: ["тиган", "тенджера", "варене"],
@@ -2924,7 +3011,7 @@ const recipes: Recipe[] = [
     {
         id: "svinski-filentsa-s-med",
         title: "Свински филенца с мед",
-        image: "filencaSMed.jpg",
+        image: [{ title: "Свински филенца с мед", src: "/images/filencaSMed.jpg" }],
         keywords: {
             type: [],
             how: ["тиган"],
@@ -2960,7 +3047,7 @@ const recipes: Recipe[] = [
     {
         id: "marinovani-rebra-na-furna",
         title: "Мариновани Ребра на фурна",
-        image: "rebra_vino_med.jpg",
+        image: [{ title: "Ребра на фурна", src: "/images/rebra_vino_med.jpg" }],
         keywords: {
             type: ["аламинут"],
             how: ["тиган", "запечатване", "тава", "печене"],
@@ -2994,7 +3081,11 @@ const recipes: Recipe[] = [
     {
         id: "rebra-na-furna",
         title: "Ребра на фурна",
-        image: "ribs_1.jpg",
+        image: [
+            { title: "Ребра порция", src: "/images/ribs_1.jpg" },
+            { title: "Ребра втора порция", src: "/images/ribs_2.jpg" },
+            { title: "Ребра на фурна", src: "/images/ribs_3.jpg" },
+        ],
         keywords: {
             type: ["аламинут"],
             how: ["тиган", "запечатване", "тава"],
@@ -3031,7 +3122,7 @@ const recipes: Recipe[] = [
     {
         id: "pecheni-nadenitsi",
         title: "Печени наденици",
-        image: "sausages_1.jpg",
+        image: [{ title: "Наденици", src: "/images/sausages_1.jpg" }],
         keywords: {
             type: [],
             how: ["тава", "печене"],
@@ -3056,7 +3147,7 @@ const recipes: Recipe[] = [
     {
         id: "yaytsa-po-shveytsarski-krok-madam",
         title: "Яйца по Швейцарски (Крок Мадам)",
-        image: "yaicaPoShveicarski.jpg",
+        image: [{ title: "Яйца по Швейцарски", src: "/images/yaicaPoShveicarski.jpg" }],
         keywords: {
             type: ["закуска"],
             how: ["тава", "печене", "фурна"],
@@ -3090,7 +3181,7 @@ const recipes: Recipe[] = [
     {
         id: "strandzhanki",
         title: "Странджанки",
-        image: "strandzhanki.jpg",
+        image: [{ title: "Странджанка", src: "/images/strandzhanki.jpg" }],
         keywords: {
             type: ["закуска"],
             how: ["скара"],
@@ -3117,7 +3208,10 @@ const recipes: Recipe[] = [
     {
         id: "marzeliva-banitsa",
         title: "Мързелива баница",
-        image: "marzeliva_banica_1.jpg",
+        image: [
+            { title: "Мързелива баница", src: "/images/marzeliva_banica_1.jpg" },
+            { title: "Мързелива баница с месо", src: "/images/marzeliva_banica_s_meso.jpg" },
+        ],
         keywords: {
             type: ["закуска"],
             how: ["фурна"],
@@ -3139,7 +3233,7 @@ const recipes: Recipe[] = [
     {
         id: "sandvichi",
         title: "Сандвичи",
-        image: "sandwich_meatballsub_1.jpg",
+        image: [{ title: "Meatball sub", src: "/images/sandwich_meatballsub_1.jpg" }],
         keywords: {
             type: ["аламинут", "закуска"],
             how: [],
@@ -3165,7 +3259,7 @@ const recipes: Recipe[] = [
     {
         id: "sloppy-joes",
         title: "Sloppy Joes",
-        image: "sloppyJoes.jpg",
+        image: [{ title: "Sloppy Joes", src: "/images/sloppyJoes.jpg" }],
         keywords: {
             type: ["аламинут"],
             how: [],
@@ -3201,7 +3295,7 @@ const recipes: Recipe[] = [
     {
         id: "burito",
         title: "Бурито",
-        image: "burrito.jpg",
+        image: [{ title: "Бурито", src: "/images/burrito.jpg" }],
         keywords: {
             type: ["аламинут"],
             how: [],
@@ -3237,7 +3331,7 @@ const recipes: Recipe[] = [
     {
         id: "dyuner",
         title: "Дюнер",
-        image: "doner.jpg",
+        image: [{ title: "Doner", src: "/images/doner.jpg" }],
         keywords: {
             type: ["аламинут"],
             how: [],
@@ -3272,7 +3366,7 @@ const recipes: Recipe[] = [
     {
         id: "mesni-purichki",
         title: "Месни пурички",
-        image: "meatCigars.jpg",
+        image: [{ title: "Месни цигари", src: "/images/meatCigars.jpg" }],
         keywords: {
             type: ["аламинут"],
             how: [],
@@ -3295,7 +3389,11 @@ const recipes: Recipe[] = [
     {
         id: "lavash-kebab",
         title: "Лаваш кебаб",
-        image: "lavash_kebab_portion.jpg",
+        image: [
+            { title: "Лаваш кебаб порция", src: "/images/lavash_kebab_portion.jpg" },
+            { title: "Лаваш кебаб в тавата", src: "/images/lavash_kebab_tava.jpg" },
+            { title: "Лаваш кебаб", src: "/images/lavash_kebab.jpg" },
+        ],
         keywords: {
             type: ["аламинут"],
             how: [],
@@ -3334,7 +3432,10 @@ const recipes: Recipe[] = [
     {
         id: "domashna-pitka-i-pitki-za-hamburgeri",
         title: "Домашна питка и питки за хамбургери",
-        image: "pitka.jpg",
+        image: [
+            { title: "Питка", src: "/images/pitka.jpg" },
+            { title: "Питка", src: "/images/pitka2.jpg" },
+        ],
         keywords: {
             type: [],
             how: ["тава", "печене"],
@@ -3368,7 +3469,7 @@ const recipes: Recipe[] = [
     {
         id: "palnozarnest-hlyab",
         title: "Пълнозърнест хляб",
-        image: "pitka.jpg",
+        image: [{ title: "Пълнозърнест хляб", src: "/images/pitka.jpg" }],
         keywords: {
             type: [],
             how: ["тава", "печене"],
@@ -3402,7 +3503,7 @@ const recipes: Recipe[] = [
     {
         id: "bolyarska-pita",
         title: "Болярска пита",
-        image: "pitka_bolyarska.jpg",
+        image: [{ title: "Болярска пита", src: "/images/pitka_bolyarska.jpg" }],
         keywords: {
             type: [],
             how: ["тава", "печене"],
@@ -3447,7 +3548,7 @@ const recipes: Recipe[] = [
     {
         id: "vita-banitsa",
         title: "Вита баница",
-        image: "banica_vita.jpg",
+        image: [{ title: "Вита баница", src: "/images/banica_vita.jpg" }],
         keywords: {
             type: [],
             how: ["тава", "печене"],
@@ -3485,7 +3586,7 @@ const recipes: Recipe[] = [
     {
         id: "garchena-banitsa",
         title: "Гърчена баница",
-        image: "banicaGarchena.jpg",
+        image: [{ title: "Гърчена баница", src: "/images/banicaGarchena.jpg" }],
         keywords: {
             type: [],
             how: ["тава", "печене"],
@@ -3520,7 +3621,7 @@ const recipes: Recipe[] = [
     {
         id: "viti-buterki-s-bekon",
         title: "Вити бутерки с бекон",
-        image: "vitiButerkiSBekon.jpg",
+        image: [{ title: "Вити бутерки с бекон", src: "/images/vitiButerkiSBekon.jpg" }],
         keywords: {
             type: [],
             how: ["тава", "печене"],
@@ -3550,7 +3651,7 @@ const recipes: Recipe[] = [
     {
         id: "testo-za-pitsa",
         title: "Тесто за пица",
-        image: "pizza2.jpg",
+        image: [{ title: "Пица", src: "/images/pizza2.jpg" }],
         keywords: {
             type: ["заготовка"],
             how: [],
@@ -3579,7 +3680,7 @@ const recipes: Recipe[] = [
     {
         id: "domashna-pitsa",
         title: "Домашна пица",
-        image: "pizza.jpg",
+        image: [{ title: "Пица", src: "/images/pizza.jpg" }],
         keywords: {
             type: ["аламинут"],
             how: [],
@@ -3623,7 +3724,7 @@ const recipes: Recipe[] = [
     {
         id: "fokacha",
         title: "Фокача",
-        image: "focaccia.jpg",
+        image: [{ title: "Фокача", src: "/images/focaccia.jpg" }],
         keywords: {
             type: [],
             how: ["тава", "печене"],
@@ -3667,7 +3768,7 @@ const recipes: Recipe[] = [
     {
         id: "bageti",
         title: "Багети",
-        image: "baguette.jpg",
+        image: [{ title: "Багета", src: "/images/baguette.jpg" }],
         keywords: {
             type: [],
             how: ["тава"],
@@ -3699,7 +3800,7 @@ const recipes: Recipe[] = [
     {
         id: "pirozhki-sas-sirene",
         title: "Пирожки със сирене",
-        image: "pirojki_sirene.jpg",
+        image: [{ title: "Пирожки със сирене", src: "/images/pirojki_sirene.jpg" }],
         keywords: {
             type: [],
             how: ["тиган", "пържене"],
@@ -3734,7 +3835,7 @@ const recipes: Recipe[] = [
     {
         id: "parlenki-sas-sirene",
         title: "Пърленки със сирене",
-        image: "ParlenkiSirene.jpg",
+        image: [{ title: "Пърленки със сирене", src: "/images/ParlenkiSirene.jpg" }],
         keywords: {
             type: [],
             how: [],
@@ -3768,7 +3869,10 @@ const recipes: Recipe[] = [
     {
         id: "parlenki-na-furna",
         title: "Пърленки на фурна",
-        image: "parlenka_furna_1.jpg",
+        image: [
+            { title: "Пърленки на фурна", src: "/images/parlenka_furna_1.jpg" },
+            { title: "Пърленки на фурна пица", src: "/images/parlenka_furna_2.jpg" },
+        ],
         keywords: {
             type: [],
             how: ["тава", "фурна", "печене"],
@@ -3805,7 +3909,11 @@ const recipes: Recipe[] = [
     {
         id: "puhkavi-biskviti-pitchitsi",
         title: "Пухкави бисквити / питчици",
-        image: "biscuits_fluffy_1.jpg",
+        image: [
+            { title: "Пухкави бисквити порция", src: "/images/biscuits_fluffy_1.jpg" },
+            { title: "Пухкави бисквити", src: "/images/biscuits_fluffy_2.jpg" },
+            { title: "Пухкави бисквити тава", src: "/images/biscuits_fluffy_3.jpg" },
+        ],
         keywords: {
             type: [],
             how: ["тава", "фурна", "печене"],
@@ -3841,7 +3949,7 @@ const recipes: Recipe[] = [
     {
         id: "pitchitsi-snezhanka",
         title: "Питчици снежанка",
-        image: "pitki_snejanka_1.jpg",
+        image: [{ title: "Питчици снежанка", src: "/images/pitki_snejanka_1.jpg" }],
         keywords: {
             type: [],
             how: ["тава", "фурна", "печене"],
@@ -3876,7 +3984,7 @@ const recipes: Recipe[] = [
     {
         id: "sirenki",
         title: "Сиренки",
-        image: "sirenki.jpg",
+        image: [{ title: "Сиренки", src: "/images/sirenki.jpg" }],
         keywords: {
             type: ["закуска"],
             how: ["тава", "фурна", "печене"],
@@ -3913,7 +4021,7 @@ const recipes: Recipe[] = [
     {
         id: "sirenki-dobrudzhanki",
         title: "Сиренки Добруджанки",
-        image: "sirenkiDobrudjanki.jpg",
+        image: [{ title: "Сиренки Добруджанки", src: "/images/sirenkiDobrudjanki.jpg" }],
         keywords: {
             type: ["закуска"],
             how: ["тава", "фурна", "печене"],
@@ -3953,7 +4061,7 @@ const recipes: Recipe[] = [
     {
         id: "pileshka-supa-sas-zastroyka",
         title: "Пилешка супа със застройка",
-        image: "supa_pile_1.jpg",
+        image: [{ title: "Пилешка супа със застройка", src: "/images/supa_pile_1.jpg" }],
         keywords: {
             type: ["супа"],
             how: [],
@@ -3997,7 +4105,7 @@ const recipes: Recipe[] = [
     {
         id: "zelenchukova-krem-supa",
         title: "Зеленчукова крем супа",
-        image: "supaKremZelenchukova.jpg",
+        image: [{ title: "Зеленчукова крем супа", src: "/images/supaKremZelenchukova.jpg" }],
         keywords: {
             type: ["супа"],
             how: ["пасатор"],
@@ -4043,7 +4151,10 @@ const recipes: Recipe[] = [
     {
         id: "domatena-krem-supa",
         title: "Доматена крем супа",
-        image: "supa_krem_domat_1.jpg",
+        image: [
+            { title: "Доматена крем супа", src: "/images/supa_krem_domat_1.jpg" },
+            { title: "Доматена крем супа 2", src: "/images/supa_krem_domat_2.jpg" },
+        ],
         keywords: {
             type: ["супа"],
             how: ["пасатор"],
@@ -4085,7 +4196,7 @@ const recipes: Recipe[] = [
     {
         id: "kartofena-krem-supa",
         title: "Картофена крем супа",
-        image: "supa_krem_kartofena_1.jpg",
+        image: [{ title: "Картофена крем супа", src: "/images/supa_krem_kartofena_1.jpg" }],
         keywords: {
             type: ["супа"],
             how: ["пасатор"],
@@ -4127,7 +4238,7 @@ const recipes: Recipe[] = [
     {
         id: "supa-topcheta",
         title: "Супа топчета",
-        image: "supa_topcheta_portion.jpg",
+        image: [{ title: "Супа топчета", src: "/images/supa_topcheta_portion.jpg" }],
         keywords: {
             type: ["супа"],
             how: ["тенджера"],
@@ -4181,7 +4292,7 @@ const recipes: Recipe[] = [
     {
         id: "gabena-supa",
         title: "Гъбена супа",
-        image: "soup_mushroom.jpg",
+        image: [{ title: "Гъбена крем супа", src: "/images/soup_mushroom.jpg" }],
         keywords: {
             type: ["супа"],
             how: [],
@@ -4226,7 +4337,7 @@ const recipes: Recipe[] = [
     {
         id: "pileshki-bulyon",
         title: "Пилешки бульон",
-        image: "chicken_stock.jpg",
+        image: [{ title: "Пилешки бульон", src: "/images/chicken_stock.jpg" }],
         keywords: {
             type: ["заготовка"],
             how: ["тенджера"],
@@ -4245,7 +4356,7 @@ const recipes: Recipe[] = [
     {
         id: "barkani-yaytsa",
         title: "Бъркани яйца",
-        image: "eggs_scrambled.jpg",
+        image: [{ title: "Scrambled eggs", src: "/images/eggs_scrambled.jpg" }],
         keywords: {
             type: ["аламинут", "закуска"],
             how: [],
@@ -4274,7 +4385,10 @@ const recipes: Recipe[] = [
     {
         id: "yaycheni-mafini-egg-muffins",
         title: "Яйчени мъфини (Egg muffins)",
-        image: "eggmuffins2.jpg",
+        image: [
+            { title: "Egg muffins", src: "/images/eggmuffins2.jpg" },
+            { title: "Egg muffins", src: "/images/eggmuffins1.jpg" },
+        ],
         keywords: {
             type: ["закуска"],
             how: ["фурна"],
@@ -4313,7 +4427,7 @@ const recipes: Recipe[] = [
     {
         id: "keto-pileshki-burger-keto-chicken-burger",
         title: "Кето пилешки бургер (Keto Chicken Burger)",
-        image: "Keto-chicken-burger-h.avif",
+        image: [{ title: "Keto-chicken-burger", src: "/images/Keto-chicken-burger-h.avif" }],
         keywords: {
             type: ["закуска", "тест"],
             how: ["тиган"],
@@ -4353,7 +4467,7 @@ const recipes: Recipe[] = [
     {
         id: "yaytsa-benedikt",
         title: "Яйца Бенедикт",
-        image: "eggsbenedict1.jpg",
+        image: [{ title: "Eggs benedict", src: "/images/eggsbenedict1.jpg" }],
         keywords: {
             type: ["закуска"],
             how: ["тиган", "тенджера"],
@@ -4398,7 +4512,7 @@ const recipes: Recipe[] = [
     {
         id: "salata-s-grozde-i-sirena",
         title: "Салата с грозде и сирена",
-        image: "SalataGrozdeISirena.jpg",
+        image: [{ title: "Салата с грозде и сирена", src: "/images/SalataGrozdeISirena.jpg" }],
         keywords: {
             type: ["салата"],
             how: [],
@@ -4435,7 +4549,10 @@ const recipes: Recipe[] = [
     {
         id: "salata-tsezar",
         title: "Салата Цезар",
-        image: "caesar_salad.jpg",
+        image: [
+            { title: "Салата Цезар", src: "/images/caesar_salad.jpg" },
+            { title: "Салати Цезар", src: "/images/caesar_salads.jpg" },
+        ],
         keywords: {
             type: ["салата"],
             how: [],
@@ -4475,7 +4592,7 @@ const recipes: Recipe[] = [
     {
         id: "zelena-salata-s-riba-ton",
         title: "Зелена салата с риба тон",
-        image: "zelena_salata_s_riba_ton.jpg",
+        image: [{ title: "Салати Цезар", src: "/images/zelena_salata_s_riba_ton.jpg" }],
         keywords: {
             type: ["салата"],
             how: [],
@@ -4503,7 +4620,7 @@ const recipes: Recipe[] = [
     {
         id: "salata-s-yaycheni-spageti",
         title: "Салата с яйчени спагети.",
-        image: "salata_spageti_ot_yaica.jpg",
+        image: [{ title: "Салати с яйчни спагети", src: "/images/salata_spageti_ot_yaica.jpg" }],
         keywords: {
             type: ["салата"],
             how: [],
@@ -4547,7 +4664,7 @@ const recipes: Recipe[] = [
     {
         id: "salata-chikenita",
         title: "Салата Чикенита",
-        image: "salata_chikenita.jpg",
+        image: [{ title: "Салати Чикенита", src: "/images/salata_chikenita.jpg" }],
         keywords: {
             type: ["салата"],
             how: [],
@@ -4578,7 +4695,7 @@ const recipes: Recipe[] = [
     {
         id: "makaroni-na-furna-soleni",
         title: "Макарони на фурна (солени)",
-        image: "makaroni.png",
+        image: [{ title: "Макарони на фурна", src: "/images/makaroni.png" }],
         keywords: {
             type: ["закуска"],
             how: [],
@@ -4613,7 +4730,10 @@ const recipes: Recipe[] = [
     {
         id: "mac-and-cheese",
         title: "Mac and Cheese",
-        image: "makandcheese1.jpg",
+        image: [
+            { title: "Макарони със сирена", src: "/images/makandcheese1.jpg" },
+            { title: "Макарони със сирена", src: "/images/makandcheese2.jpg" },
+        ],
         keywords: {
             type: ["закуска"],
             how: [],
@@ -4661,7 +4781,7 @@ const recipes: Recipe[] = [
     {
         id: "pile-s-makaroni",
         title: "Пиле с макарони",
-        image: "makaroniPile.jpg",
+        image: [{ title: "Пиле с макарони", src: "/images/makaroniPile.jpg" }],
         keywords: {
             type: [],
             how: [],
@@ -4706,7 +4826,10 @@ const recipes: Recipe[] = [
     {
         id: "klasicheski-palachinki",
         title: "Класически палачинки",
-        image: "palachinki_1.jpg",
+        image: [
+            { title: "Класически палачинки маса", src: "/images/palachinki_1.jpg" },
+            { title: "Класически палачинки всичките", src: "/images/palachinki_2.jpeg" },
+        ],
         keywords: {
             type: ["десерт", "закуска"],
             how: ["тиган"],
@@ -4742,7 +4865,7 @@ const recipes: Recipe[] = [
     {
         id: "plovdivski-palachinki",
         title: "Пловдивски палачинки",
-        image: "palachinkiPlovdiv.jpg",
+        image: [{ title: "Пловдивски палачинки", src: "/images/palachinkiPlovdiv.jpg" }],
         keywords: {
             type: ["десерт", "закуска"],
             how: ["тиган"],
@@ -4776,7 +4899,10 @@ const recipes: Recipe[] = [
     {
         id: "amerikanski-palachinki",
         title: "Американски палачинки",
-        image: "palachinki_amerikanski_porcia.jpg",
+        image: [
+            { title: "Американски палачинки порция", src: "/images/palachinki_amerikanski_porcia.jpg" },
+            { title: "Американски палачинки", src: "/images/palachinki_amerikanski.jpg" },
+        ],
         keywords: {
             type: ["десерт", "закуска"],
             how: ["тиган"],
@@ -4816,7 +4942,7 @@ const recipes: Recipe[] = [
     {
         id: "bananovi-palachinki",
         title: "Бананови палачинки",
-        image: "bananapalachinki.jpeg",
+        image: [{ title: "Бананови палачинки", src: "/images/bananapalachinki.jpeg" }],
         keywords: {
             type: ["десерт"],
             how: [],
@@ -4835,7 +4961,7 @@ const recipes: Recipe[] = [
     {
         id: "gofreti-klasicheski",
         title: "Гофрети (класически)",
-        image: "gofreti_classic.jpg",
+        image: [{ title: "Гофрети", src: "/images/gofreti_classic.jpg" }],
         keywords: {
             type: ["десерт", "закуска"],
             how: ["тиган"],
@@ -4873,7 +4999,7 @@ const recipes: Recipe[] = [
     {
         id: "buhti",
         title: "Бухти",
-        image: "buhti.jpg",
+        image: [{ title: "Бухти", src: "/images/buhti.jpg" }],
         keywords: {
             type: ["десерт", "закуска"],
             how: ["пържене"],
@@ -4907,7 +5033,10 @@ const recipes: Recipe[] = [
     {
         id: "lesni-buhtichki",
         title: "Лесни бухтички",
-        image: "buhti_lesni_1.jpg",
+        image: [
+            { title: "Лесни бухти 1", src: "/images/buhti_lesni_1.jpg" },
+            { title: "Лесни бухти 2", src: "/images/buhti_lesni_2.jpg" },
+        ],
         keywords: {
             type: ["десерт", "закуска"],
             how: ["пържене"],
@@ -4941,7 +5070,10 @@ const recipes: Recipe[] = [
     {
         id: "parzheni-filiyki-french-toast-s-kozunak",
         title: "Пържени-филийки (French Toast) с козунак",
-        image: "frenchToast_1.jpg",
+        image: [
+            { title: "Пържени филийки", src: "/images/frenchToast_1.jpg" },
+            { title: "Пържени филийки само", src: "/images/frenchToast_2.jpg" },
+        ],
         keywords: {
             type: ["закуска", "десерт", "десерт"],
             how: ["пържене"],
@@ -4974,7 +5106,10 @@ const recipes: Recipe[] = [
     {
         id: "kozunacheni-pecheni-parzheni-filiyki",
         title: "Козуначени печени пържени-филийки",
-        image: "pecheniParjeniFilijki.jpg",
+        image: [
+            { title: "Печени филийки", src: "/images/pecheniParjeniFilijki.jpg" },
+            { title: "Печени филийки", src: "/images/pecheniParjeniFilijki2.jpg" },
+        ],
         keywords: {
             type: ["десерт", "закуска"],
             how: ["печене"],
@@ -5007,7 +5142,7 @@ const recipes: Recipe[] = [
     {
         id: "puding-s-mango-i-chia",
         title: "Пудинг с манго и чиа",
-        image: "chiaPudding.jpg",
+        image: [{ title: "Пудинг с чиа", src: "/images/chiaPudding.jpg" }],
         keywords: {
             type: ["десерт"],
             how: [],
@@ -5042,7 +5177,10 @@ const recipes: Recipe[] = [
     {
         id: "shokoladovi-shisharki",
         title: "Шоколадови шишарки",
-        image: "chocoPineCones1.jpg",
+        image: [
+            { title: "Шоколадови шишарки", src: "/images/chocoPineCones1.jpg" },
+            { title: "Шоколадови шишарки", src: "/images/chocoPineCones2.jpg" },
+        ],
         keywords: {
             type: ["десерт"],
             how: [],
@@ -5076,7 +5214,7 @@ const recipes: Recipe[] = [
     {
         id: "shokoladovi-kurabiyki-s-parchentsa-shokolad",
         title: "Шоколадови курабийки с парченца шоколад",
-        image: "cookies_chocolate_chips_1.jpg",
+        image: [{ title: "Шоколадови курабийки", src: "/images/cookies_chocolate_chips_1.jpg" }],
         keywords: {
             type: ["десерт"],
             how: [],
@@ -5116,7 +5254,10 @@ const recipes: Recipe[] = [
     {
         id: "shokoladovi-kurabiyki-s-3-sastavki",
         title: "Шоколадови курабийки с 3 съставки",
-        image: "Cookies_3_Ingredients_1.jpg",
+        image: [
+            { title: "Шоколадови курабийки", src: "/images/Cookies_3_Ingredients_1.jpg" },
+            { title: "Шоколадови курабийки с банан", src: "/images/Cookies_3_Ingredients_2.jpg" },
+        ],
         keywords: {
             type: ["десерт"],
             how: [],
@@ -5146,7 +5287,7 @@ const recipes: Recipe[] = [
     {
         id: "zaharni-kakaovi-kurabiyki",
         title: "Захарни какаови курабийки",
-        image: "Cookies_sugar_1.jpg",
+        image: [{ title: "Захарни какаови курабийки", src: "/images/Cookies_sugar_1.jpg" }],
         keywords: {
             type: ["десерт"],
             how: [],
@@ -5183,7 +5324,7 @@ const recipes: Recipe[] = [
     {
         id: "negarche-na-kiki",
         title: "Негърче на Кики",
-        image: "",
+        image: [],
         keywords: {
             type: ["десерт"],
             how: [],
@@ -5221,7 +5362,10 @@ const recipes: Recipe[] = [
     {
         id: "brauni-na-tigan",
         title: "Брауни на тиган",
-        image: "brownie_skillet_1.jpg",
+        image: [
+            { title: "Брауни на тиган порция", src: "/images/brownie_skillet_1.jpg" },
+            { title: "Брауни на тиган", src: "/images/brownie_skillet_2.jpg" },
+        ],
         keywords: {
             type: ["десерт"],
             how: ["тиган"],
@@ -5264,7 +5408,10 @@ const recipes: Recipe[] = [
     {
         id: "biskvitena-torta-s-kiselo-mlyako",
         title: "Бисквитена торта с кисело мляко",
-        image: "biskvitena_torta_kiselo_mlyako.jpg",
+        image: [
+            { title: "Бисквитена торта с кисело мляко", src: "/images/biskvitena_torta_kiselo_mlyako.jpg" },
+            { title: "Бисквитена торта с кисело мляко порция", src: "/images/biskvitena_torta_kiselo_mlyako_porcia.jpg" },
+        ],
         keywords: {
             type: ["десерт"],
             how: ["касерола", "тава"],
@@ -5298,7 +5445,10 @@ const recipes: Recipe[] = [
     {
         id: "biskvitena-torta-s-nisheste",
         title: "Бисквитена торта с нишесте",
-        image: "torta_biskvitena_1.jpg",
+        image: [
+            { title: "Бисквитена торта порция", src: "/images/torta_biskvitena_1.jpg" },
+            { title: "Бисквитена торта", src: "/images/torta_biskvitena_2.jpg" },
+        ],
         keywords: {
             type: ["десерт"],
             how: ["касерола", "тава"],
@@ -5331,7 +5481,7 @@ const recipes: Recipe[] = [
     {
         id: "guakamole",
         title: "Гуакамоле",
-        image: "guakamole.jpg",
+        image: [{ title: "Гуакамалое", src: "/images/guakamole.jpg" }],
         keywords: {
             type: ["сос"],
             how: [],
@@ -5368,7 +5518,7 @@ const recipes: Recipe[] = [
     {
         id: "pesto-dzhenoveze",
         title: "Песто Дженовезе",
-        image: "pesto.jpg",
+        image: [{ title: "Песто Дженовезе", src: "/images/pesto.jpg" }],
         keywords: {
             type: ["сос", "подправка"],
             how: [],
@@ -5402,7 +5552,7 @@ const recipes: Recipe[] = [
     {
         id: "sos-holandez",
         title: "Сос Холандез",
-        image: "holandez.jpg",
+        image: [{ title: "Холандез", src: "/images/holandez.jpg" }],
         keywords: {
             type: ["сос"],
             how: ["тенджера"],
@@ -5435,7 +5585,7 @@ const recipes: Recipe[] = [
     {
         id: "sos-beshamel",
         title: "Сос Бешамел",
-        image: "bechamel.jpg",
+        image: [{ title: "Бешамел", src: "/images/bechamel.jpg" }],
         keywords: {
             type: ["тест", "сос"],
             how: ["тенджера"],
@@ -5466,7 +5616,7 @@ const recipes: Recipe[] = [
     {
         id: "sos-greyvi",
         title: "Сос грейви",
-        image: "",
+        image: [],
         keywords: {
             type: ["тест", "сос"],
             how: ["тенджера"],
@@ -5497,7 +5647,7 @@ const recipes: Recipe[] = [
     {
         id: "mayoneza",
         title: "Майонеза",
-        image: "mayonnaise.jpg",
+        image: [{ title: "Майонеза", src: "/images/mayonnaise.jpg" }],
         keywords: {
             type: ["сос", "тест"],
             how: [],
@@ -5527,7 +5677,7 @@ const recipes: Recipe[] = [
     {
         id: "mayoneza-s-shafran",
         title: "Майонеза с Шафран",
-        image: "",
+        image: [],
         keywords: {
             type: ["сос", "тест"],
             how: [],
@@ -5552,7 +5702,10 @@ const recipes: Recipe[] = [
     {
         id: "humus",
         title: "Хумус",
-        image: "humus_1.jpg",
+        image: [
+            { title: "Хумус", src: "/images/humus_1.jpg" },
+            { title: "Хумус", src: "/images/humus_2.jpg" },
+        ],
         keywords: {
             type: ["сос"],
             how: ["блендер"],
@@ -5586,7 +5739,7 @@ const recipes: Recipe[] = [
     {
         id: "karameliziran-luk",
         title: "Карамелизиран лук",
-        image: "caramelized_onions.jpg",
+        image: [{ title: "Карамелизиран лук", src: "/images/caramelized_onions.jpg" }],
         keywords: {
             type: ["гарнитура"],
             how: ["тиган"],
@@ -5605,7 +5758,7 @@ const recipes: Recipe[] = [
     {
         id: "poshirani-yaytsa",
         title: "Поширани яйца",
-        image: "",
+        image: [],
         keywords: {
             type: ["заготовка", "тест"],
             how: ["тенджера"],
@@ -5624,7 +5777,7 @@ const recipes: Recipe[] = [
     {
         id: "brokoli-na-furna",
         title: "Броколи на фурна",
-        image: "broccoli.jpg",
+        image: [{ title: "Броколи на фурна", src: "/images/broccoli.jpg" }],
         keywords: {
             type: ["гарнитура"],
             how: ["тава", "печене"],
@@ -5654,7 +5807,10 @@ const recipes: Recipe[] = [
     {
         id: "bryukselsko-zele-na-furna",
         title: "Брюкселско зеле на фурна",
-        image: "bakedBrusselSprouts1.jpg",
+        image: [
+            { title: "Брюкселско зеле на фурна", src: "/images/bakedBrusselSprouts1.jpg" },
+            { title: "Брюкселско зеле на фурна", src: "/images/bakedBrusselSprouts2.jpg" },
+        ],
         keywords: {
             type: ["гарнитура"],
             how: ["тава", "тенджера", "печене", "бланширане"],
@@ -5679,7 +5835,7 @@ const recipes: Recipe[] = [
     {
         id: "rosemary-salt-if-you-know-you-know",
         title: "Rosemary Salt - If You Know, You Know",
-        image: "",
+        image: [],
         keywords: {
             type: ["подправка", "марината", "тест"],
             how: ["миксер"],
@@ -5698,7 +5854,7 @@ const recipes: Recipe[] = [
     {
         id: "tri-salatni-dresingi",
         title: "Три салатни дресинги",
-        image: "",
+        image: [],
         keywords: {
             type: ["дресинг", "салата"],
             how: [],
@@ -5717,7 +5873,7 @@ const recipes: Recipe[] = [
     {
         id: "pet-salatni-dresingi",
         title: "Пет салатни дресинги",
-        image: "",
+        image: [],
         keywords: {
             type: ["дресинг", "салата"],
             how: [],
@@ -5736,7 +5892,7 @@ const recipes: Recipe[] = [
     {
         id: "vinegret",
         title: "Винегрет",
-        image: "",
+        image: [],
         keywords: {
             type: ["дресинг"],
             how: [],
@@ -5763,7 +5919,7 @@ const recipes: Recipe[] = [
     {
         id: "tochene-i-opravyane-na-nozh-s-kamak-za-tochene",
         title: "Точене и оправяне на нож с камък за точене",
-        image: "",
+        image: [],
         keywords: {
             type: [],
             how: [],
@@ -5782,7 +5938,7 @@ const recipes: Recipe[] = [
     {
         id: "kak-da-rezhem-vsyako-meso",
         title: "Как да режем всяко месо.",
-        image: "",
+        image: [],
         keywords: {
             type: [],
             how: [],
@@ -5801,7 +5957,7 @@ const recipes: Recipe[] = [
     {
         id: "kak-da-rezhem-vsyako-sirene",
         title: "Как да режем всяко сирене.",
-        image: "",
+        image: [],
         keywords: {
             type: [],
             how: [],
@@ -5820,7 +5976,7 @@ const recipes: Recipe[] = [
     {
         id: "vazhni-umeniya-s-nozh-za-vseki-gotvach",
         title: "Важни умения с нож за всеки готвач",
-        image: "",
+        image: [],
         keywords: {
             type: [],
             how: [],
@@ -5839,7 +5995,7 @@ const recipes: Recipe[] = [
     {
         id: "izpolzvane-na-tigani-ot-nerazhdaema-stomana",
         title: "Използване на тигани от неръждаема стомана",
-        image: "",
+        image: [],
         keywords: {
             type: [],
             how: [],
@@ -5858,7 +6014,7 @@ const recipes: Recipe[] = [
     {
         id: "marzelivki-test",
         title: "Мързеливки (ТЕСТ)",
-        image: "",
+        image: [],
         keywords: {
             type: ["десерт", "тест"],
             how: [],
@@ -5877,7 +6033,7 @@ const recipes: Recipe[] = [
     {
         id: "vegan-mayoneza-sas-gorchitsa-test",
         title: "Веган Майонеза със горчица (ТЕСТ)",
-        image: "",
+        image: [],
         keywords: {
             type: ["тест"],
             how: [],
@@ -5896,7 +6052,7 @@ const recipes: Recipe[] = [
     {
         id: "lavash-burger-test",
         title: "Лаваш бургер (ТЕСТ)",
-        image: "",
+        image: [],
         keywords: {
             type: ["тест"],
             how: [],
@@ -5915,7 +6071,7 @@ const recipes: Recipe[] = [
     {
         id: "mini-pitsi-hapki-test",
         title: "Мини пици хапки (ТЕСТ)",
-        image: "",
+        image: [],
         keywords: {
             type: ["тест"],
             how: [],
@@ -5934,7 +6090,7 @@ const recipes: Recipe[] = [
     {
         id: "zelenchukov-chips-test",
         title: "Зеленчуков чипс (ТЕСТ)",
-        image: "",
+        image: [],
         keywords: {
             type: ["тест"],
             how: [],
@@ -5953,7 +6109,7 @@ const recipes: Recipe[] = [
     {
         id: "usukani-prachitsi-s-kashkaval-test",
         title: "Усукани пръчици с кашкавал (ТЕСТ)",
-        image: "",
+        image: [],
         keywords: {
             type: ["тест"],
             how: [],
@@ -5972,7 +6128,7 @@ const recipes: Recipe[] = [
     {
         id: "kartofi-po-shvedski-test",
         title: "Картофи по шведски (ТЕСТ)",
-        image: "",
+        image: [],
         keywords: {
             type: ["тест"],
             how: [],
@@ -5991,7 +6147,7 @@ const recipes: Recipe[] = [
     {
         id: "usukani-hotdozi-test",
         title: "Усукани хотдози (ТЕСТ)",
-        image: "",
+        image: [],
         keywords: {
             type: ["тест"],
             how: [],
@@ -6010,7 +6166,7 @@ const recipes: Recipe[] = [
     {
         id: "polezni-barzinki-test",
         title: "Полезни бързинки (ТЕСТ)",
-        image: "",
+        image: [],
         keywords: {
             type: ["тест"],
             how: [],
@@ -6029,7 +6185,7 @@ const recipes: Recipe[] = [
     {
         id: "grilled-cheese-roll-ups-test",
         title: "Grilled Cheese Roll Ups (ТЕСТ)",
-        image: "",
+        image: [],
         keywords: {
             type: ["тест"],
             how: ["тиган"],
@@ -6048,7 +6204,7 @@ const recipes: Recipe[] = [
     {
         id: "mnogo-puhkava-pitka-test",
         title: "Много Пухкава питка (ТЕСТ)",
-        image: "",
+        image: [],
         keywords: {
             type: ["тест"],
             how: [],
@@ -6067,7 +6223,7 @@ const recipes: Recipe[] = [
     {
         id: "syomga-sas-sinyo-sirene-test",
         title: "Сьомга със синьо сирене (ТЕСТ)",
-        image: "salmonwithcheese.jpeg",
+        image: [{ title: "Сьомга със синьо сирене", src: "/images/salmonwithcheese.jpeg" }],
         keywords: {
             type: ["манджа", "тест"],
             how: [],
@@ -6099,7 +6255,7 @@ const recipes: Recipe[] = [
     {
         id: "svezha-salata-s-izvara-test",
         title: "Свежа салата с извара (ТЕСТ)",
-        image: "",
+        image: [],
         keywords: {
             type: ["салата", "тест"],
             how: [],

@@ -34,7 +34,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
                 <CardMedia
                     component="img"
                     height="200"
-                    image={recipe.image}
+                    image={recipe.image[0]?.src}
                     alt={recipe.title}
                     sx={{ objectFit: "cover" }}
                 />
