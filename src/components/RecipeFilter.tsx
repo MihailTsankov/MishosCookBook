@@ -15,7 +15,7 @@ import FilterListIcon from "@mui/icons-material/FilterList";
 import type { RecipeKeywords } from "../data/recipes";
 import { FILTER_CATEGORIES, getAllFilterOptions } from "../data/recipes";
 import type { ActiveFilters } from "../types/filters";
-import { EMPTY_FILTERS } from "../types/filters";
+import { EMPTY_FILTERS, MAX_TIME_SLIDER } from "../types/filters";
 
 interface RecipeFilterProps {
     filters: ActiveFilters;
@@ -23,10 +23,12 @@ interface RecipeFilterProps {
 }
 
 const TIME_MARKS = [
-    { value: 15, label: "15m" },
     { value: 30, label: "30m" },
-    { value: 45, label: "45m" },
     { value: 60, label: "60m" },
+    { value: 90, label: "90m" },
+    { value: 120, label: "2h" },
+    { value: 150, label: "2.5h" },
+    { value: MAX_TIME_SLIDER, label: "∞" },
 ];
 
 const CATEGORY_COLORS: Record<keyof RecipeKeywords, string> = {
@@ -50,7 +52,8 @@ export default function RecipeFilter({ filters, onChange }: RecipeFilterProps) {
     };
 
     const handleTimeChange = (_: unknown, value: number | number[]) => {
-        onChange({ ...filters, maxTotalTime: value as number });
+        const v = value as number;
+        onChange({ ...filters, maxTotalTime: v >= MAX_TIME_SLIDER ? Infinity : v });
     };
 
     const activeCount =
@@ -59,7 +62,7 @@ export default function RecipeFilter({ filters, onChange }: RecipeFilterProps) {
         filters.meat.length +
         filters.dairy.length +
         filters.plants.length +
-        (filters.maxTotalTime < 60 ? 1 : 0);
+        (filters.maxTotalTime < Infinity ? 1 : 0);
 
     const handleClear = () => {
         onChange({ ...EMPTY_FILTERS });
@@ -162,14 +165,16 @@ export default function RecipeFilter({ filters, onChange }: RecipeFilterProps) {
                         </Typography>
                         <Box sx={{ px: 1 }}>
                             <Slider
-                                value={filters.maxTotalTime}
+                                value={filters.maxTotalTime === Infinity ? MAX_TIME_SLIDER : filters.maxTotalTime}
                                 onChange={handleTimeChange}
                                 min={10}
-                                max={60}
+                                max={MAX_TIME_SLIDER}
                                 step={5}
                                 marks={TIME_MARKS}
                                 valueLabelDisplay="auto"
-                                valueLabelFormat={(v) => `${v} min`}
+                                valueLabelFormat={(v) =>
+                                    v >= MAX_TIME_SLIDER ? "No limit" : `${v} min`
+                                }
                                 sx={{
                                     color: "#5b9bd5",
                                     "& .MuiSlider-markLabel": {

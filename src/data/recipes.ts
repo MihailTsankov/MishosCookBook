@@ -28,6 +28,7 @@ export interface Recipe {
     workTime: number;
     cookTime: number;
     totalTime: number;
+    urls: string[];
 }
 
 const recipes: Recipe[] = [
@@ -76,6 +77,7 @@ const recipes: Recipe[] = [
         workTime: 30,
         cookTime: 60,
         totalTime: 90,
+        urls: ["https://www.youtube.com/watch?v=OtCCWkLlxws"],
     },
     {
         id: "musaka-v-multi-cooker",
@@ -119,6 +121,7 @@ const recipes: Recipe[] = [
         workTime: 30,
         cookTime: 30,
         totalTime: 60,
+        urls: ["https://www.youtube.com/watch?v=oDxNq_jCcf0"],
     },
     {
         id: "varen-bob",
@@ -156,6 +159,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 180,
         totalTime: 180,
+        urls: [],
     },
     {
         id: "varen-bob-s-meso",
@@ -196,6 +200,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 180,
         totalTime: 180,
+        urls: [],
     },
     {
         id: "leshta",
@@ -233,6 +238,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 60,
         totalTime: 60,
+        urls: [],
     },
     {
         id: "leshta-yahniya",
@@ -276,6 +282,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 60,
         totalTime: 60,
+        urls: ["https://youtu.be/DPx8HyBakSo?si=sT3oyD4C_EYPYUwY"],
     },
     {
         id: "yahniya-ot-chervena-leshta",
@@ -322,6 +329,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: ["https://www.youtube.com/watch?v=caGdv-lMDds&ab_channel=%D0%9A%D1%83%D1%85%D0%BD%D1%8F%D1%82%D0%B0%D0%BD%D0%B0%D0%97%D0%B2%D0%B5%D0%B7%D0%B4%D0%B5%D0%B2-LaCocinaB%C3%BAlgara"],
     },
     {
         id: "pile-s-oriz",
@@ -360,6 +368,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 120,
         totalTime: 120,
+        urls: [],
     },
     {
         id: "pile-s-oriz-v-multikukar",
@@ -394,9 +403,10 @@ const recipes: Recipe[] = [
             "Сервира се с хляб и домати ;)",
         ],
         servings: 0,
-        workTime: 0,
-        cookTime: 30,
-        totalTime: 30,
+        workTime: 20,
+        cookTime: 40,
+        totalTime: 60,
+        urls: ["https://www.youtube.com/watch?v=gBJ9RF2-ZJE"],
     },
     {
         id: "pile-s-oriz-basmati",
@@ -440,6 +450,7 @@ const recipes: Recipe[] = [
         workTime: 30,
         cookTime: 40,
         totalTime: 70,
+        urls: [],
     },
     {
         id: "kremavo-toskansko-pile-s-oriz",
@@ -490,6 +501,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: ["https://www.tiktok.com/@jalalsamfit/video/7236797175223700762"],
     },
     {
         id: "parzhen-gotov-oriz-s-yaytsa-kashkaval-i-mlyako",
@@ -524,6 +536,7 @@ const recipes: Recipe[] = [
         workTime: 20,
         cookTime: 0,
         totalTime: 20,
+        urls: [],
     },
     {
         id: "pile-s-kartofi",
@@ -560,6 +573,10 @@ const recipes: Recipe[] = [
         workTime: 30,
         cookTime: 50,
         totalTime: 80,
+        urls: [
+            "https://www.youtube.com/watch?v=PRIfHps3mHo",
+            "https://www.youtube.com/watch?v=01apDyM1z4U",
+        ],
     },
     {
         id: "butter-chicken",
@@ -618,6 +635,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 180,
         totalTime: 180,
+        urls: ["https://www.youtube.com/watch?v=yR52KCxWW_w&ab_channel=GugaFoods"],
     },
     {
         id: "pileshka-supena-yahniya",
@@ -655,6 +673,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 60,
         totalTime: 60,
+        urls: [],
     },
     {
         id: "pile-frikase-blanquette-de-poulet",
@@ -709,6 +728,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 60,
         totalTime: 60,
+        urls: ["https://www.youtube.com/watch?v=5bxEUVPlp4Q&ab_channel=%D0%9A%D1%83%D1%85%D0%BD%D1%8F%D1%82%D0%B0%D0%BD%D0%B0%D0%97%D0%B2%D0%B5%D0%B7%D0%B4%D0%B5%D0%B2-LaCocinaB%C3%BAlgara"],
     },
     {
         id: "pile-zhulien",
@@ -742,6 +762,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 0,
         totalTime: 0,
+        urls: [],
     },
     {
         id: "zapecheni-kartofi-s-bekon-i-smetana",
@@ -779,6 +800,7 @@ const recipes: Recipe[] = [
         workTime: 30,
         cookTime: 40,
         totalTime: 70,
+        urls: [],
     },
     {
         id: "pecheni-kartofi",
@@ -820,6 +842,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 90,
         totalTime: 90,
+        urls: ["https://www.youtube.com/watch?v=2ODlojhqZ3U&ab_channel=Epicurious"],
     },
     {
         id: "nadupeni-kartofi",
@@ -858,6 +881,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=GeGTY5qxCN8"],
     },
     {
         id: "kartofi-i-morkovi-na-furna",
@@ -890,6 +914,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 90,
         totalTime: 90,
+        urls: [],
     },
     {
         id: "kartofena-yahniya-v-multikukar",
@@ -945,6 +970,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 60,
         totalTime: 60,
+        urls: ["https://www.youtube.com/watch?v=cX7N-hBL3Vo"],
     },
     {
         id: "kartofeni-kyufteta-v-air-fryer",
@@ -991,6 +1017,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: ["https://www.youtube.com/watch?v=APZLg6BANCw"],
     },
     {
         id: "kartofeni-kyufteta-s-shunka-i-kashkaval",
@@ -1035,6 +1062,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: ["https://www.youtube.com/watch?v=jxR6fADnx2w"],
     },
     {
         id: "nyoki",
@@ -1083,6 +1111,10 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 60,
         totalTime: 60,
+        urls: [
+            "https://www.youtube.com/watch?v=mhDJNfV7hjk&t=304",
+            "https://recepti.rozali.com/italianska-kuhnia/noki-kartofeni-hapki-ot-italianskata-kuhnia.html",
+        ],
     },
     {
         id: "kartofeni-bonboni-s-motsarela",
@@ -1119,6 +1151,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/shorts/HsLvlho4cOI"],
     },
     {
         id: "parzheni-kartofi-s-air-fryer",
@@ -1146,6 +1179,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: [],
     },
     {
         id: "kartofeno-pyure",
@@ -1179,6 +1213,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [],
     },
     {
         id: "vareni-pecheni-kartofi",
@@ -1209,6 +1244,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [],
     },
     {
         id: "pileshki-parzholki-s-gabi-na-furna",
@@ -1244,6 +1280,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 90,
         totalTime: 90,
+        urls: [],
     },
     {
         id: "domateno-pile",
@@ -1280,6 +1317,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: [],
     },
     {
         id: "pileshki-drobcheta-v-maslo",
@@ -1310,6 +1348,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.bonapeti.bg/recepti/pileshki-drobcheta-v-maslo/"],
     },
     {
         id: "panirani-kriltsa",
@@ -1337,6 +1376,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 120,
         totalTime: 120,
+        urls: ["https://www.youtube.com/watch?v=aZ5gZHj4jJM&ab_channel=GugaFoods"],
     },
     {
         id: "panirano-pileshko-na-furna",
@@ -1375,6 +1415,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 90,
         totalTime: 90,
+        urls: [],
     },
     {
         id: "panirani-kriltsa-na-furna",
@@ -1411,6 +1452,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://youtu.be/ewW4NJAXiio?si=Xo4Kf3DR3kmF1Hmb"],
     },
     {
         id: "pecheni-kriltsa-ili-butcheta-na-furna",
@@ -1446,6 +1488,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [],
     },
     {
         id: "pile-s-pesto-zavito-v-bekon",
@@ -1478,6 +1521,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [],
     },
     {
         id: "kordon-blyo-cordon-bleu",
@@ -1517,6 +1561,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 60,
         totalTime: 60,
+        urls: ["https://youtu.be/sSshgEWmKMs"],
     },
     {
         id: "pileshki-gardi-na-tigan-sas-sos",
@@ -1542,6 +1587,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://youtu.be/NTBRThwL-2c"],
     },
     {
         id: "pileshki-gardi-v-sladko-kisel-sos",
@@ -1591,6 +1637,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=KuZoWnppv_4&ab_channel=ThatDudeCanCook"],
     },
     {
         id: "parzheno-pile-na-air-fryer",
@@ -1618,6 +1665,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: ["https://www.youtube.com/watch?v=2XFJRZASLsI"],
     },
     {
         id: "perfektni-pileshki-gardi",
@@ -1648,6 +1696,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://vm.tiktok.com/ZSHvLcvJ/"],
     },
     {
         id: "chicken-nuggets",
@@ -1692,6 +1741,10 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 0,
         totalTime: 0,
+        urls: [
+            "https://www.youtube.com/watch?v=njJ8FQXZmcE",
+            "https://www.youtube.com/watch?v=lDOUs75Nm98",
+        ],
     },
     {
         id: "perfektni-pileshki-parzholi-ot-but",
@@ -1711,6 +1764,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=cFz5ARS6wKE"],
     },
     {
         id: "svinsko-na-furna",
@@ -1750,6 +1804,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 180,
         totalTime: 180,
+        urls: [],
     },
     {
         id: "svinski-vratni-zapechatani-i-zapecheni",
@@ -1793,6 +1848,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: [],
     },
     {
         id: "bavno-gotveno-svinsko",
@@ -1830,6 +1886,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 180,
         totalTime: 180,
+        urls: [],
     },
     {
         id: "bavno-gotveno-darpano-svinsko-s-chipotle-mayoneza",
@@ -1875,6 +1932,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 180,
         totalTime: 180,
+        urls: ["https://www.youtube.com/watch?v=An9FA6a8dyc&ab_channel=GordonRamsay"],
     },
     {
         id: "bavno-gotveno-meso-s-vino",
@@ -1909,6 +1967,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 180,
         totalTime: 180,
+        urls: ["https://www.youtube.com/watch?v=7wCeSiOKLqM&ab_channel=ThatDudeCanCook"],
     },
     {
         id: "ramstek-s-luk",
@@ -1947,6 +2006,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 60,
         totalTime: 60,
+        urls: [],
     },
     {
         id: "postni-kyufteta-s-bob-i-nahut",
@@ -1988,6 +2048,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 120,
         totalTime: 120,
+        urls: [],
     },
     {
         id: "postni-kyufteta-s-chervena-leshta",
@@ -2026,6 +2087,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 120,
         totalTime: 120,
+        urls: ["https://www.youtube.com/watch?v=dMugENc-6mg&ab_channel=WeCookVegan"],
     },
     {
         id: "postni-kyufteta-s-leshta-i-morkovi",
@@ -2060,6 +2122,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 120,
         totalTime: 120,
+        urls: [],
     },
     {
         id: "leshteni-kyufteta",
@@ -2102,6 +2165,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 120,
         totalTime: 120,
+        urls: ["https://www.youtube.com/watch?v=X7wxfgpRKrU"],
     },
     {
         id: "zelevi-sarmi-s-kayma",
@@ -2149,6 +2213,7 @@ const recipes: Recipe[] = [
         workTime: 60,
         cookTime: 60,
         totalTime: 120,
+        urls: [],
     },
     {
         id: "lozovi-sarmi-postni",
@@ -2186,6 +2251,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 180,
         totalTime: 180,
+        urls: [],
     },
     {
         id: "vinen-kebap-v-multikukar",
@@ -2230,6 +2296,10 @@ const recipes: Recipe[] = [
         workTime: 20,
         cookTime: 30,
         totalTime: 50,
+        urls: [
+            "https://zvezdev.com/%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82%D0%B0/%D0%92%D0%B8%D0%BD%D0%B5%D0%BD-%D0%BA%D0%B5%D0%B1%D0%B0%D0%BF-%D0%B2-%D0%BC%D1%83%D0%BB%D1%82%D0%B8%D0%BA%D1%83%D0%BA%D1%8A%D1%80",
+            "https://www.youtube.com/watch?v=md0BQpYRuRE",
+        ],
     },
     {
         id: "vinen-kebap",
@@ -2270,6 +2340,7 @@ const recipes: Recipe[] = [
         workTime: 20,
         cookTime: 60,
         totalTime: 80,
+        urls: ["https://www.bonapeti.bg/recepti/vinen-kebap-s-byal-oriz/"],
     },
     {
         id: "zapechatani-svinski-vratni-s-gabi-na-furna",
@@ -2304,6 +2375,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 120,
         totalTime: 120,
+        urls: [],
     },
     {
         id: "syomga-s-hrupkava-korichka",
@@ -2332,6 +2404,10 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [
+            "https://www.youtube.com/watch?v=TwTECqKNNmc",
+            "https://www.youtube.com/watch?v=mxa-4hN1-qM",
+        ],
     },
     {
         id: "varen-oriz",
@@ -2359,6 +2435,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [],
     },
     {
         id: "varen-kafyav-oriz",
@@ -2384,6 +2461,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: [],
     },
     {
         id: "rizoto",
@@ -2425,6 +2503,11 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 120,
         totalTime: 120,
+        urls: [
+            "https://gotvach.bg/n-63084-%D0%A2%D0%B0%D0%B9%D0%BD%D0%B8%D1%82%D0%B5_%D0%BD%D0%B0_%D0%B2%D0%BA%D1%83%D1%81%D0%BD%D0%BE%D1%82%D0%BE_%D1%80%D0%B8%D0%B7%D0%BE%D1%82%D0%BE",
+            "https://www.youtube.com/watch?v=w4dhH9pPmyw&ab_channel=CookieandKate",
+            "https://www.youtube.com/watch?v=eED0pSMBgfA&ab_channel=Epicurious",
+        ],
     },
     {
         id: "spageti-boloneze",
@@ -2469,6 +2552,7 @@ const recipes: Recipe[] = [
         workTime: 45,
         cookTime: 15,
         totalTime: 60,
+        urls: [],
     },
     {
         id: "teleshko-ragu",
@@ -2527,6 +2611,7 @@ const recipes: Recipe[] = [
         workTime: 120,
         cookTime: 180,
         totalTime: 300,
+        urls: ["https://www.youtube.com/watch?v=LWvJFW_nFY4"],
     },
     {
         id: "lazanya-makaroni-boloneze",
@@ -2575,6 +2660,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: [],
     },
     {
         id: "pasta-karbonara",
@@ -2613,6 +2699,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=NqFi90p38N8&ab_channel=Epicurious"],
     },
     {
         id: "orizovi-spageti-sas-zelenchutsi",
@@ -2649,6 +2736,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: ["https://www.youtube.com/watch?v=ARnqszPtRNo"],
     },
     {
         id: "parzheni-kyufteta-s-domaten-sos",
@@ -2682,6 +2770,7 @@ const recipes: Recipe[] = [
         workTime: 60,
         cookTime: 0,
         totalTime: 60,
+        urls: [],
     },
     {
         id: "kyuftentsa-s-domaten-sos",
@@ -2726,6 +2815,10 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: [
+            "https://simplehomeedit.com/recipe/meatball-bake/",
+            "https://www.tiktok.com/@simple.home.edit/video/7249984838130846977?_r=1&_t=ZN-8v58MdQ9x94",
+        ],
     },
     {
         id: "kyufteta-s-byal-sos",
@@ -2769,6 +2862,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 90,
         totalTime: 90,
+        urls: [],
     },
     {
         id: "kyufteta-s-domaten-sos",
@@ -2816,6 +2910,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=XKpdZAw4QCI&ab_channel=%D0%9A%D1%83%D1%85%D0%BD%D1%8F%D1%82%D0%B0%D0%BD%D0%B0%D0%97%D0%B2%D0%B5%D0%B7%D0%B4%D0%B5%D0%B2-LaCocinaB%C3%BAlgara"],
     },
     {
         id: "kyufteta-na-furna",
@@ -2848,6 +2943,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: [],
     },
     {
         id: "parzheni-kyufteta-v-air-fryer",
@@ -2880,6 +2976,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: ["https://recepti.gotvach.bg/r-144531-%D0%9A%D1%8E%D1%84%D1%82%D0%B5%D1%82%D0%B0_%D0%B2_%D0%B5%D1%8A%D1%80_%D1%84%D1%80%D0%B0%D0%B9%D1%8A%D1%80"],
     },
     {
         id: "hrupkavi-tikvichki-na-furna",
@@ -2917,6 +3014,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["http://vbox7.com/play:98083ef825"],
     },
     {
         id: "parzheni-tikvichki",
@@ -2955,6 +3053,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [],
     },
     {
         id: "rultsa-ot-tikvichki-i-sirene",
@@ -2988,6 +3087,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=52Rr6T8iUPQ"],
     },
     {
         id: "spageti-s-krenvirshi",
@@ -3007,6 +3107,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [],
     },
     {
         id: "svinski-filentsa-s-med",
@@ -3043,6 +3144,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["http://vbox7.com/play:c2b7a767f7"],
     },
     {
         id: "marinovani-rebra-na-furna",
@@ -3077,6 +3179,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [],
     },
     {
         id: "rebra-na-furna",
@@ -3118,6 +3221,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [],
     },
     {
         id: "pecheni-nadenitsi",
@@ -3143,6 +3247,7 @@ const recipes: Recipe[] = [
         workTime: 5,
         cookTime: 35,
         totalTime: 40,
+        urls: [],
     },
     {
         id: "yaytsa-po-shveytsarski-krok-madam",
@@ -3177,6 +3282,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=TUWfDPP1w5c"],
     },
     {
         id: "strandzhanki",
@@ -3204,6 +3310,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [],
     },
     {
         id: "marzeliva-banitsa",
@@ -3229,6 +3336,7 @@ const recipes: Recipe[] = [
         workTime: 5,
         cookTime: 5,
         totalTime: 10,
+        urls: [],
     },
     {
         id: "sandvichi",
@@ -3255,6 +3363,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [],
     },
     {
         id: "sloppy-joes",
@@ -3291,6 +3400,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [],
     },
     {
         id: "burito",
@@ -3327,6 +3437,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://vm.tiktok.com/ZGJb2ULuH/"],
     },
     {
         id: "dyuner",
@@ -3362,6 +3473,10 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: [
+            "https://www.bonapeti.bg/recepti/domashen-pileshki-dyuner/",
+            "https://www.youtube.com/watch?v=mquzV-OGliM&ab_channel=%D0%9A%D1%83%D1%85%D0%BD%D1%8F%D1%82%D0%B0%D0%BD%D0%B0%D0%97%D0%B2%D0%B5%D0%B7%D0%B4%D0%B5%D0%B2-LaCocinaB%C3%BAlgara",
+        ],
     },
     {
         id: "mesni-purichki",
@@ -3385,6 +3500,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [],
     },
     {
         id: "lavash-kebab",
@@ -3428,6 +3544,7 @@ const recipes: Recipe[] = [
         workTime: 15,
         cookTime: 15,
         totalTime: 30,
+        urls: ["undefined"],
     },
     {
         id: "domashna-pitka-i-pitki-za-hamburgeri",
@@ -3465,6 +3582,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["http://vbox7.com/play:36868f2ef7"],
     },
     {
         id: "palnozarnest-hlyab",
@@ -3499,6 +3617,10 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [
+            "https://prikaznakuhnq.com/%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%B5%D0%BD-%D0%BF%D1%8A%D0%BB%D0%BD%D0%BE%D0%B7%D1%8A%D1%80%D0%BD%D0%B5%D1%81%D1%82-%D1%85%D0%BB%D1%8F%D0%B1/",
+            "https://youtu.be/fypCVHqcXlA",
+        ],
     },
     {
         id: "bolyarska-pita",
@@ -3544,6 +3666,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 120,
         totalTime: 120,
+        urls: ["https://www.youtube.com/watch?v=dBsSMiWtf7o&ab_channel=%D0%9A%D1%83%D1%85%D0%BD%D1%8F%D1%82%D0%B0%D0%BD%D0%B0%D0%97%D0%B2%D0%B5%D0%B7%D0%B4%D0%B5%D0%B2-LaCocinaB%C3%BAlgara"],
     },
     {
         id: "vita-banitsa",
@@ -3582,6 +3705,7 @@ const recipes: Recipe[] = [
         workTime: 20,
         cookTime: 60,
         totalTime: 80,
+        urls: ["https://www.youtube.com/watch?v=saCkssN-jp4"],
     },
     {
         id: "garchena-banitsa",
@@ -3617,6 +3741,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=KohsTPGm1VI&ab_channel=%D0%9A%D1%83%D1%85%D0%BD%D1%8F%D1%82%D0%B0%D0%BD%D0%B0%D0%97%D0%B2%D0%B5%D0%B7%D0%B4%D0%B5%D0%B2-LaCocinaB%C3%BAlgara"],
     },
     {
         id: "viti-buterki-s-bekon",
@@ -3647,6 +3772,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 0,
         totalTime: 0,
+        urls: ["https://www.youtube.com/watch?v=S4gA00BCnK0"],
     },
     {
         id: "testo-za-pitsa",
@@ -3676,6 +3802,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=9f9-xTcKzZo"],
     },
     {
         id: "domashna-pitsa",
@@ -3720,6 +3847,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [],
     },
     {
         id: "fokacha",
@@ -3764,6 +3892,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 3600,
         totalTime: 3600,
+        urls: ["https://www.tiktok.com/@_lacebakes_/video/7328681561975541025"],
     },
     {
         id: "bageti",
@@ -3796,6 +3925,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 3600,
         totalTime: 3600,
+        urls: ["https://www.youtube.com/watch?v=Z-husjZkxHw"],
     },
     {
         id: "pirozhki-sas-sirene",
@@ -3831,6 +3961,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: ["https://www.youtube.com/watch?v=kFGY7dfPTrI&ab_channel=%D0%9A%D1%83%D1%85%D0%BD%D1%8F%D1%82%D0%B0%D0%BD%D0%B0%D0%97%D0%B2%D0%B5%D0%B7%D0%B4%D0%B5%D0%B2-LaCocinaB%C3%BAlgara"],
     },
     {
         id: "parlenki-sas-sirene",
@@ -3865,6 +3996,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["http://vbox7.com/play:1e59ec760c"],
     },
     {
         id: "parlenki-na-furna",
@@ -3905,6 +4037,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=mnUKwoMCpqk&ab_channel=Gotvach.bg"],
     },
     {
         id: "puhkavi-biskviti-pitchitsi",
@@ -3945,6 +4078,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=RKV48rUCOqg&ab_channel=BincyChris"],
     },
     {
         id: "pitchitsi-snezhanka",
@@ -3980,6 +4114,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=RKV48rUCOqg&ab_channel=BincyChris"],
     },
     {
         id: "sirenki",
@@ -4017,6 +4152,7 @@ const recipes: Recipe[] = [
         workTime: 15,
         cookTime: 15,
         totalTime: 30,
+        urls: ["https://www.youtube.com/watch?v=DqWA5fDz0jk"],
     },
     {
         id: "sirenki-dobrudzhanki",
@@ -4057,6 +4193,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=gX0zepdfXHA"],
     },
     {
         id: "pileshka-supa-sas-zastroyka",
@@ -4101,6 +4238,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 120,
         totalTime: 120,
+        urls: [],
     },
     {
         id: "zelenchukova-krem-supa",
@@ -4147,6 +4285,7 @@ const recipes: Recipe[] = [
         workTime: 30,
         cookTime: 15,
         totalTime: 45,
+        urls: [],
     },
     {
         id: "domatena-krem-supa",
@@ -4192,6 +4331,10 @@ const recipes: Recipe[] = [
         workTime: 30,
         cookTime: 30,
         totalTime: 60,
+        urls: [
+            "https://www.tiktok.com/@notorious_foodie/video/7305842125847973152",
+            "https://www.youtube.com/watch?v=Q96I_lUbx_Y&ab_channel=GordonRamsayHell%27sKitchen",
+        ],
     },
     {
         id: "kartofena-krem-supa",
@@ -4234,6 +4377,7 @@ const recipes: Recipe[] = [
         workTime: 30,
         cookTime: 15,
         totalTime: 45,
+        urls: ["https://www.youtube.com/watch?v=QJYAqH9f1ts"],
     },
     {
         id: "supa-topcheta",
@@ -4288,6 +4432,7 @@ const recipes: Recipe[] = [
         workTime: 30,
         cookTime: 50,
         totalTime: 80,
+        urls: ["https://www.youtube.com/watch?v=y-jcte9_gLI"],
     },
     {
         id: "gabena-supa",
@@ -4333,6 +4478,7 @@ const recipes: Recipe[] = [
         workTime: 30,
         cookTime: 15,
         totalTime: 45,
+        urls: ["https://www.youtube.com/watch?v=0QSqDnYmPjg"],
     },
     {
         id: "pileshki-bulyon",
@@ -4352,6 +4498,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 120,
         totalTime: 120,
+        urls: ["https://youtu.be/cTR-_If_AiI?si=Mw8SbgI_Z_CdyNaM"],
     },
     {
         id: "barkani-yaytsa",
@@ -4381,6 +4528,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=9-ODDKHRVkA&ab_channel=Epicurious"],
     },
     {
         id: "yaycheni-mafini-egg-muffins",
@@ -4423,6 +4571,10 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: [
+            "https://www.dietdoctor.com/recipes/keto-egg-muffins",
+            "https://www.youtube.com/watch?v=2_y0HultmJs&ab_channel=DietDoctor",
+        ],
     },
     {
         id: "keto-pileshki-burger-keto-chicken-burger",
@@ -4463,6 +4615,10 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: [
+            "https://www.dietdoctor.com/recipes/keto-chicken-burger-with-jalapeno-aioli",
+            "https://www.youtube.com/watch?v=k-GqP-O8A20&ab_channel=DietDoctor",
+        ],
     },
     {
         id: "yaytsa-benedikt",
@@ -4508,6 +4664,12 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 60,
         totalTime: 60,
+        urls: [
+            "https://youtu.be/gBJjRYk0yC0",
+            "https://youtu.be/UusmRYeekc0",
+            "https://youtu.be/LpalC9v8ffQ?si=VXyvf4KYDPe9MBni&t=650",
+            "https://www.youtube.com/watch?v=6bDoFO7NgI8&ab_channel=BrianLagerstrom",
+        ],
     },
     {
         id: "salata-s-grozde-i-sirena",
@@ -4545,6 +4707,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 0,
         totalTime: 0,
+        urls: [],
     },
     {
         id: "salata-tsezar",
@@ -4588,6 +4751,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: ["https://recepti.gotvach.bg/r-59535-%D0%A1%D0%B0%D0%BB%D0%B0%D1%82%D0%B0_%D0%A6%D0%B5%D0%B7%D0%B0%D1%80_%D1%81_%D0%BF%D0%B8%D0%BB%D0%B5%D1%88%D0%BA%D0%BE"],
     },
     {
         id: "zelena-salata-s-riba-ton",
@@ -4616,6 +4780,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=aoyhzZ3LrHY"],
     },
     {
         id: "salata-s-yaycheni-spageti",
@@ -4660,6 +4825,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [],
     },
     {
         id: "salata-chikenita",
@@ -4691,6 +4857,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [],
     },
     {
         id: "makaroni-na-furna-soleni",
@@ -4726,6 +4893,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 90,
         totalTime: 90,
+        urls: [],
     },
     {
         id: "mac-and-cheese",
@@ -4777,6 +4945,11 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 90,
         totalTime: 90,
+        urls: [
+            "https://youtu.be/EMcN2ZzEXGQ",
+            "https://youtu.be/605DPLl8Gqg",
+            "https://youtu.be/Hvel0_s4xcY?si=vXTPPavJ1A2q1slq",
+        ],
     },
     {
         id: "pile-s-makaroni",
@@ -4822,6 +4995,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 90,
         totalTime: 90,
+        urls: ["https://www.youtube.com/watch?v=XdXAB40YXjI&ab_channel=%D0%9A%D1%83%D1%85%D0%BD%D1%8F%D1%82%D0%B0%D0%BD%D0%B0%D0%97%D0%B2%D0%B5%D0%B7%D0%B4%D0%B5%D0%B2-LaCocinaB%C3%BAlgara"],
     },
     {
         id: "klasicheski-palachinki",
@@ -4861,6 +5035,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: ["https://www.youtube.com/watch?v=FfGjDceNRVo&ab_channel=PastryLivingwithAya"],
     },
     {
         id: "plovdivski-palachinki",
@@ -4895,6 +5070,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: [],
     },
     {
         id: "amerikanski-palachinki",
@@ -4938,6 +5114,10 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: [
+            "https://www.youtube.com/watch?v=4QcK3MXl9sg&ab_channel=BrianLagerstrom",
+            "https://www.youtube.com/watch?v=BPl7D20F2mE&ab_channel=Tasty",
+        ],
     },
     {
         id: "bananovi-palachinki",
@@ -4957,6 +5137,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 0,
         totalTime: 0,
+        urls: [],
     },
     {
         id: "gofreti-klasicheski",
@@ -4995,6 +5176,7 @@ const recipes: Recipe[] = [
         workTime: 10,
         cookTime: 20,
         totalTime: 30,
+        urls: ["https://www.supichka.com/%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82%D0%B0/898/%D0%BA%D0%BB%D0%B0%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0-%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82%D0%B0-%D0%B7%D0%B0-%D0%B3%D0%BE%D1%84%D1%80%D0%B5%D1%82%D0%B8"],
     },
     {
         id: "buhti",
@@ -5029,6 +5211,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=Inl4A_GUcew"],
     },
     {
         id: "lesni-buhtichki",
@@ -5066,6 +5249,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=QOeR4SrXIcI&ab_channel=%D0%9A%D1%83%D1%85%D0%BD%D1%8F%D1%82%D0%B0%D0%BD%D0%B0%D0%97%D0%B2%D0%B5%D0%B7%D0%B4%D0%B5%D0%B2-LaCocinaB%C3%BAlgara"],
     },
     {
         id: "parzheni-filiyki-french-toast-s-kozunak",
@@ -5102,6 +5286,10 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [
+            "https://youtu.be/1nqpTkHpYyE",
+            "https://youtu.be/yaiReysXdCQ?si=5aqbiYfiODIt8XRF",
+        ],
     },
     {
         id: "kozunacheni-pecheni-parzheni-filiyki",
@@ -5138,6 +5326,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [],
     },
     {
         id: "puding-s-mango-i-chia",
@@ -5173,6 +5362,10 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [
+            "https://www.bonapeti.bg/recepti/puding-s-mango-i-chia/",
+            "https://www.pinterest.com/pin/1094445146929923125/",
+        ],
     },
     {
         id: "shokoladovi-shisharki",
@@ -5210,6 +5403,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.tiktok.com/@_bellabakes/video/7300351247897414943"],
     },
     {
         id: "shokoladovi-kurabiyki-s-parchentsa-shokolad",
@@ -5250,6 +5444,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 0,
         totalTime: 0,
+        urls: ["https://www.youtube.com/watch?v=116Jj3_8rkY&ab_channel=ScientificallySweet"],
     },
     {
         id: "shokoladovi-kurabiyki-s-3-sastavki",
@@ -5283,6 +5478,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=C2xQ-XmRx7g&ab_channel=ShaswathiCooking"],
     },
     {
         id: "zaharni-kakaovi-kurabiyki",
@@ -5320,6 +5516,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=6KH_w53ZuYQ&ab_channel=Epicurious"],
     },
     {
         id: "negarche-na-kiki",
@@ -5358,6 +5555,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 0,
         totalTime: 0,
+        urls: [],
     },
     {
         id: "brauni-na-tigan",
@@ -5404,6 +5602,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=Lm53P_tUBzU&ab_channel=GordonRamsay"],
     },
     {
         id: "biskvitena-torta-s-kiselo-mlyako",
@@ -5441,6 +5640,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=mWN3S5xWjbY"],
     },
     {
         id: "biskvitena-torta-s-nisheste",
@@ -5477,6 +5677,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=LQFoFpdAs6g"],
     },
     {
         id: "guakamole",
@@ -5514,6 +5715,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 0,
         totalTime: 0,
+        urls: [],
     },
     {
         id: "pesto-dzhenoveze",
@@ -5548,6 +5750,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://youtu.be/LpalC9v8ffQ?si=uXbf94MQOew8cKPF&t=567"],
     },
     {
         id: "sos-holandez",
@@ -5581,6 +5784,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://youtu.be/gBJjRYk0yC0"],
     },
     {
         id: "sos-beshamel",
@@ -5612,6 +5816,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://youtu.be/LpalC9v8ffQ?si=L8Ha_BpGPBK6vEVk&t=44"],
     },
     {
         id: "sos-greyvi",
@@ -5643,6 +5848,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=Yl-2LikZE1Y&ab_channel=Epicurious"],
     },
     {
         id: "mayoneza",
@@ -5673,6 +5879,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 0,
         totalTime: 0,
+        urls: ["https://www.youtube.com/watch?v=LpkloYyVRGM&ab_channel=Gotvach.bg"],
     },
     {
         id: "mayoneza-s-shafran",
@@ -5698,6 +5905,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://youtu.be/jJwKLiKQP7Q"],
     },
     {
         id: "humus",
@@ -5735,6 +5943,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://farmhopping.com/b/blog/2015/06/04/%D0%BA%D0%B0%D0%BA-%D0%B4%D0%B0-%D0%BF%D1%80%D0%B8%D0%B3%D0%BE%D1%82%D0%B2%D0%B8%D1%82%D0%B5-%D0%BF%D0%B5%D1%80%D1%84%D0%B5%D0%BA%D1%82%D0%BD%D0%B8%D1%8F-%D1%85%D1%83%D0%BC%D1%83%D1%81/"],
     },
     {
         id: "karameliziran-luk",
@@ -5754,6 +5963,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: ["https://youtu.be/v-bhA0GcoLM?si=f-MF3_zM8mPfcT3A"],
     },
     {
         id: "poshirani-yaytsa",
@@ -5773,6 +5983,10 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [
+            "https://youtu.be/mrq3iZcvHAw",
+            "https://www.facebook.com/reel/346294828168140",
+        ],
     },
     {
         id: "brokoli-na-furna",
@@ -5803,6 +6017,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [],
     },
     {
         id: "bryukselsko-zele-na-furna",
@@ -5831,6 +6046,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 30,
         totalTime: 30,
+        urls: ["https://www.youtube.com/watch?v=dCQpT9FZ7B8&ab_channel=ThatDudeCanCook"],
     },
     {
         id: "rosemary-salt-if-you-know-you-know",
@@ -5850,6 +6066,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://vm.tiktok.com/ZM8x6fkh6/"],
     },
     {
         id: "tri-salatni-dresingi",
@@ -5869,6 +6086,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=FECzUhbT2l0&ab_channel=Epicurious"],
     },
     {
         id: "pet-salatni-dresingi",
@@ -5888,6 +6106,10 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: [
+            "https://www.youtube.com/watch?v=Xv5xbJLw--Q&ab_channel=BrianLagerstrom",
+            "https://youtu.be/RF9aLBuW2-0?si=_ShZk469QcBLAw0p",
+        ],
     },
     {
         id: "vinegret",
@@ -5915,6 +6137,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://cookieandkate.com/how-to-make-vinaigrette-plus-variations/"],
     },
     {
         id: "tochene-i-opravyane-na-nozh-s-kamak-za-tochene",
@@ -5934,6 +6157,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 0,
         totalTime: 0,
+        urls: ["https://www.youtube.com/watch?v=PHsKLoLMQcA"],
     },
     {
         id: "kak-da-rezhem-vsyako-meso",
@@ -5953,6 +6177,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 0,
         totalTime: 0,
+        urls: ["https://www.youtube.com/watch?v=TxBQM0NKreg&ab_channel=Epicurious"],
     },
     {
         id: "kak-da-rezhem-vsyako-sirene",
@@ -5972,6 +6197,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 0,
         totalTime: 0,
+        urls: ["https://www.youtube.com/watch?v=fTgm36y884c&ab_channel=Epicurious"],
     },
     {
         id: "vazhni-umeniya-s-nozh-za-vseki-gotvach",
@@ -5991,6 +6217,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 0,
         totalTime: 0,
+        urls: ["https://www.youtube.com/watch?v=-al-bs737fw&ab_channel=BrianLagerstrom"],
     },
     {
         id: "izpolzvane-na-tigani-ot-nerazhdaema-stomana",
@@ -6010,6 +6237,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 0,
         totalTime: 0,
+        urls: ["https://www.youtube.com/watch?v=z9M8GFfRdBo&ab_channel=Let%E2%80%99sEat"],
     },
     {
         id: "marzelivki-test",
@@ -6029,6 +6257,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 0,
         totalTime: 0,
+        urls: ["http://vbox7.com/play:dd4d2a5c68"],
     },
     {
         id: "vegan-mayoneza-sas-gorchitsa-test",
@@ -6048,6 +6277,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.bonapeti.bg/recepti/veganska-mayoneza/"],
     },
     {
         id: "lavash-burger-test",
@@ -6067,6 +6297,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.tiktok.com/@busezeyneppp/video/7193347094759902469"],
     },
     {
         id: "mini-pitsi-hapki-test",
@@ -6086,6 +6317,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["http://vbox7.com/play:fa7831de4f"],
     },
     {
         id: "zelenchukov-chips-test",
@@ -6105,6 +6337,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["http://vbox7.com/play:431e81bdb8"],
     },
     {
         id: "usukani-prachitsi-s-kashkaval-test",
@@ -6124,6 +6357,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["http://vbox7.com/play:3744ed695e"],
     },
     {
         id: "kartofi-po-shvedski-test",
@@ -6143,6 +6377,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.vbox7.com/play:1dd815e879"],
     },
     {
         id: "usukani-hotdozi-test",
@@ -6162,6 +6397,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.youtube.com/watch?v=xEHNwvIqOYs"],
     },
     {
         id: "polezni-barzinki-test",
@@ -6181,6 +6417,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.facebook.com/officialgoodful/videos/1666644846739308/"],
     },
     {
         id: "grilled-cheese-roll-ups-test",
@@ -6200,6 +6437,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.tiktok.com/@somethingaboutsandwiches/video/6981495859779276037"],
     },
     {
         id: "mnogo-puhkava-pitka-test",
@@ -6219,6 +6457,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 15,
         totalTime: 15,
+        urls: ["https://www.instagram.com/p/CTztkaUK9yk/?utm_medium=share_sheet"],
     },
     {
         id: "syomga-sas-sinyo-sirene-test",
@@ -6251,6 +6490,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 0,
         totalTime: 0,
+        urls: [],
     },
     {
         id: "svezha-salata-s-izvara-test",
@@ -6270,6 +6510,7 @@ const recipes: Recipe[] = [
         workTime: 0,
         cookTime: 0,
         totalTime: 0,
+        urls: ["http://vbox7.com/play:ab959d5f62"],
     },
 ];
 

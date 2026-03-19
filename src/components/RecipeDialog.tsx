@@ -6,6 +6,7 @@ import {
     Dialog,
     DialogContent,
     IconButton,
+    Link,
     List,
     ListItem,
     ListItemIcon,
@@ -17,6 +18,7 @@ import {
 } from "@mui/material";
 import type { TransitionProps } from "@mui/material/transitions";
 import CloseIcon from "@mui/icons-material/Close";
+import LinkIcon from "@mui/icons-material/Link";
 import LocalDiningIcon from "@mui/icons-material/LocalDining";
 import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
 import PeopleIcon from "@mui/icons-material/People";
@@ -450,6 +452,59 @@ export default function RecipeDialog() {
                             </ListItem>
                         ))}
                     </List>
+
+                    {/* Links */}
+                    {recipe.urls.length > 0 && (
+                        <>
+                            <Typography
+                                variant="h5"
+                                gutterBottom
+                                sx={{ mt: 4 }}
+                            >
+                                Links
+                            </Typography>
+                            <List dense>
+                                {recipe.urls.map((url) => {
+                                    let label: string;
+                                    try {
+                                        label = new URL(url).hostname.replace(
+                                            /^www\./,
+                                            "",
+                                        );
+                                    } catch {
+                                        label = url;
+                                    }
+                                    return (
+                                        <ListItem key={url} sx={{ py: 0.3 }}>
+                                            <ListItemIcon
+                                                sx={{ minWidth: 28 }}
+                                            >
+                                                <LinkIcon
+                                                    sx={{
+                                                        fontSize: 18,
+                                                        color: "primary.main",
+                                                    }}
+                                                />
+                                            </ListItemIcon>
+                                            <ListItemText
+                                                primary={
+                                                    <Link
+                                                        href={url}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        underline="hover"
+                                                        color="primary.dark"
+                                                    >
+                                                        {label}
+                                                    </Link>
+                                                }
+                                            />
+                                        </ListItem>
+                                    );
+                                })}
+                            </List>
+                        </>
+                    )}
                 </Container>
             </DialogContent>
         </Dialog>

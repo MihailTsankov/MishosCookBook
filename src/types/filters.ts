@@ -4,6 +4,8 @@ export type ActiveFilters = Record<keyof RecipeKeywords, string[]> & {
     maxTotalTime: number;
 };
 
+export const MAX_TIME_SLIDER = 180;
+
 export const EMPTY_FILTERS: ActiveFilters = {
     type: [],
     how: [],
@@ -11,5 +13,5 @@ export const EMPTY_FILTERS: ActiveFilters = {
     meat: [],
     dairy: [],
     plants: [],
-    maxTotalTime: 60,
+    maxTotalTime: Infinity,
 };
