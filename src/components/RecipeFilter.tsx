@@ -8,6 +8,8 @@ import {
     Chip,
     Slider,
     Stack,
+    ToggleButton,
+    ToggleButtonGroup,
     Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -15,7 +17,7 @@ import FilterListIcon from "@mui/icons-material/FilterList";
 import { useTranslation } from "react-i18next";
 import type { RecipeKeywords } from "../data/recipes";
 import { FILTER_CATEGORIES, getAllFilterOptions } from "../data/recipes";
-import type { ActiveFilters } from "../types/filters";
+import type { ActiveFilters, FilterMode } from "../types/filters";
 import { EMPTY_FILTERS, MAX_TIME_SLIDER } from "../types/filters";
 
 interface RecipeFilterProps {
@@ -61,6 +63,12 @@ export default function RecipeFilter({ filters, onChange }: RecipeFilterProps) {
         onChange({ ...filters, maxTotalTime: sliderValue >= MAX_TIME_SLIDER ? Infinity : sliderValue });
     };
 
+    const handleFilterModeChange = (_changeEvent: unknown, newMode: FilterMode | null) => {
+        if (newMode !== null) {
+            onChange({ ...filters, filterMode: newMode });
+        }
+    };
+
     const activeCount =
         filters.type.length +
         filters.how.length +
@@ -88,25 +96,61 @@ export default function RecipeFilter({ filters, onChange }: RecipeFilterProps) {
             >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
-                    sx={{ px: 3, py: 1 }}
+                    slots={{ content: "div" }}
+                    sx={{
+                        px: 3,
+                        py: 1,
+                        "& .MuiAccordionSummary-content": { flexGrow: 1 },
+                        "& .MuiAccordionSummary-expandIconWrapper": { ml: 1 },
+                    }}
                 >
-                    <Stack direction="row" spacing={1} alignItems="center">
-                        <FilterListIcon sx={{ color: "primary.main" }} />
-                        <Typography fontWeight={600}>{translate("filter.title")}</Typography>
-                        {activeCount > 0 && (
-                            <Chip
-                                label={activeCount}
-                                size="small"
-                                sx={{
+                    <Box sx={{ display: "flex", alignItems: "center", width: "100%" }}>
+                        <Stack direction="row" spacing={1} alignItems="center">
+                            <FilterListIcon sx={{ color: "primary.main" }} />
+                            <Typography fontWeight={600}>{translate("filter.title")}</Typography>
+                            {activeCount > 0 && (
+                                <Chip
+                                    label={activeCount}
+                                    size="small"
+                                    sx={{
+                                        bgcolor: "primary.main",
+                                        color: "#fff",
+                                        fontWeight: 700,
+                                        height: 22,
+                                        minWidth: 22,
+                                    }}
+                                />
+                            )}
+                        </Stack>
+                        <Box sx={{ flex: 1 }} />
+                        <ToggleButtonGroup
+                            value={filters.filterMode}
+                            exclusive
+                            onChange={handleFilterModeChange}
+                            size="small"
+                            onClick={(clickEvent) => clickEvent.stopPropagation()}
+                            sx={{
+                                flexShrink: 0,
+                                "& .MuiToggleButton-root": {
+                                    px: 1,
+                                    py: 0.1,
+                                    fontSize: "0.7rem",
+                                    fontWeight: 600,
+                                    textTransform: "none",
+                                    lineHeight: 1.5,
+                                    border: "1px solid #ddd",
+                                },
+                                "& .MuiToggleButton-root.Mui-selected": {
                                     bgcolor: "primary.main",
                                     color: "#fff",
-                                    fontWeight: 700,
-                                    height: 22,
-                                    minWidth: 22,
-                                }}
-                            />
-                        )}
-                    </Stack>
+                                    "&:hover": { bgcolor: "primary.dark" },
+                                },
+                            }}
+                        >
+                            <ToggleButton value="AND">AND</ToggleButton>
+                            <ToggleButton value="OR">OR</ToggleButton>
+                        </ToggleButtonGroup>
+                    </Box>
                 </AccordionSummary>
 
                 <AccordionDetails sx={{ px: 3, pb: 3 }}>

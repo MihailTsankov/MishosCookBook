@@ -14,18 +14,21 @@ export default function RecipeGrid() {
     const [filters, setFilters] = useState<ActiveFilters>({ ...EMPTY_FILTERS });
 
     const filteredRecipes = useMemo(() => {
+        const isAndMode = filters.filterMode === "AND";
+
         return recipes.filter((recipe) => {
-            // Check each keyword category: recipe must match at least one selected value
             for (const { key } of FILTER_CATEGORIES) {
-                const selected = filters[key];
-                if (selected.length > 0) {
-                    const recipeValues = recipe.keywords[key];
-                    if (!selected.some((selectedValue) => recipeValues.includes(selectedValue))) {
+                const selectedValues = filters[key];
+                if (selectedValues.length > 0) {
+                    const recipeKeywordValues = recipe.keywords[key];
+                    const categoryMatches = isAndMode
+                        ? selectedValues.every((selectedValue) => recipeKeywordValues.includes(selectedValue))
+                        : selectedValues.some((selectedValue) => recipeKeywordValues.includes(selectedValue));
+                    if (!categoryMatches) {
                         return false;
                     }
                 }
             }
-            // Check time
             return recipe.totalTime <= filters.maxTotalTime;
         });
     }, [filters]);
