@@ -10,6 +10,7 @@ import {
 import LocalDiningIcon from "@mui/icons-material/LocalDining";
 import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
 import TimerIcon from "@mui/icons-material/Timer";
+import { useTranslation } from "react-i18next";
 import { useNavigate, useLocation } from "react-router-dom";
 import type { Recipe } from "../data/recipes";
 import { flattenKeywords } from "../data/recipes";
@@ -19,6 +20,7 @@ interface RecipeCardProps {
 }
 
 export default function RecipeCard({ recipe }: RecipeCardProps) {
+    const { t } = useTranslation();
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -72,7 +74,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
                     >
                         <Chip
                             icon={<LocalDiningIcon />}
-                            label={`${recipe.workTime} min`}
+                            label={t("filter.minutesShort", { count: recipe.workTime })}
                             size="small"
                             variant="outlined"
                             sx={{
@@ -82,7 +84,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
                         />
                         <Chip
                             icon={<LocalFireDepartmentIcon />}
-                            label={`${recipe.cookTime} min`}
+                            label={t("filter.minutesShort", { count: recipe.cookTime })}
                             size="small"
                             variant="outlined"
                             sx={{
@@ -92,7 +94,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
                         />
                         <Chip
                             icon={<TimerIcon />}
-                            label={`${recipe.totalTime} min`}
+                            label={t("filter.minutesShort", { count: recipe.totalTime })}
                             size="small"
                             variant="outlined"
                             sx={{

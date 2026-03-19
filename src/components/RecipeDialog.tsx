@@ -25,6 +25,7 @@ import PeopleIcon from "@mui/icons-material/People";
 import TimerIcon from "@mui/icons-material/Timer";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import { forwardRef } from "react";
+import { useTranslation } from "react-i18next";
 import { useNavigate, useParams } from "react-router-dom";
 import recipes from "../data/recipes";
 import { flattenKeywords } from "../data/recipes";
@@ -37,6 +38,7 @@ const Transition = forwardRef(function Transition(
 });
 
 export default function RecipeDialog() {
+    const { t } = useTranslation();
     const { id } = useParams<{ id: string }>();
     const navigate = useNavigate();
     const recipe = recipes.find((r) => r.id === id);
@@ -66,7 +68,7 @@ export default function RecipeDialog() {
                             <CloseIcon />
                         </IconButton>
                         <Typography sx={{ ml: 2, flex: 1 }} variant="h6">
-                            Recipe Not Found
+                            {t("recipe.notFound")}
                         </Typography>
                     </Toolbar>
                 </AppBar>
@@ -78,7 +80,7 @@ export default function RecipeDialog() {
                     }}
                 >
                     <Typography variant="h5" color="text.secondary">
-                        Sorry, we couldn't find that recipe.
+                        {t("recipe.notFoundMessage")}
                     </Typography>
                 </DialogContent>
             </Dialog>
@@ -365,7 +367,7 @@ export default function RecipeDialog() {
                     >
                         <Chip
                             icon={<LocalDiningIcon />}
-                            label={`Work: ${recipe.workTime} min`}
+                            label={t("recipe.work", { count: recipe.workTime })}
                             sx={{
                                 bgcolor: "primary.light",
                                 color: "#fff",
@@ -374,7 +376,7 @@ export default function RecipeDialog() {
                         />
                         <Chip
                             icon={<LocalFireDepartmentIcon />}
-                            label={`Cook: ${recipe.cookTime} min`}
+                            label={t("recipe.cook", { count: recipe.cookTime })}
                             sx={{
                                 bgcolor: "secondary.main",
                                 color: "#fff",
@@ -383,7 +385,7 @@ export default function RecipeDialog() {
                         />
                         <Chip
                             icon={<TimerIcon />}
-                            label={`Total: ${recipe.totalTime} min`}
+                            label={t("recipe.total", { count: recipe.totalTime })}
                             variant="outlined"
                             sx={{
                                 borderColor: "#5b9bd5",
@@ -394,7 +396,7 @@ export default function RecipeDialog() {
                         />
                         <Chip
                             icon={<PeopleIcon />}
-                            label={`Serves ${recipe.servings}`}
+                            label={t("recipe.serves", { count: recipe.servings })}
                             variant="outlined"
                             sx={{ fontWeight: 500 }}
                         />
@@ -402,7 +404,7 @@ export default function RecipeDialog() {
 
                     {/* Ingredients */}
                     <Typography variant="h5" gutterBottom sx={{ mt: 2 }}>
-                        Ingredients
+                        {t("recipe.ingredients")}
                     </Typography>
                     <List dense>
                         {recipe.ingredients.map((item, i) => (
@@ -422,7 +424,7 @@ export default function RecipeDialog() {
 
                     {/* Instructions */}
                     <Typography variant="h5" gutterBottom sx={{ mt: 4 }}>
-                        Instructions
+                        {t("recipe.instructions")}
                     </Typography>
                     <List>
                         {recipe.instructions.map((step, i) => (
@@ -461,7 +463,7 @@ export default function RecipeDialog() {
                                 gutterBottom
                                 sx={{ mt: 4 }}
                             >
-                                Links
+                                {t("recipe.links")}
                             </Typography>
                             <List dense>
                                 {recipe.urls.map((url) => {

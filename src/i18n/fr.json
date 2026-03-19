@@ -1,0 +1,40 @@
+{
+    "cookbook": {
+        "title": "Livre de recettes",
+        "subtitle": "Une collection de nos recettes préférées — cliquez sur un plat pour voir la recette complète.",
+        "noResults": "Aucune recette ne correspond à vos filtres.",
+        "noResultsHint": "Essayez de supprimer certains filtres pour voir plus de résultats."
+    },
+    "filter": {
+        "title": "Filtres",
+        "maxTime": "Temps total maximum",
+        "noLimit": "Sans limite",
+        "clearAll": "Effacer tous les filtres",
+        "minutesShort": "{{count}} min",
+        "timeMark30": "30m",
+        "timeMark60": "1h",
+        "timeMark90": "1.5h",
+        "timeMark120": "2h",
+        "timeMark150": "2.5h",
+        "timeMarkMax": "∞",
+        "categories": {
+            "type": "Type",
+            "how": "Méthode",
+            "diet": "Régime",
+            "meat": "Viande",
+            "dairy": "Produits laitiers",
+            "plants": "Végétaux"
+        }
+    },
+    "recipe": {
+        "notFound": "Recette introuvable",
+        "notFoundMessage": "Désolé, nous n’avons pas trouvé cette recette.",
+        "work": "Préparation : {{count}} min",
+        "cook": "Cuisson : {{count}} min",
+        "total": "Total : {{count}} min",
+        "serves": "Pour {{count}} personnes",
+        "ingredients": "Ingrédients",
+        "instructions": "Instructions",
+        "links": "Liens"
+    }
+}

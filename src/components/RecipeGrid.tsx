@@ -1,14 +1,16 @@
 import { useMemo, useState } from "react";
 import { Box, Container, Typography } from "@mui/material";
 import RestaurantMenuIcon from "@mui/icons-material/RestaurantMenu";
-import recipes from "../data/recipes";
-import { FILTER_CATEGORIES } from "../data/recipes";
+import { useTranslation } from "react-i18next";
+import recipes, { FILTER_CATEGORIES } from "../data/recipes";
 import RecipeCard from "./RecipeCard";
 import RecipeFilter from "./RecipeFilter";
+import LanguageSwitcher from "./LanguageSwitcher";
 import type { ActiveFilters } from "../types/filters";
 import { EMPTY_FILTERS } from "../types/filters";
 
 export default function RecipeGrid() {
+    const { t } = useTranslation();
     const [filters, setFilters] = useState<ActiveFilters>({ ...EMPTY_FILTERS });
 
     const filteredRecipes = useMemo(() => {
@@ -30,20 +32,22 @@ export default function RecipeGrid() {
 
     return (
         <Container maxWidth="lg" sx={{ py: 4 }}>
+            <Box sx={{ display: "flex", justifyContent: "flex-end", mb: 1 }}>
+                <LanguageSwitcher />
+            </Box>
             <Box sx={{ textAlign: "center", mb: 5 }}>
                 <RestaurantMenuIcon
                     sx={{ fontSize: 48, color: "primary.main", mb: 1 }}
                 />
                 <Typography variant="h3" component="h1" gutterBottom>
-                    Cookbook
+                    {t("cookbook.title")}
                 </Typography>
                 <Typography
                     variant="body1"
                     color="text.secondary"
                     sx={{ maxWidth: 500, mx: "auto" }}
                 >
-                    A collection of our favourite recipes — click on any dish to
-                    see the full recipe.
+                    {t("cookbook.subtitle")}
                 </Typography>
             </Box>
 
@@ -52,14 +56,14 @@ export default function RecipeGrid() {
             {filteredRecipes.length === 0 ? (
                 <Box sx={{ textAlign: "center", py: 8 }}>
                     <Typography variant="h6" color="text.secondary">
-                        No recipes match your filters.
+                        {t("cookbook.noResults")}
                     </Typography>
                     <Typography
                         variant="body2"
                         color="text.secondary"
                         sx={{ mt: 1 }}
                     >
-                        Try removing some filters to see more results.
+                        {t("cookbook.noResultsHint")}
                     </Typography>
                 </Box>
             ) : (

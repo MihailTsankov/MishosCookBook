@@ -1,0 +1,40 @@
+{
+    "cookbook": {
+        "title": "Cookbook",
+        "subtitle": "A collection of our favourite recipes — click on any dish to see the full recipe.",
+        "noResults": "No recipes match your filters.",
+        "noResultsHint": "Try removing some filters to see more results."
+    },
+    "filter": {
+        "title": "Filters",
+        "maxTime": "Max Total Time",
+        "noLimit": "No limit",
+        "clearAll": "Clear all filters",
+        "minutesShort": "{{count}} min",
+        "timeMark30": "30m",
+        "timeMark60": "1h",
+        "timeMark90": "1.5h",
+        "timeMark120": "2h",
+        "timeMark150": "2.5h",
+        "timeMarkMax": "∞",
+        "categories": {
+            "type": "Type",
+            "how": "Method",
+            "diet": "Diet",
+            "meat": "Meat",
+            "dairy": "Dairy",
+            "plants": "Plants"
+        }
+    },
+    "recipe": {
+        "notFound": "Recipe Not Found",
+        "notFoundMessage": "Sorry, we couldn't find that recipe.",
+        "work": "Work: {{count}} min",
+        "cook": "Cook: {{count}} min",
+        "total": "Total: {{count}} min",
+        "serves": "Serves {{count}}",
+        "ingredients": "Ingredients",
+        "instructions": "Instructions",
+        "links": "Links"
+    }
+}

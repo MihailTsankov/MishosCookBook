@@ -7,15 +7,14 @@ export interface RecipeKeywords {
     plants: string[];
 }
 
-export const FILTER_CATEGORIES: { key: keyof RecipeKeywords; label: string }[] =
-    [
-        { key: "type", label: "Type" },
-        { key: "how", label: "How" },
-        { key: "diet", label: "Diet" },
-        { key: "meat", label: "Meat" },
-        { key: "dairy", label: "Dairy" },
-        { key: "plants", label: "Plants" },
-    ];
+export const FILTER_CATEGORIES: { key: keyof RecipeKeywords }[] = [
+    { key: "type" },
+    { key: "how" },
+    { key: "diet" },
+    { key: "meat" },
+    { key: "dairy" },
+    { key: "plants" },
+];
 
 export interface Recipe {
     id: string;

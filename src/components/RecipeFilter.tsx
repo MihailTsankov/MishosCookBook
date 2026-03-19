@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import FilterListIcon from "@mui/icons-material/FilterList";
+import { useTranslation } from "react-i18next";
 import type { RecipeKeywords } from "../data/recipes";
 import { FILTER_CATEGORIES, getAllFilterOptions } from "../data/recipes";
 import type { ActiveFilters } from "../types/filters";
@@ -21,15 +22,6 @@ interface RecipeFilterProps {
     filters: ActiveFilters;
     onChange: (filters: ActiveFilters) => void;
 }
-
-const TIME_MARKS = [
-    { value: 30, label: "30m" },
-    { value: 60, label: "60m" },
-    { value: 90, label: "90m" },
-    { value: 120, label: "2h" },
-    { value: 150, label: "2.5h" },
-    { value: MAX_TIME_SLIDER, label: "∞" },
-];
 
 const CATEGORY_COLORS: Record<keyof RecipeKeywords, string> = {
     type: "#e8907e",
@@ -41,7 +33,20 @@ const CATEGORY_COLORS: Record<keyof RecipeKeywords, string> = {
 };
 
 export default function RecipeFilter({ filters, onChange }: RecipeFilterProps) {
+    const { t } = useTranslation();
     const options = useMemo(() => getAllFilterOptions(), []);
+
+    const timeMarks = useMemo(
+        () => [
+            { value: 30, label: t("filter.timeMark30") },
+            { value: 60, label: t("filter.timeMark60") },
+            { value: 90, label: t("filter.timeMark90") },
+            { value: 120, label: t("filter.timeMark120") },
+            { value: 150, label: t("filter.timeMark150") },
+            { value: MAX_TIME_SLIDER, label: t("filter.timeMarkMax") },
+        ],
+        [t],
+    );
 
     const toggleKeyword = (category: keyof RecipeKeywords, value: string) => {
         const current = filters[category];
@@ -87,7 +92,7 @@ export default function RecipeFilter({ filters, onChange }: RecipeFilterProps) {
                 >
                     <Stack direction="row" spacing={1} alignItems="center">
                         <FilterListIcon sx={{ color: "primary.main" }} />
-                        <Typography fontWeight={600}>Filters</Typography>
+                        <Typography fontWeight={600}>{t("filter.title")}</Typography>
                         {activeCount > 0 && (
                             <Chip
                                 label={activeCount}
@@ -106,14 +111,14 @@ export default function RecipeFilter({ filters, onChange }: RecipeFilterProps) {
 
                 <AccordionDetails sx={{ px: 3, pb: 3 }}>
                     {/* Keyword categories */}
-                    {FILTER_CATEGORIES.map(({ key, label }) => (
+                    {FILTER_CATEGORIES.map(({ key }) => (
                         <Box key={key} sx={{ mb: 2 }}>
                             <Typography
                                 variant="body2"
                                 fontWeight={600}
                                 sx={{ mb: 0.75, textTransform: "capitalize" }}
                             >
-                                {label}
+                                {t(`filter.categories.${key}`)}
                             </Typography>
                             <Stack
                                 direction="row"
@@ -161,7 +166,7 @@ export default function RecipeFilter({ filters, onChange }: RecipeFilterProps) {
                             fontWeight={600}
                             sx={{ mb: 0.5 }}
                         >
-                            Max Total Time
+                            {t("filter.maxTime")}
                         </Typography>
                         <Box sx={{ px: 1 }}>
                             <Slider
@@ -170,10 +175,12 @@ export default function RecipeFilter({ filters, onChange }: RecipeFilterProps) {
                                 min={10}
                                 max={MAX_TIME_SLIDER}
                                 step={5}
-                                marks={TIME_MARKS}
+                                marks={timeMarks}
                                 valueLabelDisplay="auto"
                                 valueLabelFormat={(v) =>
-                                    v >= MAX_TIME_SLIDER ? "No limit" : `${v} min`
+                                    v >= MAX_TIME_SLIDER
+                                        ? t("filter.noLimit")
+                                        : t("filter.minutesShort", { count: v })
                                 }
                                 sx={{
                                     color: "#5b9bd5",
@@ -193,7 +200,7 @@ export default function RecipeFilter({ filters, onChange }: RecipeFilterProps) {
                                 onClick={handleClear}
                                 sx={{ color: "text.secondary" }}
                             >
-                                Clear all filters
+                                {t("filter.clearAll")}
                             </Button>
                         </Box>
                     )}
