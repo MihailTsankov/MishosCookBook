@@ -11,7 +11,7 @@ export default function LanguageSwitcher() {
     const { i18n } = useTranslation();
 
     const handleChange = (
-        _: React.MouseEvent<HTMLElement>,
+        _mouseEvent: React.MouseEvent<HTMLElement>,
         lang: string | null,
     ) => {
         if (lang) {

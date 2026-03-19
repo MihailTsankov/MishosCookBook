@@ -10,7 +10,7 @@ import type { ActiveFilters } from "../types/filters";
 import { EMPTY_FILTERS } from "../types/filters";
 
 export default function RecipeGrid() {
-    const { t } = useTranslation();
+    const { t: translate } = useTranslation();
     const [filters, setFilters] = useState<ActiveFilters>({ ...EMPTY_FILTERS });
 
     const filteredRecipes = useMemo(() => {
@@ -20,7 +20,7 @@ export default function RecipeGrid() {
                 const selected = filters[key];
                 if (selected.length > 0) {
                     const recipeValues = recipe.keywords[key];
-                    if (!selected.some((v) => recipeValues.includes(v))) {
+                    if (!selected.some((selectedValue) => recipeValues.includes(selectedValue))) {
                         return false;
                     }
                 }
@@ -40,14 +40,14 @@ export default function RecipeGrid() {
                     sx={{ fontSize: 48, color: "primary.main", mb: 1 }}
                 />
                 <Typography variant="h3" component="h1" gutterBottom>
-                    {t("cookbook.title")}
+                    {translate("cookbook.title")}
                 </Typography>
                 <Typography
                     variant="body1"
                     color="text.secondary"
                     sx={{ maxWidth: 500, mx: "auto" }}
                 >
-                    {t("cookbook.subtitle")}
+                    {translate("cookbook.subtitle")}
                 </Typography>
             </Box>
 
@@ -56,14 +56,14 @@ export default function RecipeGrid() {
             {filteredRecipes.length === 0 ? (
                 <Box sx={{ textAlign: "center", py: 8 }}>
                     <Typography variant="h6" color="text.secondary">
-                        {t("cookbook.noResults")}
+                        {translate("cookbook.noResults")}
                     </Typography>
                     <Typography
                         variant="body2"
                         color="text.secondary"
                         sx={{ mt: 1 }}
                     >
-                        {t("cookbook.noResultsHint")}
+                        {translate("cookbook.noResultsHint")}
                     </Typography>
                 </Box>
             ) : (

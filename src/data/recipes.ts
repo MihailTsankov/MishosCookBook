@@ -6527,29 +6527,29 @@ export function getAllFilterOptions(): Record<keyof RecipeKeywords, string[]> {
     };
     for (const recipe of recipes) {
         for (const key of Object.keys(options) as (keyof RecipeKeywords)[]) {
-            for (const val of recipe.keywords[key]) {
-                options[key].add(val);
+            for (const keywordValue of recipe.keywords[key]) {
+                options[key].add(keywordValue);
             }
         }
     }
     return {
-        type: [...options.type].sort((a, b) => a.localeCompare(b)),
-        how: [...options.how].sort((a, b) => a.localeCompare(b)),
-        diet: [...options.diet].sort((a, b) => a.localeCompare(b)),
-        meat: [...options.meat].sort((a, b) => a.localeCompare(b)),
-        dairy: [...options.dairy].sort((a, b) => a.localeCompare(b)),
-        plants: [...options.plants].sort((a, b) => a.localeCompare(b)),
+        type: [...options.type].sort((firstValue, secondValue) => firstValue.localeCompare(secondValue)),
+        how: [...options.how].sort((firstValue, secondValue) => firstValue.localeCompare(secondValue)),
+        diet: [...options.diet].sort((firstValue, secondValue) => firstValue.localeCompare(secondValue)),
+        meat: [...options.meat].sort((firstValue, secondValue) => firstValue.localeCompare(secondValue)),
+        dairy: [...options.dairy].sort((firstValue, secondValue) => firstValue.localeCompare(secondValue)),
+        plants: [...options.plants].sort((firstValue, secondValue) => firstValue.localeCompare(secondValue)),
     };
 }
 
 /** Flatten a RecipeKeywords object into a single array of strings */
-export function flattenKeywords(kw: RecipeKeywords): string[] {
+export function flattenKeywords(keywords: RecipeKeywords): string[] {
     return [
-        ...kw.type,
-        ...kw.how,
-        ...kw.diet,
-        ...kw.meat,
-        ...kw.dairy,
-        ...kw.plants,
+        ...keywords.type,
+        ...keywords.how,
+        ...keywords.diet,
+        ...keywords.meat,
+        ...keywords.dairy,
+        ...keywords.plants,
     ];
 }

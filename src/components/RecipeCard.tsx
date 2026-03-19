@@ -20,7 +20,7 @@ interface RecipeCardProps {
 }
 
 export default function RecipeCard({ recipe }: RecipeCardProps) {
-    const { t } = useTranslation();
+    const { t: translate } = useTranslation();
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -53,10 +53,10 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
                     >
                         {flattenKeywords(recipe.keywords)
                             .slice(0, 3)
-                            .map((kw) => (
+                            .map((keyword) => (
                                 <Chip
-                                    key={kw}
-                                    label={kw}
+                                    key={keyword}
+                                    label={keyword}
                                     size="small"
                                     sx={{
                                         bgcolor: "secondary.light",
@@ -74,7 +74,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
                     >
                         <Chip
                             icon={<LocalDiningIcon />}
-                            label={t("filter.minutesShort", { count: recipe.workTime })}
+                            label={translate("filter.minutesShort", { count: recipe.workTime })}
                             size="small"
                             variant="outlined"
                             sx={{
@@ -84,7 +84,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
                         />
                         <Chip
                             icon={<LocalFireDepartmentIcon />}
-                            label={t("filter.minutesShort", { count: recipe.cookTime })}
+                            label={translate("filter.minutesShort", { count: recipe.cookTime })}
                             size="small"
                             variant="outlined"
                             sx={{
@@ -94,7 +94,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
                         />
                         <Chip
                             icon={<TimerIcon />}
-                            label={t("filter.minutesShort", { count: recipe.totalTime })}
+                            label={translate("filter.minutesShort", { count: recipe.totalTime })}
                             size="small"
                             variant="outlined"
                             sx={{

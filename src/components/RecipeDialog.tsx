@@ -38,10 +38,10 @@ const Transition = forwardRef(function Transition(
 });
 
 export default function RecipeDialog() {
-    const { t } = useTranslation();
+    const { t: translate } = useTranslation();
     const { id } = useParams<{ id: string }>();
     const navigate = useNavigate();
-    const recipe = recipes.find((r) => r.id === id);
+    const recipe = recipes.find((foundRecipe) => foundRecipe.id === id);
 
     const handleClose = () => {
         navigate("/");
@@ -68,7 +68,7 @@ export default function RecipeDialog() {
                             <CloseIcon />
                         </IconButton>
                         <Typography sx={{ ml: 2, flex: 1 }} variant="h6">
-                            {t("recipe.notFound")}
+                            {translate("recipe.notFound")}
                         </Typography>
                     </Toolbar>
                 </AppBar>
@@ -80,7 +80,7 @@ export default function RecipeDialog() {
                     }}
                 >
                     <Typography variant="h5" color="text.secondary">
-                        {t("recipe.notFoundMessage")}
+                        {translate("recipe.notFoundMessage")}
                     </Typography>
                 </DialogContent>
             </Dialog>
@@ -344,10 +344,10 @@ export default function RecipeDialog() {
                         useFlexGap
                         sx={{ mb: 3 }}
                     >
-                        {flattenKeywords(recipe.keywords).map((kw) => (
+                        {flattenKeywords(recipe.keywords).map((keyword) => (
                             <Chip
-                                key={kw}
-                                label={kw}
+                                key={keyword}
+                                label={keyword}
                                 size="small"
                                 sx={{
                                     bgcolor: "secondary.light",
@@ -367,7 +367,7 @@ export default function RecipeDialog() {
                     >
                         <Chip
                             icon={<LocalDiningIcon />}
-                            label={t("recipe.work", { count: recipe.workTime })}
+                            label={translate("recipe.work", { count: recipe.workTime })}
                             sx={{
                                 bgcolor: "primary.light",
                                 color: "#fff",
@@ -376,7 +376,7 @@ export default function RecipeDialog() {
                         />
                         <Chip
                             icon={<LocalFireDepartmentIcon />}
-                            label={t("recipe.cook", { count: recipe.cookTime })}
+                            label={translate("recipe.cook", { count: recipe.cookTime })}
                             sx={{
                                 bgcolor: "secondary.main",
                                 color: "#fff",
@@ -385,7 +385,7 @@ export default function RecipeDialog() {
                         />
                         <Chip
                             icon={<TimerIcon />}
-                            label={t("recipe.total", { count: recipe.totalTime })}
+                            label={translate("recipe.total", { count: recipe.totalTime })}
                             variant="outlined"
                             sx={{
                                 borderColor: "#5b9bd5",
@@ -396,7 +396,7 @@ export default function RecipeDialog() {
                         />
                         <Chip
                             icon={<PeopleIcon />}
-                            label={t("recipe.serves", { count: recipe.servings })}
+                            label={translate("recipe.serves", { count: recipe.servings })}
                             variant="outlined"
                             sx={{ fontWeight: 500 }}
                         />
@@ -404,11 +404,11 @@ export default function RecipeDialog() {
 
                     {/* Ingredients */}
                     <Typography variant="h5" gutterBottom sx={{ mt: 2 }}>
-                        {t("recipe.ingredients")}
+                        {translate("recipe.ingredients")}
                     </Typography>
                     <List dense>
-                        {recipe.ingredients.map((item, i) => (
-                            <ListItem key={i} sx={{ py: 0.3 }}>
+                        {recipe.ingredients.map((item, index) => (
+                            <ListItem key={index} sx={{ py: 0.3 }}>
                                 <ListItemIcon sx={{ minWidth: 28 }}>
                                     <FiberManualRecordIcon
                                         sx={{
@@ -424,12 +424,12 @@ export default function RecipeDialog() {
 
                     {/* Instructions */}
                     <Typography variant="h5" gutterBottom sx={{ mt: 4 }}>
-                        {t("recipe.instructions")}
+                        {translate("recipe.instructions")}
                     </Typography>
                     <List>
-                        {recipe.instructions.map((step, i) => (
+                        {recipe.instructions.map((step, index) => (
                             <ListItem
-                                key={i}
+                                key={index}
                                 sx={{ alignItems: "flex-start", py: 1 }}
                             >
                                 <ListItemIcon sx={{ minWidth: 36, mt: 0.5 }}>
@@ -447,7 +447,7 @@ export default function RecipeDialog() {
                                             fontWeight: 700,
                                         }}
                                     >
-                                        {i + 1}
+                                        {index + 1}
                                     </Box>
                                 </ListItemIcon>
                                 <ListItemText primary={step} />
@@ -463,21 +463,21 @@ export default function RecipeDialog() {
                                 gutterBottom
                                 sx={{ mt: 4 }}
                             >
-                                {t("recipe.links")}
+                                {translate("recipe.links")}
                             </Typography>
                             <List dense>
-                                {recipe.urls.map((url) => {
-                                    let label: string;
+                                {recipe.urls.map((recipeUrl) => {
+                                    let urlLabel: string;
                                     try {
-                                        label = new URL(url).hostname.replace(
+                                        urlLabel = new URL(recipeUrl).hostname.replace(
                                             /^www\./,
                                             "",
                                         );
                                     } catch {
-                                        label = url;
+                                        urlLabel = recipeUrl;
                                     }
                                     return (
-                                        <ListItem key={url} sx={{ py: 0.3 }}>
+                                        <ListItem key={recipeUrl} sx={{ py: 0.3 }}>
                                             <ListItemIcon
                                                 sx={{ minWidth: 28 }}
                                             >
@@ -491,13 +491,13 @@ export default function RecipeDialog() {
                                             <ListItemText
                                                 primary={
                                                     <Link
-                                                        href={url}
+                                                        href={recipeUrl}
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         underline="hover"
                                                         color="primary.dark"
                                                     >
-                                                        {label}
+                                                        {urlLabel}
                                                     </Link>
                                                 }
                                             />
