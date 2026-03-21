@@ -31,8 +31,12 @@ function AppRoutes() {
 }
 
 export default function App() {
+    // Use Vite's BASE_URL as the router basename so the app works when
+    // deployed to a subpath (for example GitHub Pages at /MishosCookBook/).
+    const routerBaseName = import.meta.env.BASE_URL ?? "/";
+
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={routerBaseName}>
             <AppRoutes />
         </BrowserRouter>
     );
