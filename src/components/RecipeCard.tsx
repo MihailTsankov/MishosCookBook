@@ -38,6 +38,14 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
         setImageLoadFailed(true);
     };
 
+    // Resolve public asset path correctly when the app is served from a base path
+    const getPublicAssetUrl = (source: string | undefined) => {
+        if (!source) return source;
+        if (source.startsWith("http") || source.startsWith("//")) return source;
+        const base = import.meta.env.BASE_URL ?? "/";
+        return `${base}${source.replace(/^\/+/, "")}`;
+    };
+
     const hasValidImage = recipe.image[0]?.src && !imageLoadFailed;
 
     return (
@@ -47,7 +55,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
                     <CardMedia
                         component="img"
                         height="200"
-                        image={recipe.image[0].src}
+                        image={getPublicAssetUrl(recipe.image[0].src)}
                         alt={recipe.title}
                         onError={handleImageError}
                         sx={{ objectFit: "cover" }}

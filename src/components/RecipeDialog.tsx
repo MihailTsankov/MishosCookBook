@@ -47,6 +47,14 @@ export default function RecipeDialog() {
         navigate("/");
     };
 
+    // Resolve public asset path correctly when the app is served from a base path
+    const getPublicAssetUrl = (source: string | undefined) => {
+        if (!source) return source;
+        if (source.startsWith("http") || source.startsWith("//")) return source;
+        const base = import.meta.env.BASE_URL ?? "/";
+        return `${base}${source.replace(/^\/+/, "")}`;
+    };
+
     if (!recipe) {
         return (
             <Dialog
@@ -123,7 +131,7 @@ export default function RecipeDialog() {
                     spacing={3}
                     sx={{ px: 3, py: 3 }}
                 >
-                    {recipe.image.map((img) => {
+                        {recipe.image.map((img) => {
                         // Reusable corner decoration – mirrored/flipped via CSS for the other 3 corners
                         const decor = (
                             <>
@@ -314,7 +322,7 @@ export default function RecipeDialog() {
 
                                 <Box
                                     component="img"
-                                    src={img.src}
+                                    src={getPublicAssetUrl(img.src)}
                                     alt={img.title ?? recipe.title}
                                     sx={{
                                         position: "relative",
