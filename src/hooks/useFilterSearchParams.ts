@@ -8,31 +8,63 @@ import type { RecipeKeywords } from "../data/recipes";
 const FILTER_MODE_PARAM = "mode";
 const MAX_TIME_PARAM = "maxTime";
 
-function parseFiltersFromSearchParams(searchParams: URLSearchParams): ActiveFilters {
-    const filters: ActiveFilters = { ...EMPTY_FILTERS };
+/**
+     * Parse URL search parameters into an ActiveFilters object.
+     *
+     * This is a pure helper that reads the provided `URLSearchParams` and maps
+     * them to the application's `ActiveFilters` shape. The function:
+     * - starts from a shallow copy of `EMPTY_FILTERS` so unspecified filters keep defaults;
+     * - iterates `FILTER_CATEGORIES` and reads CSV-valued parameters for each category key;
+     * - validates and sets the filter mode only if it equals "AND" or "OR";
+     * - parses `maxTime` and maps it to a number, mapping values >= MAX_TIME_SLIDER to Infinity.
+     *
+     * Behavior notes and edge cases:
+     * - CSV parsing: parameter values are split on commas and empty segments are discarded.
+     * - Missing parameters: any missing parameter leaves the corresponding `filters` entry at the default
+     *   value from `EMPTY_FILTERS`.
+     * - Invalid numeric `maxTime`: non-numeric or non-positive values are ignored.
+     * - `maxTime` value equal or greater than `MAX_TIME_SLIDER` becomes `Infinity` to represent "no limit".
+     *
+     * @param {URLSearchParams} searchParams - The URLSearchParams object (usually from location.search)
+     *   containing query parameters to convert into filter state.
+     * @returns {ActiveFilters} A new ActiveFilters object populated from `searchParams`.
+     *
+     * @example
+     * // Given URL ?cuisine=italian,greek&mode=AND&maxTime=60
+     * // parseFiltersFromSearchParams(new URLSearchParams("cuisine=italian,greek&mode=AND&maxTime=60"))
+     * // => { cuisine: ["italian", "greek"], filterMode: "AND", maxTotalTime: 60, ...defaults }
+     */
+    function parseFiltersFromSearchParams(searchParams: URLSearchParams): ActiveFilters {
+        // Start from defaults so missing params preserve default values
+        const filters: ActiveFilters = { ...EMPTY_FILTERS };
 
-    for (const { key } of FILTER_CATEGORIES) {
-        const paramValue = searchParams.get(key);
-        if (paramValue) {
-            filters[key] = paramValue.split(",").filter((value) => value.length > 0);
+        // For each configured filter category, read a CSV list from the search params
+        for (const { key } of FILTER_CATEGORIES) {
+            const paramValue = searchParams.get(key);
+            if (paramValue) {
+                // Split on commas and drop any empty segments (e.g. trailing commas)
+                filters[key] = paramValue.split(",").filter((value) => value.length > 0);
+            }
         }
-    }
 
-    const modeParam = searchParams.get(FILTER_MODE_PARAM);
-    if (modeParam === "AND" || modeParam === "OR") {
-        filters.filterMode = modeParam as FilterMode;
-    }
-
-    const maxTimeParam = searchParams.get(MAX_TIME_PARAM);
-    if (maxTimeParam !== null) {
-        const parsedTime = Number(maxTimeParam);
-        if (!Number.isNaN(parsedTime) && parsedTime > 0) {
-            filters.maxTotalTime = parsedTime >= MAX_TIME_SLIDER ? Infinity : parsedTime;
+        // Normalize and validate filter mode: only accept "AND" or "OR"
+        const modeParam = searchParams.get(FILTER_MODE_PARAM);
+        if (modeParam === "AND" || modeParam === "OR") {
+            filters.filterMode = modeParam as FilterMode;
         }
-    }
 
-    return filters;
-}
+        // Parse max time; accept only positive numbers. Map large sentinel values to Infinity.
+        const maxTimeParam = searchParams.get(MAX_TIME_PARAM);
+        if (maxTimeParam !== null) {
+            const parsedTime = Number(maxTimeParam);
+            if (!Number.isNaN(parsedTime) && parsedTime > 0) {
+                // If parsed time reaches or exceeds the slider's max sentinel, treat as "no limit".
+                filters.maxTotalTime = parsedTime >= MAX_TIME_SLIDER ? Infinity : parsedTime;
+            }
+        }
+
+        return filters;
+    }
 
 function buildSearchParamsFromFilters(filters: ActiveFilters): URLSearchParams {
     const params = new URLSearchParams();
