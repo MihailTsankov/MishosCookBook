@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { Box, Container, Typography } from "@mui/material";
 import RestaurantMenuIcon from "@mui/icons-material/RestaurantMenu";
 import { useTranslation } from "react-i18next";
@@ -6,12 +6,11 @@ import recipes, { FILTER_CATEGORIES } from "../data/recipes";
 import RecipeCard from "./RecipeCard";
 import RecipeFilter from "./RecipeFilter";
 import LanguageSwitcher from "./LanguageSwitcher";
-import type { ActiveFilters } from "../types/filters";
-import { EMPTY_FILTERS } from "../types/filters";
+import { useFilterSearchParams } from "../hooks/useFilterSearchParams";
 
 export default function RecipeGrid() {
     const { t: translate } = useTranslation();
-    const [filters, setFilters] = useState<ActiveFilters>({ ...EMPTY_FILTERS });
+    const [filters, setFilters] = useFilterSearchParams();
 
     const filteredRecipes = useMemo(() => {
         const isAndMode = filters.filterMode === "AND";
