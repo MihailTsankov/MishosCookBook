@@ -1,7 +1,7 @@
 {
     "cookbook": {
         "title": "Misho's Cook Book",
-        "subtitle": "A collection of our favourite recipes — click on any dish to see the full recipe.",
+        "subtitle": "A collection of my favourite recipes — click on any dish to see the full recipe.",
         "noResults": "No recipes match your filters.",
         "noResultsHint": "Try removing some filters to see more results."
     },

@@ -1,7 +1,7 @@
 {
     "cookbook": {
         "title": "Le livre de recettes de Misho",
-        "subtitle": "Une collection de nos recettes préférées — cliquez sur un plat pour voir la recette complète.",
+        "subtitle": "Une collection de mes recettes préférées — cliquez sur un plat pour voir la recette complète.",
         "noResults": "Aucune recette ne correspond à vos filtres.",
         "noResultsHint": "Essayez de supprimer certains filtres pour voir plus de résultats."
     },
