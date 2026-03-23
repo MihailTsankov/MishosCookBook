@@ -131,7 +131,7 @@ export default function RecipeDialog() {
                     spacing={3}
                     sx={{ px: 3, py: 3 }}
                 >
-                        {recipe.image.map((img) => {
+                    {recipe.image.map((img) => {
                         // Reusable corner decoration – mirrored/flipped via CSS for the other 3 corners
                         const decor = (
                             <>
@@ -402,12 +402,14 @@ export default function RecipeDialog() {
                                 fontWeight: 500,
                             }}
                         />
-                        <Chip
-                            icon={<PeopleIcon />}
-                            label={translate("recipe.serves", { count: recipe.servings })}
-                            variant="outlined"
-                            sx={{ fontWeight: 500 }}
-                        />
+                        {recipe.servings > 0 && (
+                            <Chip
+                                icon={<PeopleIcon />}
+                                label={translate("recipe.serves", { count: recipe.servings })}
+                                variant="outlined"
+                                sx={{ fontWeight: 500 }}
+                            />
+                        )}
                     </Stack>
 
                     {/* Ingredients */}

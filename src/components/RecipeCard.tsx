@@ -107,16 +107,18 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
                         flexWrap="wrap"
                         useFlexGap
                     >
-                        <Chip
-                            icon={<LocalDiningIcon />}
-                            label={translate("filter.minutesShort", { count: recipe.workTime })}
-                            size="small"
-                            variant="outlined"
-                            sx={{
-                                borderColor: "primary.light",
-                                color: "text.secondary",
-                            }}
-                        />
+                        {recipe.workTime > 0 && (
+                            <Chip
+                                icon={<LocalDiningIcon />}
+                                label={translate("filter.minutesShort", { count: recipe.workTime })}
+                                size="small"
+                                variant="outlined"
+                                sx={{
+                                    borderColor: "primary.light",
+                                    color: "text.secondary",
+                                }}
+                            />
+                        )}
                         <Chip
                             icon={<LocalFireDepartmentIcon />}
                             label={translate("filter.minutesShort", { count: recipe.cookTime })}
