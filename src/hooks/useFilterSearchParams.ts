@@ -42,7 +42,7 @@ const MAX_TIME_PARAM = "maxTime";
         for (const { key } of FILTER_CATEGORIES) {
             const paramValue = searchParams.get(key);
             if (paramValue) {
-                // Split on commas and drop any empty segments (e.g. trailing commas)
+                // Split on commas and drop any empty segments (e.g., trailing commas)
                 filters[key] = paramValue.split(",").filter((value) => value.length > 0);
             }
         }
