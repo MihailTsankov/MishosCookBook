@@ -8,7 +8,7 @@ export default defineConfig({
     base: "/MishosCookBook/",
     test: {
         globals: true,
-        environment: "jsdom",
+        environment: "happy-dom",
         setupFiles: "./src/setupTests.ts",
         css: true,
     },
