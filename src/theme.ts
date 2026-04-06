@@ -4,50 +4,86 @@ const theme = createTheme({
     palette: {
         mode: "light",
         primary: {
-            main: "#e8907e",
-            light: "#f4b8ad",
-            dark: "#c96f5e",
+            main: "#5c7a56",
+            light: "#8aad83",
+            dark: "#3d5438",
         },
         secondary: {
-            main: "#a8d5ba",
-            light: "#c8e6d0",
-            dark: "#7fb89a",
+            main: "#c9a84c",
+            light: "#e0cc8a",
+            dark: "#a08632",
         },
         background: {
-            default: "#fdf6f0",
-            paper: "#ffffff",
+            default: "#f5f0e6",
+            paper: "#faf8f2",
         },
         text: {
-            primary: "#4a4a4a",
-            secondary: "#7a7a7a",
+            primary: "#2d2a24",
+            secondary: "#201d1d",
         },
     },
     typography: {
-        fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
+        /* Cormorant renders visually smaller than sans-serif at equal CSS sizes,
+           so we bump the global base and every variant accordingly. */
+        fontSize: 16,
+        fontFamily: '"Cormorant", "Garamond", "Georgia", serif',
         h3: {
-            fontWeight: 700,
-            color: "#4a4a4a",
+            fontFamily: '"Cinzel", "Cormorant", serif',
+            fontWeight: 600,
+            fontSize: "2.4rem",
+            letterSpacing: "0.04em",
+            color: "#2d2a24",
+        },
+        h4: {
+            fontFamily: '"Cinzel", "Cormorant", serif',
+            fontWeight: 600,
+            fontSize: "2rem",
+            letterSpacing: "0.03em",
         },
         h5: {
+            fontFamily: '"Cinzel", "Cormorant", serif',
             fontWeight: 600,
+            fontSize: "1.6rem",
+            letterSpacing: "0.02em",
         },
         h6: {
-            fontWeight: 600,
+            fontFamily: '"Cinzel", "Cormorant", serif',
+            fontWeight: 500,
+            fontSize: "1.35rem",
+        },
+        body1: {
+            fontSize: "1.2rem",
+        },
+        body2: {
+            fontSize: "1.1rem",
         },
     },
     shape: {
-        borderRadius: 16,
+        borderRadius: 4,
     },
     components: {
+        MuiChip: {
+            styleOverrides: {
+                root: {
+                    fontSize: "1.15rem",
+                    height: 36,
+                },
+                sizeSmall: {
+                    fontSize: "1.05rem",
+                    height: 30,
+                },
+            },
+        },
         MuiCard: {
             styleOverrides: {
                 root: {
-                    borderRadius: 16,
-                    boxShadow: "0 2px 12px rgba(0,0,0,0.06)",
-                    transition: "transform 0.2s ease, box-shadow 0.2s ease",
+                    borderRadius: 4,
+                    border: "1px solid rgba(92, 122, 86, 0.15)",
+                    boxShadow: "0 2px 8px rgba(45, 42, 36, 0.08)",
+                    transition: "transform 0.3s ease, box-shadow 0.3s ease",
                     "&:hover": {
-                        transform: "translateY(-4px)",
-                        boxShadow: "0 8px 24px rgba(0,0,0,0.1)",
+                        transform: "translateY(-3px)",
+                        boxShadow: "0 6px 20px rgba(45, 42, 36, 0.12)",
                     },
                 },
             },
@@ -56,7 +92,7 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     textTransform: "none",
-                    borderRadius: 12,
+                    borderRadius: 4,
                 },
             },
         },

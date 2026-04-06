@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Cormorant', 'Garamond', 'Georgia', serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -9,4 +9,3 @@
 body {
   margin: 0;
 }
-

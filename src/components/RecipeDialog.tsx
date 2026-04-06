@@ -23,12 +23,12 @@ import LocalDiningIcon from "@mui/icons-material/LocalDining";
 import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
 import PeopleIcon from "@mui/icons-material/People";
 import TimerIcon from "@mui/icons-material/Timer";
-import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import { forwardRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate, useParams } from "react-router-dom";
 import recipes from "../data/recipes";
 import { flattenKeywords } from "../data/recipes";
+import VineDivider from "./VineDivider";
 
 const Transition = forwardRef(function Transition(
     props: TransitionProps & { children: React.ReactElement<unknown> },
@@ -55,6 +55,8 @@ export default function RecipeDialog() {
         return `${base}${source.replace(/^\/+/, "")}`;
     };
 
+    const leafBulletUrl = getPublicAssetUrl("assets/art-nouveau-smallflowerorn.svg");
+
     if (!recipe) {
         return (
             <Dialog
@@ -64,7 +66,11 @@ export default function RecipeDialog() {
                 slots={{ transition: Transition }}
             >
                 <AppBar
-                    sx={{ position: "relative", bgcolor: "primary.main" }}
+                    sx={{
+                        position: "relative",
+                        bgcolor: "#3d5438",
+                        backgroundImage: "linear-gradient(135deg, #3d5438 0%, #5c7a56 100%)",
+                    }}
                     elevation={0}
                 >
                     <Toolbar>
@@ -75,7 +81,15 @@ export default function RecipeDialog() {
                         >
                             <CloseIcon />
                         </IconButton>
-                        <Typography sx={{ ml: 2, flex: 1 }} variant="h6">
+                        <Typography
+                            sx={{
+                                ml: 2,
+                                flex: 1,
+                                fontFamily: '"Cinzel", serif',
+                                letterSpacing: "0.03em",
+                            }}
+                            variant="h6"
+                        >
                             {translate("recipe.notFound")}
                         </Typography>
                     </Toolbar>
@@ -103,7 +117,11 @@ export default function RecipeDialog() {
             slots={{ transition: Transition }}
         >
             <AppBar
-                sx={{ position: "relative", bgcolor: "primary.main" }}
+                sx={{
+                    position: "relative",
+                    bgcolor: "#3d5438",
+                    backgroundImage: "linear-gradient(135deg, #3d5438 0%, #5c7a56 100%)",
+                }}
                 elevation={0}
             >
                 <Toolbar>
@@ -115,7 +133,15 @@ export default function RecipeDialog() {
                     >
                         <CloseIcon />
                     </IconButton>
-                    <Typography sx={{ ml: 2, flex: 1 }} variant="h6">
+                    <Typography
+                        sx={{
+                            ml: 2,
+                            flex: 1,
+                            fontFamily: '"Cinzel", serif',
+                            letterSpacing: "0.03em",
+                        }}
+                        variant="h6"
+                    >
                         {recipe.title}
                     </Typography>
                 </Toolbar>
@@ -280,9 +306,9 @@ export default function RecipeDialog() {
                             label={translate("recipe.total", { count: recipe.totalTime })}
                             variant="outlined"
                             sx={{
-                                borderColor: "#5b9bd5",
+                                borderColor: "secondary.dark",
                                 borderWidth: 2,
-                                color: "#5b9bd5",
+                                color: "secondary.dark",
                                 fontWeight: 500,
                             }}
                         />
@@ -296,6 +322,8 @@ export default function RecipeDialog() {
                         )}
                     </Stack>
 
+                    <VineDivider variant="decorative-header" width={300} marginTop={1} marginBottom={2} opacity={0.35} />
+
                     {/* Ingredients */}
                     <Typography variant="h5" gutterBottom sx={{ mt: 2 }}>
                         {translate("recipe.ingredients")}
@@ -304,10 +332,13 @@ export default function RecipeDialog() {
                         {recipe.ingredients.map((item, index) => (
                             <ListItem key={index} sx={{ py: 0.3 }}>
                                 <ListItemIcon sx={{ minWidth: 28 }}>
-                                    <FiberManualRecordIcon
-                                        sx={{
-                                            fontSize: 8,
-                                            color: "primary.main",
+                                    <img
+                                        src={leafBulletUrl}
+                                        alt=""
+                                        style={{
+                                            width: 16,
+                                            height: 16,
+                                            filter: "brightness(0) saturate(100%) invert(47%) sepia(11%) saturate(800%) hue-rotate(82deg) brightness(92%) contrast(88%)",
                                         }}
                                     />
                                 </ListItemIcon>
@@ -315,6 +346,8 @@ export default function RecipeDialog() {
                             </ListItem>
                         ))}
                     </List>
+
+                    <VineDivider variant="tree-banner" width={280} marginTop={2} marginBottom={1} opacity={0.35} />
 
                     {/* Instructions */}
                     <Typography variant="h5" gutterBottom sx={{ mt: 4 }}>
@@ -329,16 +362,19 @@ export default function RecipeDialog() {
                                 <ListItemIcon sx={{ minWidth: 36, mt: 0.5 }}>
                                     <Box
                                         sx={{
-                                            width: 24,
-                                            height: 24,
+                                            width: 26,
+                                            height: 26,
                                             borderRadius: "50%",
-                                            bgcolor: "primary.main",
-                                            color: "#fff",
+                                            bgcolor: "transparent",
+                                            border: "2px solid",
+                                            borderColor: "primary.main",
+                                            color: "primary.main",
                                             display: "flex",
                                             alignItems: "center",
                                             justifyContent: "center",
                                             fontSize: 13,
                                             fontWeight: 700,
+                                            fontFamily: '"Cinzel", serif',
                                         }}
                                     >
                                         {index + 1}
@@ -352,6 +388,8 @@ export default function RecipeDialog() {
                     {/* Links */}
                     {recipe.urls.length > 0 && (
                         <>
+                            <VineDivider variant="decorative-header" width={280} marginTop={2} marginBottom={1} opacity={0.35} />
+
                             <Typography
                                 variant="h5"
                                 gutterBottom

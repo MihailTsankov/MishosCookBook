@@ -496,10 +496,10 @@ const recipes: Recipe[] = [
             "Добавете соса, доматите и спанака, похлупете с капак и гответе още 7 мин да къкри докато сосът се сгъсти.",
             "Сервирайте върху сварен ориз.",
         ],
-        servings: 5,
-        workTime: 30,
+        servings: 6,
+        workTime: 45,
         cookTime: 30,
-        totalTime: 30,
+        totalTime: 60,
         urls: ["https://www.tiktok.com/@jalalsamfit/video/7236797175223700762"],
     },
     {

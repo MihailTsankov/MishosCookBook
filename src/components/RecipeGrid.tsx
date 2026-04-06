@@ -1,11 +1,11 @@
 import { useMemo } from "react";
 import { Box, Container, Typography } from "@mui/material";
-import RestaurantMenuIcon from "@mui/icons-material/RestaurantMenu";
 import { useTranslation } from "react-i18next";
 import recipes, { FILTER_CATEGORIES } from "../data/recipes";
 import RecipeCard from "./RecipeCard";
 import RecipeFilter from "./RecipeFilter";
 import LanguageSwitcher from "./LanguageSwitcher";
+import VineDivider from "./VineDivider";
 import { useFilterSearchParams } from "../hooks/useFilterSearchParams";
 
 export default function RecipeGrid() {
@@ -32,14 +32,25 @@ export default function RecipeGrid() {
         });
     }, [filters]);
 
+    const grapesUrl = `${import.meta.env.BASE_URL ?? "/"}assets/Art Nouveau Grapes and leaves.svg`;
+
     return (
         <Container maxWidth="lg" sx={{ py: 4 }}>
             <Box sx={{ display: "flex", justifyContent: "flex-end", mb: 1 }}>
                 <LanguageSwitcher />
             </Box>
             <Box sx={{ textAlign: "center", mb: 5 }}>
-                <RestaurantMenuIcon
-                    sx={{ fontSize: 48, color: "primary.main", mb: 1 }}
+                <Box
+                    component="img"
+                    src={grapesUrl}
+                    alt=""
+                    sx={{
+                        width: 100,
+                        height: "auto",
+                        display: "inline-block",
+                        mb: 1,
+                        opacity: 0.85,
+                    }}
                 />
                 <Typography variant="h3" component="h1" gutterBottom>
                     {translate("cookbook.title")}
@@ -51,6 +62,7 @@ export default function RecipeGrid() {
                 >
                     {translate("cookbook.subtitle")}
                 </Typography>
+                <VineDivider variant="tree-banner" width={340} marginTop={3} marginBottom={1} />
             </Box>
 
             <RecipeFilter filters={filters} onChange={setFilters} />

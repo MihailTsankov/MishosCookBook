@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 40" fill="none">
+  <!-- Central flowing vine with Art Nouveau curves and leaves -->
+  <g opacity="0.7">
+    <!-- Main horizontal vine stem -->
+    <path d="M0 20 Q50 20 80 16 Q110 12 140 18 Q170 24 200 20 Q230 16 260 22 Q290 28 320 20 Q350 12 380 18 Q395 20 400 20"
+          stroke="#5c7a56" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+
+    <!-- Left leaf cluster -->
+    <path d="M60 16 Q55 6 65 4 Q75 2 70 14" stroke="#5c7a56" stroke-width="0.8" fill="#5c7a56" fill-opacity="0.15"/>
+    <path d="M75 14 Q78 4 88 6 Q92 8 82 16" stroke="#5c7a56" stroke-width="0.8" fill="#5c7a56" fill-opacity="0.12"/>
+
+    <!-- Left-center small leaves -->
+    <path d="M120 18 Q115 10 122 7 Q130 5 126 16" stroke="#5c7a56" stroke-width="0.7" fill="#5c7a56" fill-opacity="0.1"/>
+    <path d="M145 20 Q150 28 143 32 Q136 34 140 22" stroke="#5c7a56" stroke-width="0.7" fill="#5c7a56" fill-opacity="0.1"/>
+
+    <!-- Center ornamental leaf pair -->
+    <path d="M190 18 Q182 6 192 2 Q202 0 196 14" stroke="#5c7a56" stroke-width="0.9" fill="#5c7a56" fill-opacity="0.18"/>
+    <path d="M210 18 Q218 6 208 2 Q198 0 204 14" stroke="#5c7a56" stroke-width="0.9" fill="#5c7a56" fill-opacity="0.18"/>
+    <!-- Center berry/bud -->
+    <circle cx="200" cy="20" r="2.5" fill="#c9a84c" fill-opacity="0.5"/>
+    <circle cx="200" cy="20" r="1.2" fill="#c9a84c" fill-opacity="0.8"/>
+
+    <!-- Right-center small leaves -->
+    <path d="M255 22 Q250 30 257 34 Q264 36 260 24" stroke="#5c7a56" stroke-width="0.7" fill="#5c7a56" fill-opacity="0.1"/>
+    <path d="M280 20 Q285 12 278 8 Q271 6 275 18" stroke="#5c7a56" stroke-width="0.7" fill="#5c7a56" fill-opacity="0.1"/>
+
+    <!-- Right leaf cluster -->
+    <path d="M330 18 Q335 8 325 5 Q318 4 322 16" stroke="#5c7a56" stroke-width="0.8" fill="#5c7a56" fill-opacity="0.15"/>
+    <path d="M345 20 Q340 10 348 6 Q356 4 350 18" stroke="#5c7a56" stroke-width="0.8" fill="#5c7a56" fill-opacity="0.12"/>
+
+    <!-- Subtle curling tendrils -->
+    <path d="M95 15 Q98 10 102 12" stroke="#5c7a56" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+    <path d="M165 22 Q162 27 158 25" stroke="#5c7a56" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+    <path d="M235 18 Q238 13 242 15" stroke="#5c7a56" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+    <path d="M305 22 Q302 27 298 25" stroke="#5c7a56" stroke-width="0.5" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
+

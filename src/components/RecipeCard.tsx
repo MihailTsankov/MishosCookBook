@@ -96,7 +96,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
                                     sx={{
                                         bgcolor: "secondary.light",
                                         color: "text.secondary",
-                                        fontSize: "0.7rem",
+                                        fontSize: "1.05rem",
                                     }}
                                 />
                             ))}
@@ -135,7 +135,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
                             size="small"
                             variant="outlined"
                             sx={{
-                                borderColor: "#5b9bd5",
+                                borderColor: "secondary.main",
                                 borderWidth: 2,
                                 color: "text.secondary",
                             }}

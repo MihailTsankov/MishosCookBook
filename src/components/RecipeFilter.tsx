@@ -132,9 +132,9 @@ export default function RecipeFilter({ filters, onChange }: RecipeFilterProps) {
                             sx={{
                                 flexShrink: 0,
                                 "& .MuiToggleButton-root": {
-                                    px: 1,
-                                    py: 0.1,
-                                    fontSize: "0.7rem",
+                                    px: 1.5,
+                                    py: 0.3,
+                                    fontSize: "0.95rem",
                                     fontWeight: 600,
                                     textTransform: "none",
                                     lineHeight: 1.5,
@@ -227,9 +227,9 @@ export default function RecipeFilter({ filters, onChange }: RecipeFilterProps) {
                                         : translate("filter.minutesShort", { count: sliderValue })
                                 }
                                 sx={{
-                                    color: "#5b9bd5",
+                                    color: "secondary.main",
                                     "& .MuiSlider-markLabel": {
-                                        fontSize: "0.75rem",
+                                        fontSize: "1rem",
                                     },
                                 }}
                             />

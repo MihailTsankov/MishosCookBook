@@ -6,5 +6,43 @@
 
 body {
   min-height: 100vh;
-  background-color: #fdf6f0;
+  background-color: #f5f0e6;
+  /* Subtle parchment texture using CSS gradient — forest light on aged paper */
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(92, 122, 86, 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(201, 168, 76, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(92, 122, 86, 0.02) 0%, transparent 50%);
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* Subtle Art Nouveau twisted branch watermarks in the page corners */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 320px;
+  height: 320px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.04;
+  /* Tint the black SVG to forest green */
+  filter: brightness(0) saturate(100%) invert(47%) sepia(11%) saturate(800%) hue-rotate(82deg) brightness(92%) contrast(88%);
+}
+
+body::before {
+  top: 0;
+  left: 0;
+  background-image: url("/assets/art-nouveau-Steren_Twisted_Branch.svg");
+  background-position: top left;
+}
+
+body::after {
+  bottom: 0;
+  right: 0;
+  background-image: url("/assets/art-nouveau-Steren_Twisted_Branch_2.svg");
+  background-position: bottom right;
+  transform: scaleX(-1);
 }
