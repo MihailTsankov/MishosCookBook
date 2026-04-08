@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "postbuild": "node -e \"const fs=require('fs');fs.copyFileSync('dist/index.html','dist/404.html');console.log('Copied dist/index.html to dist/404.html')\"",
+    "postbuild": "node scripts/generate-og-pages.mjs",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
