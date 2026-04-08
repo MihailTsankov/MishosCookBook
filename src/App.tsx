@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import RecipeGrid from "./components/RecipeGrid";
 import RecipeDialog from "./components/RecipeDialog";
+import ElvenTreeBorders from "./components/ElvenTreeBorders";
 
 function AppRoutes() {
     const location = useLocation();
@@ -8,6 +9,7 @@ function AppRoutes() {
 
     return (
         <>
+            <ElvenTreeBorders />
             <Routes location={state?.backgroundLocation || location}>
                 <Route path="/" element={<RecipeGrid />} />
                 <Route path="/recipe/:id" element={<RecipeGrid />} />
