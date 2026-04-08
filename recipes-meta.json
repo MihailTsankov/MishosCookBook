@@ -1,0 +1,892 @@
+[
+  {
+    "id": "musaka",
+    "title": "Мусака",
+    "firstImageSrc": "/images/musaka.png"
+  },
+  {
+    "id": "musaka-v-multi-cooker",
+    "title": "Мусака в multi-cooker",
+    "firstImageSrc": "/images/musaka_multicooker.jpg"
+  },
+  {
+    "id": "varen-bob",
+    "title": "Варен Боб",
+    "firstImageSrc": "/images/beans.jpg"
+  },
+  {
+    "id": "varen-bob-s-meso",
+    "title": "Варен Боб с месо",
+    "firstImageSrc": "/images/bob_s_meso.jpg"
+  },
+  {
+    "id": "leshta",
+    "title": "Леща",
+    "firstImageSrc": "/images/leshta.png"
+  },
+  {
+    "id": "leshta-yahniya",
+    "title": "Леща яхния",
+    "firstImageSrc": "/images/leshta_stew.png"
+  },
+  {
+    "id": "yahniya-ot-chervena-leshta",
+    "title": "Яхния от червена леща",
+    "firstImageSrc": "/images/leshta_chervena_stew_portion.jpg"
+  },
+  {
+    "id": "pile-s-oriz",
+    "title": "Пиле с ориз",
+    "firstImageSrc": "/images/chickenWithRice.jpg"
+  },
+  {
+    "id": "pile-s-oriz-v-multikukar",
+    "title": "Пиле с ориз в мултикукър",
+    "firstImageSrc": "/images/oriz_multicooker.jpg"
+  },
+  {
+    "id": "pile-s-oriz-basmati",
+    "title": "Пиле с ориз басмати",
+    "firstImageSrc": "/images/riceBasmatiWithChicken.jpg"
+  },
+  {
+    "id": "kremavo-toskansko-pile-s-oriz",
+    "title": "Кремаво тосканско пиле с ориз",
+    "firstImageSrc": "/images/pile_sirena_oriz_portion.jpg"
+  },
+  {
+    "id": "parzhen-gotov-oriz-s-yaytsa-kashkaval-i-mlyako",
+    "title": "Пържен готов ориз с яйца, кашкавал и мляко",
+    "firstImageSrc": "/images/riceWithEggsAndMilk.jpeg"
+  },
+  {
+    "id": "pile-s-kartofi",
+    "title": "Пиле с картофи",
+    "firstImageSrc": "/images/potatoesWithChicken.png"
+  },
+  {
+    "id": "butter-chicken",
+    "title": "Butter chicken",
+    "firstImageSrc": "/images/chicken_butter_1.jpg"
+  },
+  {
+    "id": "pileshka-supena-yahniya",
+    "title": "Пилешка супена яхния",
+    "firstImageSrc": "/images/chicken_stew_1.jpg"
+  },
+  {
+    "id": "pile-frikase-blanquette-de-poulet",
+    "title": "Пиле фрикасе (Blanquette de Poulet)",
+    "firstImageSrc": "/images/pile_chicken_fricassee_portion.jpg"
+  },
+  {
+    "id": "pile-zhulien",
+    "title": "Пиле жулиен",
+    "firstImageSrc": "/images/pileJulien.png"
+  },
+  {
+    "id": "zapecheni-kartofi-s-bekon-i-smetana",
+    "title": "Запечени картофи с бекон и сметана",
+    "firstImageSrc": "/images/kartofibaconsmetana_1.jpg"
+  },
+  {
+    "id": "pecheni-kartofi",
+    "title": "Печени картофи",
+    "firstImageSrc": "/images/potatoes_roasted_1.jpg"
+  },
+  {
+    "id": "nadupeni-kartofi",
+    "title": "Надупени картофи",
+    "firstImageSrc": "/images/nadupeniKartofi.jpg"
+  },
+  {
+    "id": "kartofi-i-morkovi-na-furna",
+    "title": "Картофи и моркови на фурна",
+    "firstImageSrc": "/images/kartofi_s_morkovi_1.jpg"
+  },
+  {
+    "id": "kartofena-yahniya-v-multikukar",
+    "title": "Картофена яхния в мултикукър",
+    "firstImageSrc": "/images/stew_potatoes_multicooker_1.jpg"
+  },
+  {
+    "id": "kartofeni-kyufteta-v-air-fryer",
+    "title": "Картофени кюфтета в air-fryer",
+    "firstImageSrc": "/images/kartofeni_kufteta_airfrier_big_bowl.jpg"
+  },
+  {
+    "id": "kartofeni-kyufteta-s-shunka-i-kashkaval",
+    "title": "Картофени кюфтета с шунка и кашкавал",
+    "firstImageSrc": "/images/kartofeni_kufteta_1.jpg"
+  },
+  {
+    "id": "nyoki",
+    "title": "Ньоки",
+    "firstImageSrc": "/images/nioki.jpg"
+  },
+  {
+    "id": "kartofeni-bonboni-s-motsarela",
+    "title": "Картофени бонбони с моцарела",
+    "firstImageSrc": "/images/kartofeni_bonboni_mocarela_1.jpg"
+  },
+  {
+    "id": "parzheni-kartofi-s-air-fryer",
+    "title": "Пържени картофи с air-fryer",
+    "firstImageSrc": "/images/friedPotatoes1.jpg"
+  },
+  {
+    "id": "kartofeno-pyure",
+    "title": "Картофено пюре",
+    "firstImageSrc": "/images/kartofenopure.jpg"
+  },
+  {
+    "id": "vareni-pecheni-kartofi",
+    "title": "Варени-печени картофи",
+    "firstImageSrc": "/images/vareniPecheniKartofi.jpg"
+  },
+  {
+    "id": "pileshki-parzholki-s-gabi-na-furna",
+    "title": "Пилешки пържолки с гъби на фурна",
+    "firstImageSrc": "/images/pilegabifurna.png"
+  },
+  {
+    "id": "domateno-pile",
+    "title": "Доматено Пиле",
+    "firstImageSrc": "/images/domatenoPile.jpg"
+  },
+  {
+    "id": "pileshki-drobcheta-v-maslo",
+    "title": "Пилешки дробчета в масло",
+    "firstImageSrc": "/images/drobVMaslo.jpg"
+  },
+  {
+    "id": "panirani-kriltsa",
+    "title": "Панирани крилца",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "panirano-pileshko-na-furna",
+    "title": "Панирано пилешко на фурна",
+    "firstImageSrc": "/images/chicken_flowered_baked_1.jpg"
+  },
+  {
+    "id": "panirani-kriltsa-na-furna",
+    "title": "Панирани крилца на фурна",
+    "firstImageSrc": "/images/paniraniKrilcaNaFurna.jpg"
+  },
+  {
+    "id": "pecheni-kriltsa-ili-butcheta-na-furna",
+    "title": "Печени крилца или бутчета на фурна",
+    "firstImageSrc": "/images/krilcaNaFurna.jpg"
+  },
+  {
+    "id": "pile-s-pesto-zavito-v-bekon",
+    "title": "Пиле с песто завито в бекон",
+    "firstImageSrc": "/images/pilepesto5.jpg"
+  },
+  {
+    "id": "kordon-blyo-cordon-bleu",
+    "title": "Кордон Бльо (Cordon Bleu)",
+    "firstImageSrc": "/images/cordonbleu_1.jpg"
+  },
+  {
+    "id": "pileshki-gardi-na-tigan-sas-sos",
+    "title": "Пилешки гърди на тиган със сос",
+    "firstImageSrc": "/images/pilegardisos.jpg"
+  },
+  {
+    "id": "pileshki-gardi-v-sladko-kisel-sos",
+    "title": "Пилешки гърди в сладко-кисел сос",
+    "firstImageSrc": "/images/pile_sladkoKiselSos_1.jpg"
+  },
+  {
+    "id": "parzheno-pile-na-air-fryer",
+    "title": "Пържено пиле на air-fryer",
+    "firstImageSrc": "/images/friedChickenAirFryer.jpg"
+  },
+  {
+    "id": "perfektni-pileshki-gardi",
+    "title": "Перфектни пилешки гърди",
+    "firstImageSrc": "/images/pilegardisos.jpg"
+  },
+  {
+    "id": "chicken-nuggets",
+    "title": "Chicken nuggets",
+    "firstImageSrc": "/images/chickenNuggets_1.jpg"
+  },
+  {
+    "id": "perfektni-pileshki-parzholi-ot-but",
+    "title": "Перфектни пилешки пържоли от бут",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "svinsko-na-furna",
+    "title": "Свинско на фурна",
+    "firstImageSrc": "/images/svinsko_na_furna_2.jpg"
+  },
+  {
+    "id": "svinski-vratni-zapechatani-i-zapecheni",
+    "title": "Свински вратни запечатани и запечени",
+    "firstImageSrc": "/images/svinskaVratnaSasSirene.jpg"
+  },
+  {
+    "id": "bavno-gotveno-svinsko",
+    "title": "Бавно готвено свинско",
+    "firstImageSrc": "/images/svinsko_bavnoGotveno.jpg"
+  },
+  {
+    "id": "bavno-gotveno-darpano-svinsko-s-chipotle-mayoneza",
+    "title": "Бавно готвено дърпано свинско с чипотле майонеза",
+    "firstImageSrc": "/images/svinsko_bavnoGotveno_chipotle_1.jpg"
+  },
+  {
+    "id": "bavno-gotveno-meso-s-vino",
+    "title": "Бавно готвено месо с вино",
+    "firstImageSrc": "/images/bavnoGotvenoMesoSVino.jpg"
+  },
+  {
+    "id": "ramstek-s-luk",
+    "title": "Рамстек с Лук",
+    "firstImageSrc": "/images/ramstek1.jpg"
+  },
+  {
+    "id": "postni-kyufteta-s-bob-i-nahut",
+    "title": "Постни кюфтета с боб и нахут",
+    "firstImageSrc": "/images/veganMeatballs.jpg"
+  },
+  {
+    "id": "postni-kyufteta-s-chervena-leshta",
+    "title": "Постни кюфтета с червена леща",
+    "firstImageSrc": "/images/kufteta_leshta_0.jpg"
+  },
+  {
+    "id": "postni-kyufteta-s-leshta-i-morkovi",
+    "title": "Постни кюфтета с леща и моркови",
+    "firstImageSrc": "/images/lentilsMeatballs.jpg"
+  },
+  {
+    "id": "leshteni-kyufteta",
+    "title": "Лещени кюфтета",
+    "firstImageSrc": "/images/leshteni_kufteta_1.jpg"
+  },
+  {
+    "id": "zelevi-sarmi-s-kayma",
+    "title": "Зелеви сарми с кайма",
+    "firstImageSrc": "/images/sarmiZelevi.jpg"
+  },
+  {
+    "id": "lozovi-sarmi-postni",
+    "title": "Лозови сарми (постни)",
+    "firstImageSrc": "/images/lozoviSarmi.jpg"
+  },
+  {
+    "id": "vinen-kebap-v-multikukar",
+    "title": "Винен кебап в мултикукър",
+    "firstImageSrc": "/images/vinen_kebab_multi-cooker_portion.jpg"
+  },
+  {
+    "id": "vinen-kebap",
+    "title": "Винен кебап",
+    "firstImageSrc": "/images/vinenKebap.jpg"
+  },
+  {
+    "id": "zapechatani-svinski-vratni-s-gabi-na-furna",
+    "title": "Запечатани свински вратни с гъби на фурна",
+    "firstImageSrc": "/images/svinskoSGybi.jpg"
+  },
+  {
+    "id": "syomga-s-hrupkava-korichka",
+    "title": "Сьомга с хрупкава коричка",
+    "firstImageSrc": "/images/salmon.jpg"
+  },
+  {
+    "id": "varen-oriz",
+    "title": "Варен ориз",
+    "firstImageSrc": "/images/rice.png"
+  },
+  {
+    "id": "varen-kafyav-oriz",
+    "title": "Варен кафяв ориз",
+    "firstImageSrc": "/images/rice_brown_1.jpg"
+  },
+  {
+    "id": "rizoto",
+    "title": "Ризото",
+    "firstImageSrc": "/images/risoto.jpg"
+  },
+  {
+    "id": "spageti-boloneze",
+    "title": "Спагети болонезе",
+    "firstImageSrc": "/images/pasta bolognese.jpg"
+  },
+  {
+    "id": "teleshko-ragu",
+    "title": "Телешко Рагу",
+    "firstImageSrc": "/images/pasta_ragu.jpg"
+  },
+  {
+    "id": "lazanya-makaroni-boloneze",
+    "title": "Лазаня макарони болонезе",
+    "firstImageSrc": "/images/lasagnaMacaroniBolognese.jpg"
+  },
+  {
+    "id": "pasta-karbonara",
+    "title": "Паста карбонара",
+    "firstImageSrc": "/images/pastaCarbonara1.jpg"
+  },
+  {
+    "id": "orizovi-spageti-sas-zelenchutsi",
+    "title": "Оризови спагети със зеленчуци",
+    "firstImageSrc": "/images/rice_noodles_with_vegetables.jpg"
+  },
+  {
+    "id": "parzheni-kyufteta-s-domaten-sos",
+    "title": "Пържени кюфтета с доматен сос",
+    "firstImageSrc": "/images/meatBallsInTomatoeSauce.png"
+  },
+  {
+    "id": "kyuftentsa-s-domaten-sos",
+    "title": "Кюфтенца с доматен сос",
+    "firstImageSrc": "/images/meatballs_tomato_sauce.jpg"
+  },
+  {
+    "id": "kyufteta-s-byal-sos",
+    "title": "Кюфтета с бял сос",
+    "firstImageSrc": "/images/kufteta_white_sauce_1.jpg"
+  },
+  {
+    "id": "kyufteta-s-domaten-sos",
+    "title": "Кюфтета с доматен сос",
+    "firstImageSrc": "/images/kufteta_domaten_sos_0.jpg"
+  },
+  {
+    "id": "kyufteta-na-furna",
+    "title": "Кюфтета на фурна",
+    "firstImageSrc": "/images/meatBallsInAnOven.png"
+  },
+  {
+    "id": "parzheni-kyufteta-v-air-fryer",
+    "title": "Пържени кюфтета в air-fryer",
+    "firstImageSrc": "/images/kufteta_air-fryer.jpg"
+  },
+  {
+    "id": "hrupkavi-tikvichki-na-furna",
+    "title": "Хрупкави тиквички на фурна",
+    "firstImageSrc": "/images/tikvichkiNaFurna.jpeg"
+  },
+  {
+    "id": "parzheni-tikvichki",
+    "title": "Пържени тиквички",
+    "firstImageSrc": "/images/tikvichkiParjeni.jpg"
+  },
+  {
+    "id": "rultsa-ot-tikvichki-i-sirene",
+    "title": "Рулца от тиквички и сирене",
+    "firstImageSrc": "/images/rulca_tikvichki_portion.jpg"
+  },
+  {
+    "id": "spageti-s-krenvirshi",
+    "title": "Спагети с кренвирши",
+    "firstImageSrc": "/images/spaghettiinhotdogs.png"
+  },
+  {
+    "id": "svinski-filentsa-s-med",
+    "title": "Свински филенца с мед",
+    "firstImageSrc": "/images/filencaSMed.jpg"
+  },
+  {
+    "id": "marinovani-rebra-na-furna",
+    "title": "Мариновани Ребра на фурна",
+    "firstImageSrc": "/images/rebra_vino_med.jpg"
+  },
+  {
+    "id": "rebra-na-furna",
+    "title": "Ребра на фурна",
+    "firstImageSrc": "/images/ribs_1.jpg"
+  },
+  {
+    "id": "pecheni-nadenitsi",
+    "title": "Печени наденици",
+    "firstImageSrc": "/images/sausages_1.jpg"
+  },
+  {
+    "id": "yaytsa-po-shveytsarski-krok-madam",
+    "title": "Яйца по Швейцарски (Крок Мадам)",
+    "firstImageSrc": "/images/yaicaPoShveicarski.jpg"
+  },
+  {
+    "id": "strandzhanki",
+    "title": "Странджанки",
+    "firstImageSrc": "/images/strandzhanki.jpg"
+  },
+  {
+    "id": "marzeliva-banitsa",
+    "title": "Мързелива баница",
+    "firstImageSrc": "/images/marzeliva_banica_1.jpg"
+  },
+  {
+    "id": "sandvichi",
+    "title": "Сандвичи",
+    "firstImageSrc": "/images/sandwich_meatballsub_1.jpg"
+  },
+  {
+    "id": "sloppy-joes",
+    "title": "Sloppy Joes",
+    "firstImageSrc": "/images/sloppyJoes.jpg"
+  },
+  {
+    "id": "burito",
+    "title": "Бурито",
+    "firstImageSrc": "/images/burrito.jpg"
+  },
+  {
+    "id": "dyuner",
+    "title": "Дюнер",
+    "firstImageSrc": "/images/doner.jpg"
+  },
+  {
+    "id": "mesni-purichki",
+    "title": "Месни пурички",
+    "firstImageSrc": "/images/meatCigars.jpg"
+  },
+  {
+    "id": "lavash-kebab",
+    "title": "Лаваш кебаб",
+    "firstImageSrc": "/images/lavash_kebab_portion.jpg"
+  },
+  {
+    "id": "domashna-pitka-i-pitki-za-hamburgeri",
+    "title": "Домашна питка и питки за хамбургери",
+    "firstImageSrc": "/images/pitka.jpg"
+  },
+  {
+    "id": "palnozarnest-hlyab",
+    "title": "Пълнозърнест хляб",
+    "firstImageSrc": "/images/pitka.jpg"
+  },
+  {
+    "id": "bolyarska-pita",
+    "title": "Болярска пита",
+    "firstImageSrc": "/images/pitka_bolyarska.jpg"
+  },
+  {
+    "id": "vita-banitsa",
+    "title": "Вита баница",
+    "firstImageSrc": "/images/banica_vita.jpg"
+  },
+  {
+    "id": "garchena-banitsa",
+    "title": "Гърчена баница",
+    "firstImageSrc": "/images/banicaGarchena.jpg"
+  },
+  {
+    "id": "viti-buterki-s-bekon",
+    "title": "Вити бутерки с бекон",
+    "firstImageSrc": "/images/vitiButerkiSBekon.jpg"
+  },
+  {
+    "id": "testo-za-pitsa",
+    "title": "Тесто за пица",
+    "firstImageSrc": "/images/pizza2.jpg"
+  },
+  {
+    "id": "domashna-pitsa",
+    "title": "Домашна пица",
+    "firstImageSrc": "/images/pizza.jpg"
+  },
+  {
+    "id": "fokacha",
+    "title": "Фокача",
+    "firstImageSrc": "/images/focaccia.jpg"
+  },
+  {
+    "id": "bageti",
+    "title": "Багети",
+    "firstImageSrc": "/images/baguette.jpg"
+  },
+  {
+    "id": "pirozhki-sas-sirene",
+    "title": "Пирожки със сирене",
+    "firstImageSrc": "/images/pirojki_sirene.jpg"
+  },
+  {
+    "id": "parlenki-sas-sirene",
+    "title": "Пърленки със сирене",
+    "firstImageSrc": "/images/ParlenkiSirene.jpg"
+  },
+  {
+    "id": "parlenki-na-furna",
+    "title": "Пърленки на фурна",
+    "firstImageSrc": "/images/parlenka_furna_1.jpg"
+  },
+  {
+    "id": "puhkavi-biskviti-pitchitsi",
+    "title": "Пухкави бисквити / питчици",
+    "firstImageSrc": "/images/biscuits_fluffy_1.jpg"
+  },
+  {
+    "id": "pitchitsi-snezhanka",
+    "title": "Питчици снежанка",
+    "firstImageSrc": "/images/pitki_snejanka_1.jpg"
+  },
+  {
+    "id": "sirenki",
+    "title": "Сиренки",
+    "firstImageSrc": "/images/sirenki.jpg"
+  },
+  {
+    "id": "sirenki-dobrudzhanki",
+    "title": "Сиренки Добруджанки",
+    "firstImageSrc": "/images/sirenkiDobrudjanki.jpg"
+  },
+  {
+    "id": "pileshka-supa-sas-zastroyka",
+    "title": "Пилешка супа със застройка",
+    "firstImageSrc": "/images/supa_pile_1.jpg"
+  },
+  {
+    "id": "zelenchukova-krem-supa",
+    "title": "Зеленчукова крем супа",
+    "firstImageSrc": "/images/supaKremZelenchukova.jpg"
+  },
+  {
+    "id": "domatena-krem-supa",
+    "title": "Доматена крем супа",
+    "firstImageSrc": "/images/supa_krem_domat_1.jpg"
+  },
+  {
+    "id": "kartofena-krem-supa",
+    "title": "Картофена крем супа",
+    "firstImageSrc": "/images/supa_krem_kartofena_1.jpg"
+  },
+  {
+    "id": "supa-topcheta",
+    "title": "Супа топчета",
+    "firstImageSrc": "/images/supa_topcheta_portion.jpg"
+  },
+  {
+    "id": "gabena-supa",
+    "title": "Гъбена супа",
+    "firstImageSrc": "/images/soup_mushroom.jpg"
+  },
+  {
+    "id": "pileshki-bulyon",
+    "title": "Пилешки бульон",
+    "firstImageSrc": "/images/chicken_stock.jpg"
+  },
+  {
+    "id": "barkani-yaytsa",
+    "title": "Бъркани яйца",
+    "firstImageSrc": "/images/eggs_scrambled.jpg"
+  },
+  {
+    "id": "yaycheni-mafini-egg-muffins",
+    "title": "Яйчени мъфини (Egg muffins)",
+    "firstImageSrc": "/images/eggmuffins2.jpg"
+  },
+  {
+    "id": "keto-pileshki-burger-keto-chicken-burger",
+    "title": "Кето пилешки бургер (Keto Chicken Burger)",
+    "firstImageSrc": "/images/Keto-chicken-burger-h.avif"
+  },
+  {
+    "id": "yaytsa-benedikt",
+    "title": "Яйца Бенедикт",
+    "firstImageSrc": "/images/eggsbenedict1.jpg"
+  },
+  {
+    "id": "salata-s-grozde-i-sirena",
+    "title": "Салата с грозде и сирена",
+    "firstImageSrc": "/images/SalataGrozdeISirena.jpg"
+  },
+  {
+    "id": "salata-tsezar",
+    "title": "Салата Цезар",
+    "firstImageSrc": "/images/caesar_salad.jpg"
+  },
+  {
+    "id": "zelena-salata-s-riba-ton",
+    "title": "Зелена салата с риба тон",
+    "firstImageSrc": "/images/zelena_salata_s_riba_ton.jpg"
+  },
+  {
+    "id": "salata-s-yaycheni-spageti",
+    "title": "Салата с яйчени спагети.",
+    "firstImageSrc": "/images/salata_spageti_ot_yaica.jpg"
+  },
+  {
+    "id": "salata-chikenita",
+    "title": "Салата Чикенита",
+    "firstImageSrc": "/images/salata_chikenita.jpg"
+  },
+  {
+    "id": "makaroni-na-furna-soleni",
+    "title": "Макарони на фурна (солени)",
+    "firstImageSrc": "/images/makaroni.png"
+  },
+  {
+    "id": "mac-and-cheese",
+    "title": "Mac and Cheese",
+    "firstImageSrc": "/images/makandcheese1.jpg"
+  },
+  {
+    "id": "pile-s-makaroni",
+    "title": "Пиле с макарони",
+    "firstImageSrc": "/images/makaroniPile.jpg"
+  },
+  {
+    "id": "klasicheski-palachinki",
+    "title": "Класически палачинки",
+    "firstImageSrc": "/images/palachinki_1.jpg"
+  },
+  {
+    "id": "plovdivski-palachinki",
+    "title": "Пловдивски палачинки",
+    "firstImageSrc": "/images/palachinkiPlovdiv.jpg"
+  },
+  {
+    "id": "amerikanski-palachinki",
+    "title": "Американски палачинки",
+    "firstImageSrc": "/images/palachinki_amerikanski_porcia.jpg"
+  },
+  {
+    "id": "bananovi-palachinki",
+    "title": "Бананови палачинки",
+    "firstImageSrc": "/images/bananapalachinki.jpeg"
+  },
+  {
+    "id": "gofreti-klasicheski",
+    "title": "Гофрети (класически)",
+    "firstImageSrc": "/images/gofreti_classic.jpg"
+  },
+  {
+    "id": "buhti",
+    "title": "Бухти",
+    "firstImageSrc": "/images/buhti.jpg"
+  },
+  {
+    "id": "lesni-buhtichki",
+    "title": "Лесни бухтички",
+    "firstImageSrc": "/images/buhti_lesni_1.jpg"
+  },
+  {
+    "id": "parzheni-filiyki-french-toast-s-kozunak",
+    "title": "Пържени-филийки (French Toast) с козунак",
+    "firstImageSrc": "/images/frenchToast_1.jpg"
+  },
+  {
+    "id": "kozunacheni-pecheni-parzheni-filiyki",
+    "title": "Козуначени печени пържени-филийки",
+    "firstImageSrc": "/images/pecheniParjeniFilijki.jpg"
+  },
+  {
+    "id": "puding-s-mango-i-chia",
+    "title": "Пудинг с манго и чиа",
+    "firstImageSrc": "/images/chiaPudding.jpg"
+  },
+  {
+    "id": "shokoladovi-shisharki",
+    "title": "Шоколадови шишарки",
+    "firstImageSrc": "/images/chocoPineCones1.jpg"
+  },
+  {
+    "id": "shokoladovi-kurabiyki-s-parchentsa-shokolad",
+    "title": "Шоколадови курабийки с парченца шоколад",
+    "firstImageSrc": "/images/cookies_chocolate_chips_1.jpg"
+  },
+  {
+    "id": "shokoladovi-kurabiyki-s-3-sastavki",
+    "title": "Шоколадови курабийки с 3 съставки",
+    "firstImageSrc": "/images/Cookies_3_Ingredients_1.jpg"
+  },
+  {
+    "id": "zaharni-kakaovi-kurabiyki",
+    "title": "Захарни какаови курабийки",
+    "firstImageSrc": "/images/Cookies_sugar_1.jpg"
+  },
+  {
+    "id": "negarche-na-kiki",
+    "title": "Негърче на Кики",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "brauni-na-tigan",
+    "title": "Брауни на тиган",
+    "firstImageSrc": "/images/brownie_skillet_1.jpg"
+  },
+  {
+    "id": "biskvitena-torta-s-kiselo-mlyako",
+    "title": "Бисквитена торта с кисело мляко",
+    "firstImageSrc": "/images/biskvitena_torta_kiselo_mlyako.jpg"
+  },
+  {
+    "id": "biskvitena-torta-s-nisheste",
+    "title": "Бисквитена торта с нишесте",
+    "firstImageSrc": "/images/torta_biskvitena_1.jpg"
+  },
+  {
+    "id": "guakamole",
+    "title": "Гуакамоле",
+    "firstImageSrc": "/images/guakamole.jpg"
+  },
+  {
+    "id": "pesto-dzhenoveze",
+    "title": "Песто Дженовезе",
+    "firstImageSrc": "/images/pesto.jpg"
+  },
+  {
+    "id": "sos-holandez",
+    "title": "Сос Холандез",
+    "firstImageSrc": "/images/holandez.jpg"
+  },
+  {
+    "id": "sos-beshamel",
+    "title": "Сос Бешамел",
+    "firstImageSrc": "/images/bechamel.jpg"
+  },
+  {
+    "id": "sos-greyvi",
+    "title": "Сос грейви",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "mayoneza",
+    "title": "Майонеза",
+    "firstImageSrc": "/images/mayonnaise.jpg"
+  },
+  {
+    "id": "mayoneza-s-shafran",
+    "title": "Майонеза с Шафран",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "humus",
+    "title": "Хумус",
+    "firstImageSrc": "/images/humus_1.jpg"
+  },
+  {
+    "id": "karameliziran-luk",
+    "title": "Карамелизиран лук",
+    "firstImageSrc": "/images/caramelized_onions.jpg"
+  },
+  {
+    "id": "poshirani-yaytsa",
+    "title": "Поширани яйца",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "brokoli-na-furna",
+    "title": "Броколи на фурна",
+    "firstImageSrc": "/images/broccoli.jpg"
+  },
+  {
+    "id": "bryukselsko-zele-na-furna",
+    "title": "Брюкселско зеле на фурна",
+    "firstImageSrc": "/images/bakedBrusselSprouts1.jpg"
+  },
+  {
+    "id": "rosemary-salt-if-you-know-you-know",
+    "title": "Rosemary Salt - If You Know, You Know",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "tri-salatni-dresingi",
+    "title": "Три салатни дресинги",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "pet-salatni-dresingi",
+    "title": "Пет салатни дресинги",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "vinegret",
+    "title": "Винегрет",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "tochene-i-opravyane-na-nozh-s-kamak-za-tochene",
+    "title": "Точене и оправяне на нож с камък за точене",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "kak-da-rezhem-vsyako-meso",
+    "title": "Как да режем всяко месо.",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "kak-da-rezhem-vsyako-sirene",
+    "title": "Как да режем всяко сирене.",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "vazhni-umeniya-s-nozh-za-vseki-gotvach",
+    "title": "Важни умения с нож за всеки готвач",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "izpolzvane-na-tigani-ot-nerazhdaema-stomana",
+    "title": "Използване на тигани от неръждаема стомана",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "marzelivki-test",
+    "title": "Мързеливки (ТЕСТ)",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "vegan-mayoneza-sas-gorchitsa-test",
+    "title": "Веган Майонеза със горчица (ТЕСТ)",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "lavash-burger-test",
+    "title": "Лаваш бургер (ТЕСТ)",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "mini-pitsi-hapki-test",
+    "title": "Мини пици хапки (ТЕСТ)",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "zelenchukov-chips-test",
+    "title": "Зеленчуков чипс (ТЕСТ)",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "usukani-prachitsi-s-kashkaval-test",
+    "title": "Усукани пръчици с кашкавал (ТЕСТ)",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "kartofi-po-shvedski-test",
+    "title": "Картофи по шведски (ТЕСТ)",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "usukani-hotdozi-test",
+    "title": "Усукани хотдози (ТЕСТ)",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "grilled-cheese-roll-ups-test",
+    "title": "Grilled Cheese Roll Ups (ТЕСТ)",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "mnogo-puhkava-pitka-test",
+    "title": "Много Пухкава питка (ТЕСТ)",
+    "firstImageSrc": ""
+  },
+  {
+    "id": "syomga-sas-sinyo-sirene-test",
+    "title": "Сьомга със синьо сирене (ТЕСТ)",
+    "firstImageSrc": "/images/salmonwithcheese.jpeg"
+  },
+  {
+    "id": "svezha-salata-s-izvara-test",
+    "title": "Свежа салата с извара (ТЕСТ)",
+    "firstImageSrc": ""
+  }
+]
