@@ -26,28 +26,28 @@ const theme = createTheme({
         /* Cormorant renders visually smaller than sans-serif at equal CSS sizes,
            so we bump the global base and every variant accordingly. */
         fontSize: 16,
-        fontFamily: '"Cormorant", "Garamond", "Georgia", serif',
+        fontFamily: '"Alice", "Cormorant", "Garamond", "Georgia", serif',
         h3: {
-            fontFamily: '"Cinzel", "Cormorant", serif',
+            fontFamily: '"Alice", "Cinzel", "Cormorant", serif',
             fontWeight: 600,
             fontSize: "2.4rem",
             letterSpacing: "0.04em",
             color: "#2d2a24",
         },
         h4: {
-            fontFamily: '"Cinzel", "Cormorant", serif',
+            fontFamily: '"Alice", "Cinzel", "Cormorant", serif',
             fontWeight: 600,
             fontSize: "2rem",
             letterSpacing: "0.03em",
         },
         h5: {
-            fontFamily: '"Cinzel", "Cormorant", serif',
+            fontFamily: '"Alice", "Cinzel", "Cormorant", serif',
             fontWeight: 600,
             fontSize: "1.6rem",
             letterSpacing: "0.02em",
         },
         h6: {
-            fontFamily: '"Cinzel", "Cormorant", serif',
+            fontFamily: '"Alice", "Cinzel", "Cormorant", serif',
             fontWeight: 500,
             fontSize: "1.35rem",
         },
@@ -65,11 +65,11 @@ const theme = createTheme({
         MuiChip: {
             styleOverrides: {
                 root: {
-                    fontSize: "1.15rem",
+                    fontSize: "1.05rem",
                     height: 36,
                 },
                 sizeSmall: {
-                    fontSize: "1.05rem",
+                    fontSize: "0.95rem",
                     height: 30,
                 },
             },

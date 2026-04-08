@@ -96,7 +96,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
                                     sx={{
                                         bgcolor: "secondary.light",
                                         color: "text.secondary",
-                                        fontSize: "1.05rem",
+                                        fontSize: "0.95rem",
                                     }}
                                 />
                             ))}
