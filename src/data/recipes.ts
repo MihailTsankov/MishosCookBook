@@ -5569,8 +5569,8 @@ const recipes: Recipe[] = [
             how: ["тиган"],
             diet: [],
             meat: [],
-            dairy: ["шоколад"],
-            plants: [],
+            dairy: ["яйца", "шоколад", "сладолед"],
+            plants: ["захар", "брашно", "пекан"],
         },
         ingredients: [
             "--- Продукти ---",
