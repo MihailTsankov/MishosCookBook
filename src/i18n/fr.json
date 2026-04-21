@@ -35,7 +35,8 @@
         "serves": "Pour {{count}} personnes",
         "ingredients": "Ingrédients",
         "instructions": "Instructions",
-        "links": "Liens"
+        "links": "Liens",
+        "watchOnYoutube": "Regarder sur YouTube"
     },
     "scrollToTop": "HAUT"
 }

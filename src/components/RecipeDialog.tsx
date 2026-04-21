@@ -18,7 +18,6 @@ import {
 } from "@mui/material";
 import type { TransitionProps } from "@mui/material/transitions";
 import CloseIcon from "@mui/icons-material/Close";
-import LinkIcon from "@mui/icons-material/Link";
 import LocalDiningIcon from "@mui/icons-material/LocalDining";
 import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
 import PeopleIcon from "@mui/icons-material/People";
@@ -29,6 +28,23 @@ import { useNavigate, useParams } from "react-router-dom";
 import recipes from "../data/recipes";
 import { flattenKeywords } from "../data/recipes";
 import VineDivider from "./VineDivider";
+
+/**
+ * Extracts the YouTube video ID from various YouTube URL formats.
+ * Returns null if the URL is not a YouTube link.
+ */
+function extractYoutubeVideoId(url: string): string | null {
+    const patterns = [
+        /youtube\.com\/watch\?.*v=([a-zA-Z0-9_-]{11})/,
+        /youtu\.be\/([a-zA-Z0-9_-]{11})/,
+        /youtube\.com\/embed\/([a-zA-Z0-9_-]{11})/,
+    ];
+    for (const pattern of patterns) {
+        const match = url.match(pattern);
+        if (match) return match[1];
+    }
+    return null;
+}
 
 const Transition = forwardRef(function Transition(
     props: TransitionProps & { children: React.ReactElement<unknown> },
@@ -397,46 +413,92 @@ export default function RecipeDialog() {
                             >
                                 {translate("recipe.links")}
                             </Typography>
-                            <List dense>
+                            <Stack spacing={2} sx={{ mt: 1 }}>
                                 {recipe.urls.map((recipeUrl) => {
-                                    let urlLabel: string;
+                                    let hostname: string;
                                     try {
-                                        urlLabel = new URL(recipeUrl).hostname.replace(
+                                        hostname = new URL(recipeUrl).hostname.replace(
                                             /^www\./,
                                             "",
                                         );
                                     } catch {
-                                        urlLabel = recipeUrl;
+                                        hostname = recipeUrl;
                                     }
+
+                                    const youtubeVideoId = extractYoutubeVideoId(recipeUrl);
+                                    const thumbnailUrl = youtubeVideoId
+                                        ? `https://img.youtube.com/vi/${youtubeVideoId}/hqdefault.jpg`
+                                        : null;
+                                    const faviconUrl = `https://www.google.com/s2/favicons?domain=${hostname}&sz=32`;
+
                                     return (
-                                        <ListItem key={recipeUrl} sx={{ py: 0.3 }}>
-                                            <ListItemIcon
-                                                sx={{ minWidth: 28 }}
-                                            >
-                                                <LinkIcon
+                                        <Link
+                                            key={recipeUrl}
+                                            href={recipeUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            underline="none"
+                                            sx={{
+                                                display: "flex",
+                                                overflow: "hidden",
+                                                borderRadius: 2,
+                                                border: "1px solid",
+                                                borderColor: "divider",
+                                                bgcolor: "background.paper",
+                                                transition: "box-shadow 0.2s ease, transform 0.2s ease",
+                                                "&:hover": {
+                                                    boxShadow: "0 4px 16px rgba(0,0,0,0.12)",
+                                                    transform: "translateY(-2px)",
+                                                },
+                                            }}
+                                        >
+                                            {thumbnailUrl && (
+                                                <Box
+                                                    component="img"
+                                                    src={thumbnailUrl}
+                                                    alt=""
                                                     sx={{
-                                                        fontSize: 18,
-                                                        color: "primary.main",
+                                                        width: 160,
+                                                        minHeight: 90,
+                                                        objectFit: "cover",
+                                                        flexShrink: 0,
                                                     }}
                                                 />
-                                            </ListItemIcon>
-                                            <ListItemText
-                                                primary={
-                                                    <Link
-                                                        href={recipeUrl}
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        underline="hover"
-                                                        color="primary.dark"
+                                            )}
+                                            <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", px: 2, py: 1.5, minWidth: 0 }}>
+                                                <Stack direction="row" spacing={1} alignItems="center">
+                                                    <Box
+                                                        component="img"
+                                                        src={faviconUrl}
+                                                        alt=""
+                                                        sx={{ width: 16, height: 16, flexShrink: 0 }}
+                                                    />
+                                                    <Typography
+                                                        variant="caption"
+                                                        color="text.secondary"
+                                                        noWrap
                                                     >
-                                                        {urlLabel}
-                                                    </Link>
-                                                }
-                                            />
-                                        </ListItem>
+                                                        {hostname}
+                                                    </Typography>
+                                                </Stack>
+                                                <Typography
+                                                    variant="body2"
+                                                    color="primary.dark"
+                                                    sx={{
+                                                        mt: 0.5,
+                                                        fontWeight: 500,
+                                                        overflow: "hidden",
+                                                        textOverflow: "ellipsis",
+                                                        whiteSpace: "nowrap",
+                                                    }}
+                                                >
+                                                    {youtubeVideoId ? translate("recipe.watchOnYoutube") : hostname}
+                                                </Typography>
+                                            </Box>
+                                        </Link>
                                     );
                                 })}
-                            </List>
+                            </Stack>
                         </>
                     )}
                 </Container>

@@ -35,7 +35,8 @@
         "serves": "Порции: {{count}}",
         "ingredients": "Съставки",
         "instructions": "Приготвяне",
-        "links": "Връзки"
+        "links": "Връзки",
+        "watchOnYoutube": "Гледай в YouTube"
     },
     "scrollToTop": "Горе"
 }
