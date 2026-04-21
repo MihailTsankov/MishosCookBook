@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import RecipeGrid from "./components/RecipeGrid";
 import RecipeDialog from "./components/RecipeDialog";
 import ElvenTreeBorders from "./components/ElvenTreeBorders";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function AppRoutes() {
     const location = useLocation();
@@ -10,6 +11,7 @@ function AppRoutes() {
     return (
         <>
             <ElvenTreeBorders />
+            <ScrollToTopButton />
             <Routes location={state?.backgroundLocation || location}>
                 <Route path="/" element={<RecipeGrid />} />
                 <Route path="/recipe/:id" element={<RecipeGrid />} />
