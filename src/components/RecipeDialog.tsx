@@ -60,7 +60,13 @@ export default function RecipeDialog() {
     const recipe = recipes.find((foundRecipe) => foundRecipe.id === id);
 
     const handleClose = () => {
-        navigate("/");
+        // Use navigate(-1) to go back in history so the grid filter state is preserved.
+        // Fall back to "/" when there is no prior history entry (direct URL visit).
+        if (window.history.state && window.history.state.idx > 0) {
+            navigate(-1);
+        } else {
+            navigate("/");
+        }
     };
 
     // Resolve public asset path correctly when the app is served from a base path
