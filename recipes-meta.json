@@ -487,12 +487,17 @@
   {
     "id": "testo-za-pitsa",
     "title": "Тесто за пица",
-    "firstImageSrc": "/images/pizza2.jpg"
+    "firstImageSrc": "/images/pizza_dough_1.jpg"
   },
   {
     "id": "domashna-pitsa",
     "title": "Домашна пица",
     "firstImageSrc": "/images/pizza.jpg"
+  },
+  {
+    "id": "pizza-burrito",
+    "title": "Пица бурито",
+    "firstImageSrc": "/images/pizza_burrito_baked.jpg"
   },
   {
     "id": "fokacha",
