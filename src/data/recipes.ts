@@ -4232,9 +4232,9 @@ const recipes: Recipe[] = [
             "Печем в загрята на 180гр фурна с вентилатор за 15мин (или до зачервяване).",
         ],
         servings: 10,
-        workTime: 0,
+        workTime: 15,
         cookTime: 15,
-        totalTime: 15,
+        totalTime: 30,
         urls: ["https://www.youtube.com/watch?v=gX0zepdfXHA"],
     },
     {
@@ -4243,7 +4243,7 @@ const recipes: Recipe[] = [
         image: [{ title: "Пилешка супа със застройка", src: "/images/supa_pile_1.jpg" }],
         keywords: {
             type: ["супа"],
-            how: [],
+            how: ["варене", "тенджера"],
             diet: [],
             meat: ["пиле"],
             dairy: [],
@@ -4277,7 +4277,7 @@ const recipes: Recipe[] = [
             "Сервира се с прясно нарязан магданоз.",
         ],
         servings: 4,
-        workTime: 0,
+        workTime: 60,
         cookTime: 120,
         totalTime: 120,
         urls: [],
@@ -4288,7 +4288,7 @@ const recipes: Recipe[] = [
         image: [{ title: "Зеленчукова крем супа", src: "/images/supaKremZelenchukova.jpg" }],
         keywords: {
             type: ["супа"],
-            how: ["пасатор"],
+            how: ["пасатор", "варене", "тенджера"],
             diet: ["фибри"],
             meat: [],
             dairy: ["прясно мляко"],
@@ -4338,7 +4338,7 @@ const recipes: Recipe[] = [
         ],
         keywords: {
             type: ["супа"],
-            how: ["пасатор"],
+            how: ["пасатор", "варене", "тенджера"],
             diet: ["фибри"],
             meat: [],
             dairy: ["прясно мляко"],
@@ -4384,7 +4384,7 @@ const recipes: Recipe[] = [
         image: [{ title: "Картофена крем супа", src: "/images/supa_krem_kartofena_1.jpg" }],
         keywords: {
             type: ["супа"],
-            how: ["пасатор"],
+            how: ["пасатор", "варене", "тенджера"],
             diet: [],
             meat: [],
             dairy: ["яйца", "прясно мляко"],
@@ -4427,7 +4427,7 @@ const recipes: Recipe[] = [
         image: [{ title: "Супа топчета", src: "/images/supa_topcheta_portion.jpg" }],
         keywords: {
             type: ["супа"],
-            how: ["тенджера"],
+            how: ["тенджера", "варене", "тенджера"],
             diet: [],
             meat: ["кайма"],
             dairy: [],
