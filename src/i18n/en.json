@@ -10,6 +10,8 @@
         "maxTime": "Max Total Time",
         "noLimit": "No limit",
         "clearAll": "Clear all filters",
+        "modeAnd": "AND",
+        "modeOr": "OR",
         "minutesShort": "{{count}} min",
         "timeMark30": "30m",
         "timeMark60": "1h",

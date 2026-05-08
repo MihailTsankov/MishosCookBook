@@ -147,8 +147,8 @@ export default function RecipeFilter({ filters, onChange }: RecipeFilterProps) {
                                 },
                             }}
                         >
-                            <ToggleButton value="AND">AND</ToggleButton>
-                            <ToggleButton value="OR">OR</ToggleButton>
+                            <ToggleButton value="AND">{translate("filter.modeAnd")}</ToggleButton>
+                            <ToggleButton value="OR">{translate("filter.modeOr")}</ToggleButton>
                         </ToggleButtonGroup>
                     </Box>
                 </AccordionSummary>

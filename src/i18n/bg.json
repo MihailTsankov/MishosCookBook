@@ -10,6 +10,8 @@
         "maxTime": "Макс. общо време",
         "noLimit": "Без лимит",
         "clearAll": "Изчисти филтрите",
+        "modeAnd": "И",
+        "modeOr": "ИЛИ",
         "minutesShort": "{{count}} мин",
         "timeMark30": "30м",
         "timeMark60": "1ч",
