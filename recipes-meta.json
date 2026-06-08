@@ -40,6 +40,11 @@
     "firstImageSrc": "/images/chickenWithRice.jpg"
   },
   {
+    "id": "pile-s-oriz-bez-varene",
+    "title": "Пиле с ориз без варене",
+    "firstImageSrc": "/images/chickenWithRice.jpg"
+  },
+  {
     "id": "pile-s-oriz-v-multikukar",
     "title": "Пиле с ориз в мултикукър",
     "firstImageSrc": "/images/oriz_multicooker.jpg"
@@ -218,6 +223,11 @@
     "id": "perfektni-pileshki-parzholi-ot-but",
     "title": "Перфектни пилешки пържоли от бут",
     "firstImageSrc": ""
+  },
+  {
+    "id": "parjoli-na-furna-s-gaben-sos",
+    "title": "Пържоли на фурна с гъбен сос",
+    "firstImageSrc": "/images/parjoli-na-furna-s-gabi.jpg"
   },
   {
     "id": "svinsko-na-furna",
@@ -407,7 +417,7 @@
   {
     "id": "pecheni-nadenitsi",
     "title": "Печени наденици",
-    "firstImageSrc": "/images/sausages_1.jpg"
+    "firstImageSrc": "/images/nadenici-debeli.jpg"
   },
   {
     "id": "yaytsa-po-shveytsarski-krok-madam",
@@ -478,6 +488,11 @@
     "id": "garchena-banitsa",
     "title": "Гърчена баница",
     "firstImageSrc": "/images/banicaGarchena.jpg"
+  },
+  {
+    "id": "malki-banichki",
+    "title": "Малки банички",
+    "firstImageSrc": "/images/banichkiMalki.jpg"
   },
   {
     "id": "viti-buterki-s-bekon",
