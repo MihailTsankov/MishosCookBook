@@ -425,6 +425,11 @@
     "firstImageSrc": "/images/yaicaPoShveicarski.jpg"
   },
   {
+    "id": "antipasti-cheeses-and-meats",
+    "title": "Антипасти със сирена и меса",
+    "firstImageSrc": "/images/antipasti_cheeses_and_meats.jpg"
+  },
+  {
     "id": "strandzhanki",
     "title": "Странджанки",
     "firstImageSrc": "/images/strandzhanki.jpg"
