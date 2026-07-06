@@ -1017,7 +1017,7 @@ const recipes: Recipe[] = [
             { title: "Картофени кюфтета в air-fryer порция резнати", src: "/images/kartofeni_kufteta_airfrier_insides.jpg" },
         ],
         keywords: {
-            type: [],
+            type: ["предястие", "гарнитура", "кюфтета"],
             how: ["air-fryer", "тиган"],
             diet: ["вегетарианско"],
             meat: [],
@@ -1063,7 +1063,7 @@ const recipes: Recipe[] = [
             { title: "Картофени бонбони", src: "/images/kartofeni_kufteta_2.jpg" },
         ],
         keywords: {
-            type: ["аламинут"],
+            type: ["аламинут", "кюфтета", "гарнитура"],
             how: ["пържене", "тиган"],
             diet: [],
             meat: ["месо"],
@@ -1811,7 +1811,7 @@ const recipes: Recipe[] = [
         keywords: {
             type: ["манджа"],
             how: ["тава", "печене"],
-            diet: [""],
+            diet: ["кето"],
             meat: ["свинско"],
             dairy: ["сметана"],
             plants: ["картофи", "гъби"],
@@ -2113,7 +2113,7 @@ const recipes: Recipe[] = [
             { title: "Vegan meatballs", src: "/images/veganMeatballs2.jpg" },
         ],
         keywords: {
-            type: ["аламинут"],
+            type: ["аламинут", "предястие", "кюфтета"],
             how: ["пържене", "тиган"],
             diet: ["веган", "вегетарианско", "фибри"],
             meat: [],
@@ -2155,7 +2155,7 @@ const recipes: Recipe[] = [
             { title: "Кюфтета от червена леща 2", src: "/images/kufteta_leshta_1.jpg" },
         ],
         keywords: {
-            type: [],
+            type: ["кюфтета"],
             how: ["пържене", "тиган"],
             diet: ["веган", "вегетарианско", "фибри"],
             meat: [],
@@ -2191,7 +2191,7 @@ const recipes: Recipe[] = [
         title: "Постни кюфтета с леща и моркови",
         image: [{ title: "Vegan meatballs", src: "/images/lentilsMeatballs.jpg" }],
         keywords: {
-            type: [],
+            type: ["кюфтета"],
             how: ["пържене", "тиган"],
             diet: ["веган", "вегетарианско", "фибри"],
             meat: [],
@@ -2226,7 +2226,7 @@ const recipes: Recipe[] = [
         title: "Лещени кюфтета",
         image: [{ title: "Лещени кюфтета", src: "/images/leshteni_kufteta_1.jpg" }],
         keywords: {
-            type: ["аламинут"],
+            type: ["аламинут", "кюфтета", "предястие", "гарнитура"],
             how: ["печене"],
             diet: ["веган", "вегетарианско", "фибри"],
             meat: [],
@@ -2840,7 +2840,7 @@ const recipes: Recipe[] = [
         title: "Пържени кюфтета с доматен сос",
         image: [{ title: "Пържени кюфтета с доматен сос", src: "/images/meatBallsInTomatoeSauce.png" }],
         keywords: {
-            type: ["аламинут"],
+            type: ["аламинут", "манджа", "кюфтета"],
             how: ["тиган", "пържене"],
             diet: [],
             meat: ["кайма"],
@@ -2874,7 +2874,7 @@ const recipes: Recipe[] = [
         title: "Кюфтенца с доматен сос",
         image: [{ title: "Пържени кюфтета с доматен сос", src: "/images/meatballs_tomato_sauce.jpg" }],
         keywords: {
-            type: ["аламинут"],
+            type: ["аламинут", "кюфтета", "манджа"],
             how: ["тиган"],
             diet: [],
             meat: ["кайма", "месо"],
@@ -2925,7 +2925,7 @@ const recipes: Recipe[] = [
             { title: "Кюфтета с бял сос 2", src: "/images/kufteta_white_sauce_2.jpg" },
         ],
         keywords: {
-            type: ["супа"],
+            type: ["супа", "кюфтета", "манджа"],
             how: ["тенджера", "варене"],
             diet: [],
             meat: ["кайма"],
@@ -2970,7 +2970,7 @@ const recipes: Recipe[] = [
             { title: "Кюфтета с доматен сос", src: "/images/kufteta_domaten_sos_2.jpg" },
         ],
         keywords: {
-            type: ["аламинут"],
+            type: ["аламинут", "кюфтета", "манджа"],
             how: ["тиган", "пържене"],
             diet: [],
             meat: ["кайма"],
@@ -3014,32 +3014,31 @@ const recipes: Recipe[] = [
         title: "Кюфтета на фурна",
         image: [{ title: "Кюфтета на Фурна", src: "/images/meatBallsInAnOven.png" }],
         keywords: {
-            type: ["аламинут"],
+            type: ["аламинут", "кюфтета"],
             how: ["тава", "фурна", "печене"],
-            diet: [],
+            diet: ["месо"],
             meat: ["кайма"],
             dairy: [],
-            plants: [],
+            plants: ["лук"],
         },
         ingredients: [
-            "Кайма (1-1.5кг)",
+            "Кайма 1кг",
             "Глава лук",
-            "Олио",
+            "Мазнина",
             "1 чл. Кимьон, Черен пипер, Чубрица, Риган",
             "1 сл. Сол",
         ],
         instructions: [
             "Нарязва се лукът на дребни кубчета",
-            "В голяма купа се добавя каймата, подправките, солта и лука",
-            "В намазнена с олио тава (може би с хартия за печене) започват да се правят кюфтетата (по-дебелички)",
-            "Пече се на 170 градуса за 30 мин.",
-            "Сменя се на 220 градуса и се пече още 10 мин (докато горната част на кюфтетата се зачерви)",
-            "Кюфтетата се обръщат и се слагат за още 5-10 мин (докато и другата страна се зачерви)",
+            "В голяма купа се добавя каймата, подправките, солта, лука и малко мазнина (освен ако каймата не е много мазна)",
+            "Оформяме кюфтета с дебелина 2см - 2.5см с намазнени ръце и поставяме в тава",
+            "Печем в загрята фурна на 220 градуса за 7-8 мин.",
+            "Обръщаме кюфтетата и печем за още 6-7 мин."
         ],
-        servings: 6,
+        servings: 12,
         workTime: 20,
-        cookTime: 30,
-        totalTime: 50,
+        cookTime: 15,
+        totalTime: 30,
         urls: [],
     },
     {
@@ -3047,7 +3046,7 @@ const recipes: Recipe[] = [
         title: "Пържени кюфтета в air-fryer",
         image: [{ title: "Кюфтета в air-fryer", src: "/images/kufteta_air-fryer.jpg" }],
         keywords: {
-            type: ["аламинут"],
+            type: ["аламинут", "кюфтета"],
             how: ["air-fryer"],
             diet: [],
             meat: ["кайма"],
