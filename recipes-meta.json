@@ -90,6 +90,16 @@
     "firstImageSrc": "/images/pileJulien.png"
   },
   {
+    "id": "pile-kascheta-med",
+    "title": "Пилешки късчета с медено-горчичен сос",
+    "firstImageSrc": "/images/pile_kascheta_med.jpg"
+  },
+  {
+    "id": "pile-teriyaki",
+    "title": "Пилешки късчета с терияки сос",
+    "firstImageSrc": "/images/pile_teriyaki.png"
+  },
+  {
     "id": "zapecheni-kartofi-s-bekon-i-smetana",
     "title": "Запечени картофи с бекон и сметана",
     "firstImageSrc": "/images/kartofibaconsmetana_1.jpg"
