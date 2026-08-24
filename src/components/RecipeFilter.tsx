@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, type ChangeEvent } from "react";
 import {
     Accordion,
     AccordionDetails,
@@ -8,6 +8,7 @@ import {
     Chip,
     Slider,
     Stack,
+    TextField,
     ToggleButton,
     ToggleButtonGroup,
     Typography,
@@ -69,13 +70,18 @@ export default function RecipeFilter({ filters, onChange }: RecipeFilterProps) {
         }
     };
 
+    const handleTitleChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        onChange({ ...filters, titleQuery: event.target.value });
+    };
+
     const activeCount =
         filters.type.length +
         filters.how.length +
         filters.meat.length +
         filters.dairy.length +
         filters.plants.length +
-        (filters.maxTotalTime < Infinity ? 1 : 0);
+        (filters.maxTotalTime < Infinity ? 1 : 0) +
+        (filters.titleQuery && filters.titleQuery.trim().length > 0 ? 1 : 0);
 
     const handleClear = () => {
         onChange({ ...EMPTY_FILTERS });
@@ -154,6 +160,18 @@ export default function RecipeFilter({ filters, onChange }: RecipeFilterProps) {
                 </AccordionSummary>
 
                 <AccordionDetails sx={{ px: 3, pb: 3 }}>
+                    {/* Title text filter */}
+                    <Box sx={{ mb: 2 }}>
+                        <TextField
+                            value={filters.titleQuery}
+                            onChange={handleTitleChange}
+                            size="small"
+                            fullWidth
+                            placeholder={translate("filter.searchTitle")}
+                            onClick={(e) => e.stopPropagation()}
+                        />
+                    </Box>
+
                     {/* Keyword categories */}
                     {FILTER_CATEGORIES.map(({ key }) => (
                         <Box key={key} sx={{ mb: 2 }}>

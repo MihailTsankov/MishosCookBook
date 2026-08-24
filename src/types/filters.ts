@@ -3,6 +3,7 @@ import type { RecipeKeywords } from "../data/recipes";
 export type FilterMode = "AND" | "OR";
 
 export type ActiveFilters = Record<keyof RecipeKeywords, string[]> & {
+    titleQuery: string;
     maxTotalTime: number;
     filterMode: FilterMode;
 };
@@ -16,6 +17,7 @@ export const EMPTY_FILTERS: ActiveFilters = {
     meat: [],
     dairy: [],
     plants: [],
+    titleQuery: "",
     maxTotalTime: Infinity,
     filterMode: "AND",
 };

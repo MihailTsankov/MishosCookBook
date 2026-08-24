@@ -7,6 +7,7 @@
     },
     "filter": {
         "title": "Filtres",
+        "searchTitle": "Rechercher par titre",
         "maxTime": "Temps total maximum",
         "noLimit": "Sans limite",
         "clearAll": "Effacer tous les filtres",

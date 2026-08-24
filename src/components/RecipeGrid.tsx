@@ -28,6 +28,15 @@ export default function RecipeGrid() {
                     }
                 }
             }
+
+            // Title text search (case-insensitive)
+            if (filters.titleQuery && filters.titleQuery.trim().length > 0) {
+                const q = filters.titleQuery.trim().toLowerCase();
+                if (!recipe.title.toLowerCase().includes(q)) {
+                    return false;
+                }
+            }
+
             return recipe.totalTime <= filters.maxTotalTime;
         });
     }, [filters]);

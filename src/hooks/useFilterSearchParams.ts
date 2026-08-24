@@ -7,6 +7,7 @@ import type { RecipeKeywords } from "../data/recipes";
 
 const FILTER_MODE_PARAM = "mode";
 const MAX_TIME_PARAM = "maxTime";
+const TITLE_PARAM = "q";
 
 /**
      * Parse URL search parameters into an ActiveFilters object.
@@ -63,6 +64,12 @@ const MAX_TIME_PARAM = "maxTime";
             }
         }
 
+        // Title text query
+        const titleQueryParam = searchParams.get(TITLE_PARAM);
+        if (titleQueryParam !== null) {
+            filters.titleQuery = titleQueryParam;
+        }
+
         return filters;
     }
 
@@ -82,6 +89,10 @@ function buildSearchParamsFromFilters(filters: ActiveFilters): URLSearchParams {
 
     if (filters.maxTotalTime < Infinity) {
         params.set(MAX_TIME_PARAM, String(filters.maxTotalTime));
+    }
+
+    if (filters.titleQuery && filters.titleQuery.length > 0) {
+        params.set(TITLE_PARAM, filters.titleQuery);
     }
 
     return params;
