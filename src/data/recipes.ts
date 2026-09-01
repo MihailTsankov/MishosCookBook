@@ -39,7 +39,7 @@ const recipes: Recipe[] = [
             { title: "musaka", src: "/images/musakaFull.jpg" },
         ],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["фурна"],
             diet: [],
             meat: ["кайма"],
@@ -83,7 +83,7 @@ const recipes: Recipe[] = [
         title: "Мусака в multi-cooker",
         image: [{ title: "Мусака в мултикуукър", src: "/images/musaka_multicooker.jpg" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["фурна"],
             diet: [],
             meat: ["кайма"],
@@ -110,7 +110,7 @@ const recipes: Recipe[] = [
             "Слагаме олио в мултикуукъра и настройваме на соте. Леко сотираме лукът и морковите.",
             "Добавяме каймата и разбиваме докато стане на ситни бучки и покафенее леко.",
             "Добавяме доматите, чубрица, черен пипер и сол, разбъркваме добре и сотираме за още 5 мин.",
-            "Добавяме изцедени картофите и 180гр от водата, в която са били и разбъркваме.",
+            "Добавяме изцедени картофите и водата колкото почти да ги покрие и разбъркваме.",
             "Настройваме мултикукъра на готвене под налягане за 5-7мин.",
             "Приготвяме смес кисело мляко, яйца, хлебна сода, брашно и малко от подправките в една купичка и разбъркваме добре.",
             "Когато готвенето под налягане завърши добавяме млечната смес разстилайки я добре и настройваме мултикуукъра на печене за 8 мин на 204гр.",
@@ -127,7 +127,7 @@ const recipes: Recipe[] = [
         title: "Варен Боб",
         image: [{ title: "Варен Боб", src: "/images/beans.jpg" }],
         keywords: {
-            type: ["манджа", "супа"],
+            type: ["основно", "супа"],
             how: ["варене", "тенджера"],
             diet: ["фибри", "веган", "вегетарианско"],
             meat: [],
@@ -165,7 +165,7 @@ const recipes: Recipe[] = [
         title: "Варен Боб с месо",
         image: [{ title: "Варен Боб с месо", src: "/images/bob_s_meso.jpg" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["варене", "тенджера"],
             diet: ["фибри"],
             meat: ["свинско"],
@@ -206,7 +206,7 @@ const recipes: Recipe[] = [
         title: "Леща",
         image: [{ title: "Леща", src: "/images/leshta.png" }],
         keywords: {
-            type: ["манджа", "супа"],
+            type: ["основно", "супа"],
             how: ["варене", "тенджера"],
             diet: ["веган", "вегетарианско"],
             meat: [],
@@ -244,7 +244,7 @@ const recipes: Recipe[] = [
         title: "Леща яхния",
         image: [{ title: "Леща", src: "/images/leshta_stew.png" }],
         keywords: {
-            type: ["манджа", "яхния"],
+            type: ["основно", "яхния"],
             how: ["варене", "тенджера"],
             diet: ["веган", "вегетарианско"],
             meat: [],
@@ -291,7 +291,7 @@ const recipes: Recipe[] = [
             { title: "Червена леща яхния", src: "/images/leshta_chervena_stew_2.jpg" },
         ],
         keywords: {
-            type: ["манджа", "супа"],
+            type: ["основно", "супа"],
             how: ["варене", "multi-cooker"],
             diet: ["веган", "вегетарианско"],
             meat: [],
@@ -335,7 +335,7 @@ const recipes: Recipe[] = [
         title: "Пиле с ориз",
         image: [{ title: "Chicken with rice", src: "/images/chickenWithRice.jpg" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["варене", "тенджера", "фурна"],
             diet: [],
             meat: ["пиле"],
@@ -374,7 +374,7 @@ const recipes: Recipe[] = [
         title: "Пиле с ориз без варене",
         image: [{ title: "Chicken with rice", src: "/images/chickenWithRice.jpg" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["варене", "тенджера", "фурна"],
             diet: [],
             meat: ["пиле"],
@@ -411,7 +411,7 @@ const recipes: Recipe[] = [
         title: "Пиле с ориз в мултикукър",
         image: [{ title: "Chicken with rice in multi-cooker", src: "/images/oriz_multicooker.jpg" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["multi-cooker"],
             diet: [],
             meat: ["пиле"],
@@ -449,7 +449,7 @@ const recipes: Recipe[] = [
         title: "Пиле с ориз басмати",
         image: [{ title: "Chicken with basmati rice", src: "/images/riceBasmatiWithChicken.jpg" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["фурна"],
             diet: [],
             meat: ["пиле"],
@@ -496,7 +496,7 @@ const recipes: Recipe[] = [
             { title: "Кремаво тосканско пиле с ориз", src: "/images/pile_sirena_oriz_portions.jpg" },
         ],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["тиган"],
             diet: [],
             meat: ["пиле"],
@@ -544,7 +544,7 @@ const recipes: Recipe[] = [
         title: "Пържен готов ориз с яйца, кашкавал и мляко",
         image: [{ title: "Ориз с яйца и мляко", src: "/images/riceWithEggsAndMilk.jpeg" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["тиган"],
             diet: ["вегетарианско"],
             meat: [],
@@ -579,7 +579,7 @@ const recipes: Recipe[] = [
         title: "Пиле с картофи",
         image: [{ title: "Пиле с картофи", src: "/images/potatoesWithChicken.png" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["фурна"],
             diet: [],
             meat: ["пиле"],
@@ -619,7 +619,7 @@ const recipes: Recipe[] = [
         title: "Butter chicken",
         image: [{ title: "Butter chicken", src: "/images/chicken_butter_1.jpg" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["тиган", "пасатор"],
             diet: [],
             meat: ["пиле"],
@@ -678,7 +678,7 @@ const recipes: Recipe[] = [
         title: "Пилешка супена яхния",
         image: [{ title: "Яхния с пилешко порция", src: "/images/chicken_stew_1.jpg" }],
         keywords: {
-            type: ["манджа", "супа"],
+            type: ["основно", "супа"],
             how: ["multi-cooker"],
             diet: [],
             meat: ["пиле"],
@@ -719,7 +719,7 @@ const recipes: Recipe[] = [
             { title: "Пиле фрикасе", src: "/images/pile_chicken_fricassee_2.jpg" },
         ],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["тенджера"],
             diet: [],
             meat: ["пиле", "месо"],
@@ -771,7 +771,7 @@ const recipes: Recipe[] = [
         title: "Пиле жулиен",
         image: [{ title: "Пиле жулиен", src: "/images/pileJulien.png" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["тиган"],
             diet: [],
             meat: ["пиле"],
@@ -805,7 +805,7 @@ const recipes: Recipe[] = [
         title: "Пилешки късчета с медено-горчичен сос",
         image: [{ title: "Пилешки късчета с медено-горчичен сос", src: "/images/pile_kascheta_med.jpg" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["тиган"],
             diet: [],
             meat: ["пиле"],
@@ -849,7 +849,7 @@ const recipes: Recipe[] = [
         title: "Пилешки късчета с терияки сос",
         image: [{ title: "Пилешки късчета с терияки сос", src: "/images/pile_teriyaki.png" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["тиган"],
             diet: [],
             meat: ["пиле"],
@@ -883,7 +883,7 @@ const recipes: Recipe[] = [
             { title: "Запечени картофи с бекон и сметана", src: "/images/kartofibaconsmetana_2.jpg" },
         ],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["тава", "печене"],
             diet: [],
             meat: ["бекон"],
@@ -1036,7 +1036,7 @@ const recipes: Recipe[] = [
             { title: "Картофена яхния в мултикукър", src: "/images/stew_potatoes_multicooker_2.jpg" },
         ],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["multi-cooker"],
             diet: [],
             meat: ["месо"],
@@ -1363,7 +1363,7 @@ const recipes: Recipe[] = [
         title: "Пилешки пържолки с гъби на фурна",
         image: [{ title: "Пилешки пържолки с гъби на фурна", src: "/images/pilegabifurna.png" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["тава", "печене", "фурна"],
             diet: ["кето"],
             meat: ["свинско"],
@@ -1399,7 +1399,7 @@ const recipes: Recipe[] = [
         title: "Доматено Пиле",
         image: [{ title: "Доматено Пиле", src: "/images/domatenoPile.jpg" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["тава", "печене"],
             diet: ["кето"],
             meat: ["пиле"],
@@ -1643,7 +1643,7 @@ const recipes: Recipe[] = [
             { title: "Cordon Bleu", src: "/images/cordonbleu_2.jpg" },
         ],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["тава", "фурна", "печене"],
             diet: [],
             meat: ["пиле"],
@@ -1885,7 +1885,7 @@ const recipes: Recipe[] = [
             { title: "Пържоли на фурна с гъбен сос", src: "/images/parjoli-na-furna-s-gabi.jpg" }
         ],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["тава", "печене"],
             diet: ["кето"],
             meat: ["свинско"],
@@ -1947,7 +1947,7 @@ const recipes: Recipe[] = [
             { title: "Свинско на фурна", src: "/images/svinsko_na_furna.jpg" },
         ],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["тава", "печене"],
             diet: ["кето"],
             meat: ["свинско"],
@@ -1987,7 +1987,7 @@ const recipes: Recipe[] = [
             { title: "Сос (gravy)", src: "/images/svinskaVratnaSasSireneGravy.jpg" },
         ],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["тиган", "запечатване", "фурна"],
             diet: ["кето"],
             meat: ["свинско"],
@@ -2028,7 +2028,7 @@ const recipes: Recipe[] = [
         title: "Бавно готвено свинско",
         image: [{ title: "Бавно готвено свинско", src: "/images/svinsko_bavnoGotveno.jpg" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["тиган", "запечатване", "фурна"],
             diet: ["кето"],
             meat: ["свинско"],
@@ -2069,7 +2069,7 @@ const recipes: Recipe[] = [
             { title: "Бавно готвено свинско с чипотле майонеза порция", src: "/images/svinsko_bavnoGotveno_chipotle_2.jpg" },
         ],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["тава", "запечатване", "фурна"],
             diet: [],
             meat: ["свинско", "месо"],
@@ -2112,7 +2112,7 @@ const recipes: Recipe[] = [
         title: "Бавно готвено месо с вино",
         image: [{ title: "Бавно готвено месо с вино", src: "/images/bavnoGotvenoMesoSVino.jpg" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["фурна", "multi-cooker"],
             diet: [],
             meat: ["свинско", "телешко"],
@@ -2150,7 +2150,7 @@ const recipes: Recipe[] = [
             { title: "Рамстек с лук", src: "/images/ramstek2.jpg" },
         ],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: [],
             diet: [],
             meat: ["телешко"],
@@ -2345,7 +2345,7 @@ const recipes: Recipe[] = [
         title: "Зелеви сарми с кайма",
         image: [{ title: "Zelevi sarmi", src: "/images/sarmiZelevi.jpg" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: [],
             diet: [],
             meat: ["кайма"],
@@ -2393,7 +2393,7 @@ const recipes: Recipe[] = [
         title: "Лозови сарми (постни)",
         image: [{ title: "Lozovi sarmi", src: "/images/lozoviSarmi.jpg" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: [],
             diet: ["веган", "вегетарианско"],
             meat: [],
@@ -2431,7 +2431,7 @@ const recipes: Recipe[] = [
         title: "Винен кебап в мултикукър",
         image: [{ title: "Винен кебап в мултикукър", src: "/images/vinen_kebab_multi-cooker_portion.jpg" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["multi-cooker"],
             diet: [],
             meat: ["свинско", "месо"],
@@ -2480,7 +2480,7 @@ const recipes: Recipe[] = [
         title: "Винен кебап",
         image: [{ title: "Винен кебап", src: "/images/vinenKebap.jpg" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["тенджера"],
             diet: [],
             meat: ["свинско", "месо"],
@@ -2522,7 +2522,7 @@ const recipes: Recipe[] = [
         title: "Запечатани свински вратни с гъби на фурна",
         image: [{ title: "Свински вратни с гъби", src: "/images/svinskoSGybi.jpg" }],
         keywords: {
-            type: ["манджа", "манджа"],
+            type: ["основно", "основно"],
             how: ["запечатване", "фурна"],
             diet: ["кето"],
             meat: ["свинско"],
@@ -2557,7 +2557,7 @@ const recipes: Recipe[] = [
         title: "Сьомга с хрупкава коричка",
         image: [{ title: "Сьомга", src: "/images/salmon.jpg" }],
         keywords: {
-            type: ["манджа"],
+            type: ["основно"],
             how: ["тиган"],
             diet: [],
             meat: ["риба"],
@@ -2918,7 +2918,7 @@ const recipes: Recipe[] = [
         title: "Пържени кюфтета с доматен сос",
         image: [{ title: "Пържени кюфтета с доматен сос", src: "/images/meatBallsInTomatoeSauce.png" }],
         keywords: {
-            type: ["аламинут", "манджа", "кюфтета"],
+            type: ["аламинут", "основно", "кюфтета"],
             how: ["тиган", "пържене"],
             diet: [],
             meat: ["кайма"],
@@ -2952,7 +2952,7 @@ const recipes: Recipe[] = [
         title: "Кюфтенца с доматен сос",
         image: [{ title: "Пържени кюфтета с доматен сос", src: "/images/meatballs_tomato_sauce.jpg" }],
         keywords: {
-            type: ["аламинут", "кюфтета", "манджа"],
+            type: ["аламинут", "кюфтета", "основно"],
             how: ["тиган"],
             diet: [],
             meat: ["кайма", "месо"],
@@ -3003,7 +3003,7 @@ const recipes: Recipe[] = [
             { title: "Кюфтета с бял сос 2", src: "/images/kufteta_white_sauce_2.jpg" },
         ],
         keywords: {
-            type: ["супа", "кюфтета", "манджа"],
+            type: ["супа", "кюфтета", "основно"],
             how: ["тенджера", "варене"],
             diet: [],
             meat: ["кайма"],
@@ -3048,7 +3048,7 @@ const recipes: Recipe[] = [
             { title: "Кюфтета с доматен сос", src: "/images/kufteta_domaten_sos_2.jpg" },
         ],
         keywords: {
-            type: ["аламинут", "кюфтета", "манджа"],
+            type: ["аламинут", "кюфтета", "основно"],
             how: ["тиган", "пържене"],
             diet: [],
             meat: ["кайма"],
@@ -6544,46 +6544,6 @@ const recipes: Recipe[] = [
         urls: ["https://www.youtube.com/watch?v=z9M8GFfRdBo&ab_channel=Let%E2%80%99sEat"],
     },
     {
-        id: "marzelivki-test",
-        title: "Мързеливки (ТЕСТ)",
-        image: [],
-        keywords: {
-            type: ["десерт", "тест"],
-            how: [],
-            diet: [],
-            meat: [],
-            dairy: [],
-            plants: [],
-        },
-        ingredients: [],
-        instructions: [],
-        servings: 0,
-        workTime: 0,
-        cookTime: 0,
-        totalTime: 0,
-        urls: ["http://vbox7.com/play:dd4d2a5c68"],
-    },
-    {
-        id: "vegan-mayoneza-sas-gorchitsa-test",
-        title: "Веган Майонеза със горчица (ТЕСТ)",
-        image: [],
-        keywords: {
-            type: ["тест"],
-            how: [],
-            diet: [],
-            meat: [],
-            dairy: [],
-            plants: [],
-        },
-        ingredients: [],
-        instructions: [],
-        servings: 0,
-        workTime: 0,
-        cookTime: 15,
-        totalTime: 15,
-        urls: ["https://www.bonapeti.bg/recepti/veganska-mayoneza/"],
-    },
-    {
         id: "lavash-burger-test",
         title: "Лаваш бургер (ТЕСТ)",
         image: [],
@@ -6622,66 +6582,6 @@ const recipes: Recipe[] = [
         cookTime: 15,
         totalTime: 15,
         urls: ["http://vbox7.com/play:fa7831de4f"],
-    },
-    {
-        id: "zelenchukov-chips-test",
-        title: "Зеленчуков чипс (ТЕСТ)",
-        image: [],
-        keywords: {
-            type: ["тест"],
-            how: [],
-            diet: [],
-            meat: [],
-            dairy: [],
-            plants: [],
-        },
-        ingredients: [],
-        instructions: [],
-        servings: 0,
-        workTime: 0,
-        cookTime: 15,
-        totalTime: 15,
-        urls: ["http://vbox7.com/play:431e81bdb8"],
-    },
-    {
-        id: "usukani-prachitsi-s-kashkaval-test",
-        title: "Усукани пръчици с кашкавал (ТЕСТ)",
-        image: [],
-        keywords: {
-            type: ["тест"],
-            how: [],
-            diet: [],
-            meat: [],
-            dairy: [],
-            plants: [],
-        },
-        ingredients: [],
-        instructions: [],
-        servings: 0,
-        workTime: 0,
-        cookTime: 15,
-        totalTime: 15,
-        urls: ["http://vbox7.com/play:3744ed695e"],
-    },
-    {
-        id: "kartofi-po-shvedski-test",
-        title: "Картофи по шведски (ТЕСТ)",
-        image: [],
-        keywords: {
-            type: ["тест"],
-            how: [],
-            diet: ["вегетарианско"],
-            meat: [],
-            dairy: [],
-            plants: ["картофи"],
-        },
-        ingredients: [],
-        instructions: [],
-        servings: 0,
-        workTime: 0,
-        cookTime: 15,
-        totalTime: 15,
-        urls: ["https://www.vbox7.com/play:1dd815e879"],
     },
     {
         id: "usukani-hotdozi-test",
@@ -6748,7 +6648,7 @@ const recipes: Recipe[] = [
         title: "Сьомга със синьо сирене (ТЕСТ)",
         image: [{ title: "Сьомга със синьо сирене", src: "/images/salmonwithcheese.jpeg" }],
         keywords: {
-            type: ["манджа", "тест"],
+            type: ["основно", "тест"],
             how: [],
             diet: [],
             meat: [],
@@ -6775,27 +6675,7 @@ const recipes: Recipe[] = [
         cookTime: 0,
         totalTime: 0,
         urls: [],
-    },
-    {
-        id: "svezha-salata-s-izvara-test",
-        title: "Свежа салата с извара (ТЕСТ)",
-        image: [],
-        keywords: {
-            type: ["салата", "тест"],
-            how: [],
-            diet: [],
-            meat: [],
-            dairy: [],
-            plants: [],
-        },
-        ingredients: [],
-        instructions: [],
-        servings: 0,
-        workTime: 0,
-        cookTime: 0,
-        totalTime: 0,
-        urls: ["http://vbox7.com/play:ab959d5f62"],
-    },
+    }
 ];
 
 export default recipes;
