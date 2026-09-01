@@ -865,16 +865,6 @@
     "firstImageSrc": ""
   },
   {
-    "id": "marzelivki-test",
-    "title": "Мързеливки (ТЕСТ)",
-    "firstImageSrc": ""
-  },
-  {
-    "id": "vegan-mayoneza-sas-gorchitsa-test",
-    "title": "Веган Майонеза със горчица (ТЕСТ)",
-    "firstImageSrc": ""
-  },
-  {
     "id": "lavash-burger-test",
     "title": "Лаваш бургер (ТЕСТ)",
     "firstImageSrc": ""
@@ -882,21 +872,6 @@
   {
     "id": "mini-pitsi-hapki-test",
     "title": "Мини пици хапки (ТЕСТ)",
-    "firstImageSrc": ""
-  },
-  {
-    "id": "zelenchukov-chips-test",
-    "title": "Зеленчуков чипс (ТЕСТ)",
-    "firstImageSrc": ""
-  },
-  {
-    "id": "usukani-prachitsi-s-kashkaval-test",
-    "title": "Усукани пръчици с кашкавал (ТЕСТ)",
-    "firstImageSrc": ""
-  },
-  {
-    "id": "kartofi-po-shvedski-test",
-    "title": "Картофи по шведски (ТЕСТ)",
     "firstImageSrc": ""
   },
   {
@@ -918,10 +893,5 @@
     "id": "syomga-sas-sinyo-sirene-test",
     "title": "Сьомга със синьо сирене (ТЕСТ)",
     "firstImageSrc": "/images/salmonwithcheese.jpeg"
-  },
-  {
-    "id": "svezha-salata-s-izvara-test",
-    "title": "Свежа салата с извара (ТЕСТ)",
-    "firstImageSrc": ""
   }
 ]
