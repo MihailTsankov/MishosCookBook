@@ -992,7 +992,7 @@ const recipes: Recipe[] = [
         workTime: 10,
         cookTime: 15,
         totalTime: 15,
-        urls: ["https://www.youtube.com/watch?v=GeGTY5qxCN8"],
+        urls: ["https://www.youtube.com/watch?v=26lsPO1gIXY"],
     },
     {
         id: "kartofi-i-morkovi-na-furna",
@@ -1366,7 +1366,7 @@ const recipes: Recipe[] = [
             type: ["основно"],
             how: ["тава", "печене", "фурна"],
             diet: ["кето"],
-            meat: ["свинско"],
+            meat: ["пилешко"],
             dairy: [],
             plants: ["гъби"],
         },

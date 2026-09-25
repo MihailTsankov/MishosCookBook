@@ -1,4 +1,4 @@
-import { useMemo, type ChangeEvent } from "react";
+import { useMemo, useState, useEffect, useRef, type ChangeEvent } from "react";
 import {
     Accordion,
     AccordionDetails,
@@ -70,9 +70,44 @@ export default function RecipeFilter({ filters, onChange }: RecipeFilterProps) {
         }
     };
 
-    const handleTitleChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        onChange({ ...filters, titleQuery: event.target.value });
+    // Local debounced title input to avoid rapid URL/search-param writes that
+    // can interfere with the TextField caret and drop characters.
+    const [titleInput, setTitleInput] = useState(filters.titleQuery);
+    const titleDebounceRef = useRef<number | null>(null);
+
+    // Keep local input in sync when external filters change (e.g., back/forward navigation)
+    // Use a microtask (setTimeout) to defer the state update and avoid synchronous
+    // setState inside the effect which can trigger cascading renders.
+    useEffect(() => {
+        const timer = window.setTimeout(() => {
+            setTitleInput(filters.titleQuery);
+        }, 0);
+        return () => window.clearTimeout(timer);
+    }, [filters.titleQuery]);
+
+    const handleTitleInputChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const nextValue = event.target.value;
+        setTitleInput(nextValue);
+
+        if (titleDebounceRef.current !== null) {
+            window.clearTimeout(titleDebounceRef.current);
+        }
+
+        // Debounce update to parent (and URL) to avoid rapid search param updates
+        titleDebounceRef.current = window.setTimeout(() => {
+            onChange({ ...filters, titleQuery: nextValue });
+            titleDebounceRef.current = null;
+        }, 300);
     };
+
+    // Cleanup any pending timeout on unmount
+    useEffect(() => {
+        return () => {
+            if (titleDebounceRef.current !== null) {
+                window.clearTimeout(titleDebounceRef.current);
+            }
+        };
+    }, []);
 
     const activeCount =
         filters.type.length +
@@ -163,8 +198,8 @@ export default function RecipeFilter({ filters, onChange }: RecipeFilterProps) {
                     {/* Title text filter */}
                     <Box sx={{ mb: 2 }}>
                         <TextField
-                            value={filters.titleQuery}
-                            onChange={handleTitleChange}
+                            value={titleInput}
+                            onChange={handleTitleInputChange}
                             size="small"
                             fullWidth
                             placeholder={translate("filter.searchTitle")}
