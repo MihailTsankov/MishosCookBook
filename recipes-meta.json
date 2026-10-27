@@ -20,21 +20,6 @@
     "firstImageSrc": "/images/bob_s_meso.jpg"
   },
   {
-    "id": "leshta",
-    "title": "Леща",
-    "firstImageSrc": "/images/leshta.png"
-  },
-  {
-    "id": "leshta-yahniya",
-    "title": "Леща яхния",
-    "firstImageSrc": "/images/leshta_stew.png"
-  },
-  {
-    "id": "yahniya-ot-chervena-leshta",
-    "title": "Яхния от червена леща",
-    "firstImageSrc": "/images/leshta_chervena_stew_portion.jpg"
-  },
-  {
     "id": "pile-s-oriz",
     "title": "Пиле с ориз",
     "firstImageSrc": "/images/chickenWithRice.jpg"
@@ -73,6 +58,21 @@
     "id": "butter-chicken",
     "title": "Butter chicken",
     "firstImageSrc": "/images/chicken_butter_1.jpg"
+  },
+  {
+    "id": "leshta",
+    "title": "Леща",
+    "firstImageSrc": "/images/leshta.png"
+  },
+  {
+    "id": "leshta-yahniya",
+    "title": "Леща яхния",
+    "firstImageSrc": "/images/leshta_stew.png"
+  },
+  {
+    "id": "yahniya-ot-chervena-leshta",
+    "title": "Яхния от червена леща",
+    "firstImageSrc": "/images/leshta_chervena_stew_portion.jpg"
   },
   {
     "id": "pileshka-supena-yahniya",
@@ -518,6 +518,11 @@
     "id": "testo-za-pitsa",
     "title": "Тесто за пица",
     "firstImageSrc": "/images/pizza_dough_1.jpg"
+  },
+  {
+    "id": "pitki-s-testo-za-pizza",
+    "title": "Питки с тесто за пица",
+    "firstImageSrc": "/images/pizza-pitki.jpg"
   },
   {
     "id": "domashna-pitsa",
